@@ -313,10 +313,10 @@ I have been working as a freelancer web developer for almost three years now, an
 			
 		});
 		
+		$(function(){
+			NProgress.start();
+		});
 		window.onload = function(){
-			$(function(){
-				NProgress.start();
-			});
 			setTimeout(function(){ 
 				NProgress.done();
 			}, 5000);
