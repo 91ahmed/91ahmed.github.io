@@ -44,11 +44,18 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li><p><i class="fa-solid fa-magnifying-glass"></i> <a href="https://github.com/91ahmed/JsonModifier" target="_blank">github/JsonModifier</a></p></li>
-                        <li><p><i class="fa-regular fa-calendar"></i> 09 Jan, 2022</p></li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                <span id="repo">
+                                <a href="https://github.com/91ahmed/JsonModifier" target="_blank">github/JsonModifier</a>
+                                </span>
+                            </p>
+                        </li>
+                        <li><p><i class="fa-regular fa-calendar"></i> <span id="release">09 Jan, 2022</span></p></li>
                     </ul>
 
-                    <p>PHP package allows developers to manipulate JSON files by performing data lookup and many other operations such as read, write, delete and update.</p>
+                    <p id="describe">PHP package allows developers to manipulate JSON files by performing data lookup and many other operations such as read, write, delete and update.</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -57,8 +64,10 @@
                             <h3>Technology</h3>
                         </div>
                         <ul class="tags">
+                            <!--
                             <li><a>PHP</a></li>
                             <li><a>JSON</a></li>
+                            -->
                         </ul>
                     </div>
                     <!-- /Technology -->
@@ -69,7 +78,6 @@
                             <h3>Hosts Links</h3>
                         </div>
                         <ul class="tags">
-                            <li><a href="https://packagist.org/packages/jsoncontrol/php-json-control" target="_blank" class="btn"><i class="devicon-composer-line"></i> Packagist</a></li>
                             <li><a href="https://github.com/91ahmed/JsonModifier" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Github</a></li>
                         </ul>
                     </div>
@@ -80,3 +88,18 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    let url = 'https://api.github.com/repos/91ahmed/JsonModifier';
+    
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        document.getElementById('release').innerHTML = data.created_at
+        document.getElementById('describe').innerHTML = data.description
+        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
+
+        data.topics.forEach ((item) => {
+            document.getElementsByClassName('tags')[0].innerHTML += "<li><a>"+item+"</a></li>" 
+        });
+    })
+</script>

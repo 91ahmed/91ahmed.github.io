@@ -44,21 +44,32 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li><p><i class="fa-solid fa-magnifying-glass"></i> <a href="https://github.com/91ahmed/CsvtoSql" target="_blank">github/CsvtoSql</a></p></li>
-                        <li><p><i class="fa-regular fa-calendar"></i> 23 Jul, 2022</p></li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                <span id="repo">
+                                    <!--<a href="https://github.com/91ahmed/CsvtoSql" target="_blank">github/CsvtoSql</a>-->
+                                </span>
+                            </p>
+                        </li>
+                        <li><p id="release"></p></li>
                     </ul>
 
-                    <p>PHP script to extract data from (csv) file and transform it into SQL insert statement.</p>
+                    <p id="describe">
+                        <!--PHP script to extract data from (csv) file and transform it into SQL insert statement.-->
+                    </p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
                     <div class="tags-block">
                         <div class="block-title">
-                            <h3>Technology</h3>
+                            <h3>Topics</h3>
                         </div>
-                        <ul class="tags">
+                        <ul class="tags topics">
+                            <!--
                             <li><a>PHP</a></li>
                             <li><a>SQL</a></li>
+                            -->
                         </ul>
                     </div>
                     <!-- /Technology -->
@@ -69,7 +80,6 @@
                             <h3>Hosts Links</h3>
                         </div>
                         <ul class="tags">
-                            <li><a href="https://packagist.org/packages/csv/csvtosql" target="_blank" class="btn"><i class="devicon-composer-line"></i> Packagist</a></li>
                             <li><a href="https://github.com/91ahmed/CsvtoSql" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Github</a></li>
                         </ul>
                     </div>
@@ -80,3 +90,19 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    let url = 'https://api.github.com/repos/91ahmed/CsvtoSql';
+    
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        document.getElementById('release').innerHTML = "<i class='fa-regular fa-calendar'></i> "+data.created_at
+        document.getElementById('describe').innerHTML = data.description
+        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
+
+        data.topics.forEach ((item) => {
+            document.getElementsByClassName('topics')[0].innerHTML += "<li><a>"+item+"</a></li>" 
+        });
+    })
+</script>

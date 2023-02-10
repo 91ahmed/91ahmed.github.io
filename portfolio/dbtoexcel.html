@@ -50,21 +50,30 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li><p><i class="fa-solid fa-magnifying-glass"></i> <a href="https://github.com/91ahmed/DbtoExcel" target="_blank">github/DbtoExcel</a></p></li>
-                        <li><p><i class="fa-regular fa-calendar"></i> 27 Jan, 2023</p></li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                <span id="repo">
+                                    <a href="https://github.com/91ahmed/DbtoExcel" target="_blank">github/DbtoExcel</a>
+                                </span>
+                            </p>
+                        </li>
+                        <li><p><i class="fa-regular fa-calendar"></i> <span id="release">27 Jan, 2023</span></p></li>
                     </ul>
 
-                    <p>PHP script to simplify the process of converting database table to excel sheet.</p>
+                    <p id="describe">PHP script to simplify the process of converting database table to excel sheet.</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
                     <div class="tags-block">
                         <div class="block-title">
-                            <h3>Technology</h3>
+                            <h3>Topics</h3>
                         </div>
-                        <ul class="tags">
+                        <ul class="tags topics">
+                            <!--
                             <li><a>PHP</a></li>
                             <li><a>SQL</a></li>
+                            -->
                         </ul>
                     </div>
                     <!-- /Technology -->
@@ -86,3 +95,19 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    let url = 'https://api.github.com/repos/91ahmed/DbtoExcel';
+    
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        document.getElementById('release').innerHTML = "<i class='fa-regular fa-calendar'></i> "+data.created_at
+        document.getElementById('describe').innerHTML = data.description
+        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
+
+        data.topics.forEach ((item) => {
+            document.getElementsByClassName('topics')[0].innerHTML += "<li><a>"+item+"</a></li>" 
+        });
+    })
+</script>

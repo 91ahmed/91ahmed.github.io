@@ -44,21 +44,30 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li><p><i class="fa-solid fa-magnifying-glass"></i> <a href="https://github.com/91ahmed/NODE-MVC" target="_blank">github/Node-Mvc</a></p></li>
-                        <li><p><i class="fa-regular fa-calendar"></i> 23 Jul, 2020</p></li>
+                        <li>
+                            <p>
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                <span id="repo">
+                                    <a href="https://github.com/91ahmed/NODE-MVC" target="_blank">github/Node-Mvc</a>
+                                </span>
+                            </p>
+                        </li>
+                        <li><p id="release"></p></li>
                     </ul>
 
-                    <p>NodeJs mvc framework.</p>
+                    <p id="describe"><!--NodeJs mvc framework.--></p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
                     <div class="tags-block">
                         <div class="block-title">
-                            <h3>Technology</h3>
+                            <h3>Topics</h3>
                         </div>
-                        <ul class="tags">
+                        <ul class="tags topics">
+                            <!--
                             <li><a>Node.Js</a></li>
                             <li><a>Express.Js</a></li>
+                            -->
                         </ul>
                     </div>
                     <!-- /Technology -->
@@ -79,3 +88,18 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    let url = 'https://api.github.com/repos/91ahmed/Nodemvc';
+    
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        document.getElementById('release').innerHTML = data.created_at
+        document.getElementById('describe').innerHTML = data.description
+        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
+
+        data.topics.forEach ((item) => {
+            document.getElementsByClassName('topics')[0].innerHTML += "<li><a>"+item+"</a></li>" 
+        });
+    })
+</script>
