@@ -7,7 +7,7 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1><i class="fa-brands fa-node"></i> MovieDoc</h1>
+            <h1><i class="fa-brands fa-node"></i> <span id="repo-name"></span></h1>
         </div>
 
         <div class="row">
@@ -20,12 +20,6 @@
                         <img src="img/portfolio/moviedoc/moviedoc-2.png" alt="project">
                     </div>
                 </div>
-
-                <!-- VIDEO
-                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
-                </div>
-                -->
 
                 <script type="text/javascript">
                     jQuery(document).ready(function($){
@@ -46,46 +40,45 @@
             </div>
 
             <div class="col-sm-4 col-md-4 portfolio-block">
-                <!-- Project Description -->
+                <!-- project description -->
                 <div class="project-description">
-                    <div class="block-title">
-                        <h3>Description</h3>
-                    </div>
+                    <div class="block-title" id="info-title"></div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li><p><i class="fa-solid fa-magnifying-glass"></i> <a href="https://moviedoc.onrender.com/" target="_blank">MovieDoc/Preview</a></p></li>
-                        <li><p><i class="fa-regular fa-calendar"></i> 13 Dec, 2022</p></li>
+                        <li id="author"></li>
+                        <li id="repository"></li>
+                        <li id="released"></li>
                     </ul>
 
-                    <p>Node.js application for new released and upcoming movies and series.</p>
-                    <!-- /Project Description -->
+                    <p id="describe"></p>
 
-                    <!-- Technology -->
+                    <!-- topics -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Technology</h3>
-                        </div>
-                        <ul class="tags">
-                            <li><a>Node.Js</a></li>
-                            <li><a>Movie API</a></li>
-                        </ul>
+                        <div class="block-title" id="topics-title"></div>
+                        <ul class="tags topics"></ul>
                     </div>
-                    <!-- /Technology -->
+                    <!-- /topics -->
 
-                    <!-- Hosts -->
+                    <!-- languages -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Hosts Links</h3>
-                        </div>
-                        <ul class="tags">
-                            <li><a href="https://moviedoc.onrender.com/" target="_blank" class="btn"><i class="fa-solid fa-earth-americas"></i> Render</a></li>
-                            <li><a href="https://github.com/91ahmed/MovieDoc" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Github</a></li>
-                        </ul>
+                        <div class="block-title" id="language-title"></div>
+                        <ul class="tags" id="language"></ul>
                     </div>
-                    <!-- /Hosts -->
+                    <!-- /languages -->
+
+                    <!-- hosts -->
+                    <div class="tags-block">
+                        <div class="block-title" id="hosts-title"></div>
+                        <ul class="tags" id="hosts"></ul>
+                    </div>
+                    <!-- /hosts -->
                 </div>
-                <!-- Project Description -->
+                <!-- project description -->
             </div>
         </div>
     </div>
 </div>
+
+<script src="../js/fetch.js"></script>
+<script type="text/javascript">
+    fetchGithubApi('https://api.github.com/repos/91ahmed/MovieDoc');
+</script>

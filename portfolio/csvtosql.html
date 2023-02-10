@@ -7,7 +7,7 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1><i class="fa-brands fa-php"></i> Transform CSV to SQL</h1>
+            <h1><i class="fa-brands fa-php"></i> <span id="repo-name"></span></h1>
         </div>
 
         <div class="row">
@@ -37,72 +37,45 @@
             </div>
 
             <div class="col-sm-4 col-md-4 portfolio-block">
-                <!-- Project Description -->
+                <!-- project description -->
                 <div class="project-description">
-                    <div class="block-title">
-                        <h3>Description</h3>
-                    </div>
+                    <div class="block-title" id="info-title"></div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li>
-                            <p>
-                                <i class="fa-solid fa-magnifying-glass"></i> 
-                                <span id="repo">
-                                    <!--<a href="https://github.com/91ahmed/CsvtoSql" target="_blank">github/CsvtoSql</a>-->
-                                </span>
-                            </p>
-                        </li>
-                        <li><p id="release"></p></li>
+                        <li id="author"></li>
+                        <li id="repository"></li>
+                        <li id="released"></li>
                     </ul>
 
-                    <p id="describe">
-                        <!--PHP script to extract data from (csv) file and transform it into SQL insert statement.-->
-                    </p>
-                    <!-- /Project Description -->
+                    <p id="describe"></p>
 
-                    <!-- Technology -->
+                    <!-- topics -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Topics</h3>
-                        </div>
-                        <ul class="tags topics">
-                            <!--
-                            <li><a>PHP</a></li>
-                            <li><a>SQL</a></li>
-                            -->
-                        </ul>
+                        <div class="block-title" id="topics-title"></div>
+                        <ul class="tags topics"></ul>
                     </div>
-                    <!-- /Technology -->
+                    <!-- /topics -->
 
-                    <!-- Hosts -->
+                    <!-- languages -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Hosts Links</h3>
-                        </div>
-                        <ul class="tags">
-                            <li><a href="https://github.com/91ahmed/CsvtoSql" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Github</a></li>
-                        </ul>
+                        <div class="block-title" id="language-title"></div>
+                        <ul class="tags" id="language"></ul>
                     </div>
-                    <!-- /Hosts -->
+                    <!-- /languages -->
+
+                    <!-- hosts -->
+                    <div class="tags-block">
+                        <div class="block-title" id="hosts-title"></div>
+                        <ul class="tags" id="hosts"></ul>
+                    </div>
+                    <!-- /hosts -->
                 </div>
-                <!-- Project Description -->
+                <!-- project description -->
             </div>
         </div>
     </div>
 </div>
 
+<script src="../js/fetch.js"></script>
 <script type="text/javascript">
-    let url = 'https://api.github.com/repos/91ahmed/CsvtoSql';
-    
-    fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById('release').innerHTML = "<i class='fa-regular fa-calendar'></i> "+data.created_at
-        document.getElementById('describe').innerHTML = data.description
-        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
-
-        data.topics.forEach ((item) => {
-            document.getElementsByClassName('topics')[0].innerHTML += "<li><a>"+item+"</a></li>" 
-        });
-    })
+    fetchGithubApi('https://api.github.com/repos/91ahmed/CsvtoSql');
 </script>

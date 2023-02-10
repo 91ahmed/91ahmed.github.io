@@ -7,7 +7,7 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1><i class="fa-brands fa-php"></i> Json Modifier</h1>
+            <h1><i class="fa-brands fa-php"></i> <span id="repo-name"></span></h1>
         </div>
 
         <div class="row">
@@ -37,69 +37,45 @@
             </div>
 
             <div class="col-sm-4 col-md-4 portfolio-block">
-                <!-- Project Description -->
+                <!-- project description -->
                 <div class="project-description">
-                    <div class="block-title">
-                        <h3>Description</h3>
-                    </div>
+                    <div class="block-title" id="info-title"></div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa-regular fa-user"></i> Ahmed Hassan</p></li>
-                        <li>
-                            <p>
-                                <i class="fa-solid fa-magnifying-glass"></i> 
-                                <span id="repo">
-                                <a href="https://github.com/91ahmed/JsonModifier" target="_blank">github/JsonModifier</a>
-                                </span>
-                            </p>
-                        </li>
-                        <li><p><i class="fa-regular fa-calendar"></i> <span id="release">09 Jan, 2022</span></p></li>
+                        <li id="author"></li>
+                        <li id="repository"></li>
+                        <li id="released"></li>
                     </ul>
 
-                    <p id="describe">PHP package allows developers to manipulate JSON files by performing data lookup and many other operations such as read, write, delete and update.</p>
-                    <!-- /Project Description -->
+                    <p id="describe"></p>
 
-                    <!-- Technology -->
+                    <!-- topics -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Technology</h3>
-                        </div>
-                        <ul class="tags">
-                            <!--
-                            <li><a>PHP</a></li>
-                            <li><a>JSON</a></li>
-                            -->
-                        </ul>
+                        <div class="block-title" id="topics-title"></div>
+                        <ul class="tags topics"></ul>
                     </div>
-                    <!-- /Technology -->
+                    <!-- /topics -->
 
-                    <!-- Hosts -->
+                    <!-- languages -->
                     <div class="tags-block">
-                        <div class="block-title">
-                            <h3>Hosts Links</h3>
-                        </div>
-                        <ul class="tags">
-                            <li><a href="https://github.com/91ahmed/JsonModifier" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Github</a></li>
-                        </ul>
+                        <div class="block-title" id="language-title"></div>
+                        <ul class="tags" id="language"></ul>
                     </div>
-                    <!-- /Hosts -->
+                    <!-- /languages -->
+
+                    <!-- hosts -->
+                    <div class="tags-block">
+                        <div class="block-title" id="hosts-title"></div>
+                        <ul class="tags" id="hosts"></ul>
+                    </div>
+                    <!-- /hosts -->
                 </div>
-                <!-- Project Description -->
+                <!-- project description -->
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    let url = 'https://api.github.com/repos/91ahmed/JsonModifier';
-    
-    fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-        document.getElementById('release').innerHTML = data.created_at
-        document.getElementById('describe').innerHTML = data.description
-        document.getElementById('repo').innerHTML = "<a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a>"
 
-        data.topics.forEach ((item) => {
-            document.getElementsByClassName('tags')[0].innerHTML += "<li><a>"+item+"</a></li>" 
-        });
-    })
+<script src="../js/fetch.js"></script>
+<script type="text/javascript">
+    fetchGithubApi('https://api.github.com/repos/91ahmed/JsonModifier');
 </script>
