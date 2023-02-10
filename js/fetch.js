@@ -13,7 +13,7 @@ fetchGithubApi = (url) =>
     	document.getElementById('repo-name').innerHTML = data.name
 
         // Author
-        document.getElementById('author').innerHTML += "<a href='https://github.com/"+data.owner.login+"' target='_blank'><i class='fa-regular fa-user'></i> Ahmed Hassan</a>"
+        document.getElementById('author').innerHTML += "<p><i class='fa-regular fa-user'></i> <a href='https://github.com/"+data.owner.login+"' target='_blank'>Ahmed Hassan</a></p>"
         // Release (Created at)
         document.getElementById('released').innerHTML += "<p><i class='fa-regular fa-calendar'></i> "+data.created_at+'</p>'
         // Description
