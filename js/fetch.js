@@ -19,14 +19,14 @@ fetchGithubApi = (url) =>
         // Description
         document.getElementById('describe').innerHTML += data.description
         // Repository Link
-        document.getElementById('repository').innerHTML += "<p><i class='fa-solid fa-magnifying-glass'></i><a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a></p>"
+        document.getElementById('repository').innerHTML += "<p><i class='fa-solid fa-magnifying-glass'></i> <a href='"+data.html_url+"' target='_blank'>"+data.full_name+"</a></p>"
         // Topics
         data.topics.forEach ((item) => {
             document.getElementsByClassName('topics')[0].innerHTML += "<li><a>"+item+"</a></li>" 
         });
 
         // Language
-        document.getElementById('language').innerHTML += data.language
+        document.getElementById('language').innerHTML += "<li><a>"+data.language+"</a></li>"
 
         // Hosts
         document.getElementById('hosts').innerHTML += "<li><a href='"+url+"' target='_blank' class='btn'><i class='fa-brands fa-github'></i> Github</a></li>"
