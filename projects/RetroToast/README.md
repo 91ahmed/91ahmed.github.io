@@ -1,3 +1,3 @@
-## RetroToast
-RetroToast - Pure Javascript library to display toast messages with easy customization.
+## RetroNotify
+RetroNotify - Pure Javascript library to display notification messages with easy customization.
 

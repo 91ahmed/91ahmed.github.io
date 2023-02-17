@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.retro-toast-container{
+.retro-notify-container{
 	position: fixed;
     width: auto;
     height: auto;
@@ -8,7 +8,7 @@
 	padding: 20px;
 	z-index: 99999;
 }
-.retro-toast-main{
+.retro-notify-main{
 	position: relative;
 	font-family: 'Mulish', sans-serif !important;
 	font-size: 13px;
@@ -24,17 +24,17 @@
 	-o-box-shadow: 0 3px 20px rgb(0 0 0 / 8%);
 	box-shadow: 0 3px 20px rgb(0 0 0 / 8%);
 }
-.retro-toast-header{
+.retro-notify-header{
 	font-weight: 700;
 	font-size: 14.5px;
 	text-transform: capitalize;
 	padding: 10px 20px;
 }
-.retro-toast-content{
+.retro-notify-content{
 	padding: 15px 20px;
 }
 
-.retro-toast-close{
+.retro-notify-close{
 	position: absolute;
     top: 10px;
     right: 10px;
@@ -47,7 +47,7 @@
 }
 
 
-/** RetorToast slideBottomRight Animate **/
+/** RetorNotify slideBottomRight Animate **/
 .retro-slideBottomRight-ready{
 	bottom: -200px;
 	right: 0;
@@ -62,7 +62,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideBottomLeft Animate **/
+/** RetorNotify slideBottomLeft Animate **/
 .retro-slideBottomLeft-ready{
 	bottom: -200px;
 	left: 0;
@@ -77,7 +77,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideTopRight Animate **/
+/** RetorNotify slideTopRight Animate **/
 .retro-slideTopRight-ready{
 	top: -200px;
 	right: 0;
@@ -92,7 +92,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideTopLeft Animate **/
+/** RetorNotify slideTopLeft Animate **/
 .retro-slideTopLeft-ready{
 	top: -200px;
 	left: 0;
@@ -107,7 +107,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideLeftTop Animate **/
+/** RetorNotify slideLeftTop Animate **/
 .retro-slideLeftTop-ready{
 	top: 0;
 	left: -200px;
@@ -122,7 +122,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideLeftBottom Animate **/
+/** RetorNotify slideLeftBottom Animate **/
 .retro-slideLeftBottom-ready{
 	bottom: 0;
 	left: -200px;
@@ -137,7 +137,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideRightTop Animate **/
+/** RetorNotify slideRightTop Animate **/
 .retro-slideRightTop-ready{
 	top: 0;
 	right: -200px;
@@ -152,7 +152,7 @@
 	opacity: 0;
 }
 
-/** RetorToast slideRightBottom Animate **/
+/** RetorNotify slideRightBottom Animate **/
 .retro-slideRightBottom-ready{
 	bottom: 0;
 	right: -200px;
@@ -167,7 +167,7 @@
 	opacity: 0;
 }
 
-/** RetorToast fadeBottomLeft Animate **/
+/** RetorNotify fadeBottomLeft Animate **/
 .retro-fadeBottomLeft-ready{
 	bottom: 0;
 	left: 0;
@@ -180,7 +180,7 @@
 	opacity: 0;
 }
 
-/** RetorToast fadeBottomRight Animate **/
+/** RetorNotify fadeBottomRight Animate **/
 .retro-fadeBottomRight-ready{
 	bottom: 0;
 	right: 0;
@@ -193,7 +193,7 @@
 	opacity: 0;
 }
 
-/** RetorToast fadeTopRight Animate **/
+/** RetorNotify fadeTopRight Animate **/
 .retro-fadeTopRight-ready{
 	top: 0;
 	right: 0;
@@ -206,7 +206,7 @@
 	opacity: 0;
 }
 
-/** RetorToast fadeTopLeft Animate **/
+/** RetorNotify fadeTopLeft Animate **/
 .retro-fadeTopLeft-ready{
 	top: 0;
 	left: 0;
