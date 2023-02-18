@@ -46,6 +46,12 @@
     font-size: 16px;
 }
 
+/** Default Style **/
+.retro-default-style{
+	bottom: 0;
+	right: 0;
+}
+
 
 /** RetorNotify slideBottomRight Animate **/
 .retro-slideBottomRight-ready{
@@ -243,7 +249,7 @@
 /** Yellow style **/
 .retro-yellow{
 	background-color: #FFAF65;
-	color: #FFF;
+	color: #012D2D;
 }
 /** Sky style **/
 .retro-sky{

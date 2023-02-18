@@ -1,3 +1,7 @@
+/**
+ *	@author ahmed hassan
+ *	@link github.com/91ahmed
+ */
 class RetroNotify 
 {
 	/**
@@ -10,13 +14,15 @@ class RetroNotify
 	{
 		// Store default options
 		this.default = {
+			class: null,
+			id: null,
 			contentText: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-			contentHeader: 'Warning',
+			contentHeader: 'Message',
 			contentClose: '×',
 			background: '#FFF', // White
 			color: '#012D2D', // Black
-			openDelay: 1000, // 1 Second
-			closeDelay: 7000, // 7 Seconds
+			openDelay: 500,
+			closeDelay: 6000,
 			animate: 'slideBottomRight',
 			transition: '0.5s', // Css transition
 			style: null,
@@ -55,6 +61,7 @@ class RetroNotify
 	{
 		this.retroNotifyAnimation()
 		this.retroNotifyStyle()
+		this.retroNotifyAttributes()
 	}
 
 	/**
@@ -191,6 +198,8 @@ class RetroNotify
 	{
 		// Create RetroNotify
 		this.retroNotifyCreate()
+		// Add default style
+		this.retroNotifyContainer.classList.add("retro-default-style")
 
 		// Close RetroNotify on click
 		this.retroNotifyClose.addEventListener('click', () => {
@@ -199,9 +208,7 @@ class RetroNotify
 	}
 
 	/**
-	 *	Execute style.
-	 *
-	 *	@return void
+	 *	Add style
 	 */
 	retroNotifyStyle ()
 	{
@@ -209,18 +216,27 @@ class RetroNotify
 		if (this.style.includes(this.retroNotifyGetOption('style'))) {
 			// ture
 			// set selected style
-			this.retroNotifySetStyle()
+			let style = this.retroNotifyGetOption('style')
+			this.retroNotifyMain.classList.add("retro-"+style)
+		} else {
+			// false
+			// set custom style
+			this.retroNotifyMain.style.backgroundColor = this.retroNotifyGetOption('background')
+			this.retroNotifyMain.style.color = this.retroNotifyGetOption('color')
 		}
 	}
 
 	/**
-	 *	Set style. 
-	 *
-	 *	@return void
+	 *	Add attributes
 	 */
-	retroNotifySetStyle ()
+	retroNotifyAttributes ()
 	{
-		let style = this.retroNotifyGetOption('style')
-		this.retroNotifyMain.classList.add("retro-"+style)
+		if(this.retroNotifyGetOption('class') !== null) {
+			this.retroNotifyContainer.classList.add(this.retroNotifyGetOption('class'))
+		}
+
+		if(this.retroNotifyGetOption('id') !== null) {
+			this.retroNotifyContainer.setAttribute('id', this.retroNotifyGetOption('id'))
+		}
 	}
 }

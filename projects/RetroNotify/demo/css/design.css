@@ -21,6 +21,19 @@ p{
 	text-align: center;
 	font-family: 'Mulish', sans-serif !important;
 }
+.animate,
+.animate:focus,
+.animate:hover,
+.animate:active{
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: none;
+}
+.animate option{
+	cursor: pointer;
+}
 .body-bg{
 	background-color: #eaecf1;
 }
@@ -28,7 +41,14 @@ p{
 	max-width: 700px;
 	margin: 30px auto;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 100px;
+}
+button,
+button:hover,
+button:active,
+button:focus{
+	border: 0 !important;
+	outline: 0 !important;
 }
 .btn-retro{
 	font-family: 'Mulish', sans-serif !important;
@@ -138,4 +158,45 @@ p{
 
 .retro-trans{
 	background-color: transparent !important;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #FFF !important;
+    -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 7%);
+    -moz-box-shadow: 0 3px 15px rgb(0 0 0 / 7%);
+    -ms-box-shadow: 0 3px 15px rgb(0 0 0 / 7%);
+    -o-box-shadow: 0 3px 15px rgb(0 0 0 / 7%);
+    box-shadow: 0 3px 15px rgb(0 0 0 / 7%);
+}
+.navbar a{
+    color: #4F5764 !important;
+}
+.fixed-navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+}
+.user-avatar{
+    float: left;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #dfe1e1;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+.brand-name{
+    float: left;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 9px 10px;
+}
+i{
+	bottom: -1px;
+    position: relative;
 }
