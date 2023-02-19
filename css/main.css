@@ -2572,7 +2572,7 @@ ul.social-links li:last-child a {
   padding: 4px 10px;
   margin: 0;
   background-color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.2;
   top: 20px;
   left: 20px;
@@ -5884,4 +5884,23 @@ a.post-thumbnail:hover {
     left: 0;
     bottom: 0;
   }
+}
+
+.portfolio-describe{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: auto;
+  z-index: 10;
+  padding: 1px 13px;
+  text-align: center;
+  font-size: 11px;
+    font-weight: 400;
+  background-color: #007ced;
+  color: #FFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
