@@ -29,7 +29,7 @@ fetchGithubApi = (url) =>
         document.getElementById('language').innerHTML += "<li><a>"+data.language+"</a></li>"
 
         // Hosts
-        document.getElementById('hosts').innerHTML += "<li><a href='"+url+"' target='_blank' class='btn'><i class='fa-brands fa-github'></i> Github</a></li>"
+        document.getElementById('hosts').innerHTML += "<li><a href='https://github.com/91ahmed/"+data.name+"' target='_blank' class='btn'><i class='fa-brands fa-github'></i> Github</a></li>"
 
         // Preview
         if (!data.homepage == "") {
