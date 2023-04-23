@@ -20,6 +20,26 @@
 
   <body class="page">
 
+<!-- Modal -->
+<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="mailModalLabel" aria-hidden="true" style="z-index:9999999999;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mailModalLabel">SORRY</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        The service is not available now, you can send an email by clicking on this link. <a href="mailto: ahmdohssn@gmail.com">Send e-mail to ahmed</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="lm-animated-bg"></div>
     
     <!-- Loading animation -->
@@ -125,8 +145,8 @@
                           <i class="linecons linecons-mail"></i>
                         </div>
                         <div class="ci-text">
-                          <h4>hello@example.com</h4>
-                          <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.</p>
+                          <h4>ahmdohssn@gmail.com</h4>
+                          <p>Send me an email.</p>
                         </div>
                       </div>
                     </div>
@@ -174,7 +194,7 @@
                           </div>
                         </div>
       
-                        <input type="submit" class="button btn-send disabled" value="Send message">
+                        <input type="submit" class="button btn-send disabled" value="Send message" data-toggle="modal" data-target="#mailModal">
                       </div>
                     </form>
 
