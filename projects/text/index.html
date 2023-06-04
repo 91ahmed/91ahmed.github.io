@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<title>Test</title>
+	<style>
+		#content,
+		#new-content{
+			width: 100%;
+			height: 47vh;
+			border: 1px solid #ddd;
+			text-align: right;
+			direction: rtl;
+		}
+		#new-content {
+			background-color: #ddd;
+			overflow-x: hidden;
+			overflow-y: scroll;
+		}
+	</style>
+</head>
+<body>
+
+	<textarea id="new-content"></textarea>
+	<textarea id="content"></textarea>
+
+	<script>	
+		let content = document.getElementById('content')
+
+
+		content.addEventListener('keyup', () => {
+			// Object of the new arabic letters
+			let letters = {
+				'ب': 'ﺑــ',
+				'ت': 'ﺗــ',
+				'ث':'ﺛــ',
+				'ج':'ﺟــ',
+				'ح':'ﺣــ',
+				'خ':'ﺧــ',
+				'س':'ﺳــ',
+				'ش':'ﺷــ',
+				'ص':'ﺻــ',
+				'ض':'ﺿــ',
+				'ط':'ﻃــ',
+				'ظ':'ﻇــ',
+				'ع':'ﻋــ',
+				'غ':'ﻏــ',
+				'ف':'ﻓــ',
+				'ق':'ﻗــ',
+				'ك':'ﻛــ',
+				'ل':'ﻟــ',
+				'م':'ﻣــ',
+				'ن':'ﻧــ',
+				'ي':'ﯾــ'
+			}
+
+			let new_content = document.getElementById('new-content') // Used to display new data
+			let values = [] // Holds the content values
+
+			// Push the content data in the values array
+			for(let v of content.value) {
+				values.push(v)
+			}
+
+			let newValue = [] // Holds the new values after change
+
+			// Change Operation 
+			// Comparing the content values and change it with the corresponding or similar letters
+			for(let d of values) {
+				if (!/\s|\r|\n/.exec(d)) {
+
+					for(let l in letters) {
+						//console.log(l + ' - ' + d)
+						if (l == d) {
+							d = letters[l]
+						}
+					}
+				}
+
+				newValue.push(d)
+			}
+
+			let text = newValue.join('') // implode newValues array
+
+			// Display content in the new content textarea
+			new_content.innerHTML = text
+		})
+	</script>
+</body>
+</html>
