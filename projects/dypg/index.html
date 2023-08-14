@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>dypg - javascript dynamic pagination</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+		<link rel="stylesheet" href="dypg.css">
+	</head>
+	<body>
+
+		<!-- Pagination container -->
+		<div class="content">
+			<h1>Dynamic Pagination</h1>
+			<ul id="dypg"></ul>
+
+			<div style="margin-bottom: 50px;"></div>
+			<a href="https://github.com/91ahmed/Dypg" class="llink"><i class="fa-brands fa-github"></i> Github</a>
+			<a href="https://91ahmed.github.io/projects/dypg/dypg.zip" class="llink"><i class="fa-solid fa-download"></i> Download</a>
+		</div>
+
+		<script src="jquery-3.7.0.min.js"></script>
+		<script src="dypg.js"></script>
+		<script>
+			dyPaginate ({
+				id: 'dypg', // pagination container id (element)
+				count: 35, // number of pages
+				current: 1, // determine the current page
+				pages: 5,  // number of pages to be displayed per page
+				first_text: 'First', // set the first page text
+				last_text: 'Last', // set the last page text or icon
+				next_text: 'Next', // set the next page text or icon
+				prev_text: 'Prev' // set the previous page text or icon
+			})
+		</script>
+	</body>
+</html>
