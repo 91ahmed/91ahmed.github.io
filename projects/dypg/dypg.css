@@ -30,3 +30,42 @@
 	background-color: #f1f1f1 !important;
 	cursor: auto !important;
 }
+
+/** Page Style **/
+body{
+	background-color: #F1F5FB;
+}
+.content{
+	padding: 30px;
+	max-width: 600px;
+	margin:auto;
+	text-align: center;
+	font-family: 'system-ui';
+}
+.content h1{
+	font-size: 27px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: #303030;
+}
+.content #dypg{
+	margin: auto;
+}
+.llink{
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-family: 'tahoma';
+	margin: 5px;
+	border: 1px solid #333;
+	text-decoration: none;
+	color: #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #FFF;
+}
