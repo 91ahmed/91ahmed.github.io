@@ -228,6 +228,10 @@
 
     if (!errors.length) return
 
+    errors = $('<ul/>')
+      .addClass('list-unstyled')
+      .append($.map(errors, function (error) { return $('<li/>')[method](error) }))
+
     $block.data('bs.validator.originalContent') === undefined && $block.data('bs.validator.originalContent', $block.html())
     $block.empty().append(errors)
     $group.addClass('has-error has-danger')
