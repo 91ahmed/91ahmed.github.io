@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Sign Up</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				background-color: #f1f7f7;
+			}
+			.register-content {
+				font-family: "Roboto Mono", monospace;
+				max-width: 500px;
+				margin: auto;
+				padding: 30px;
+			}
+			.register-content form {
+				width: 100%;
+			}
+			.register-input {
+				margin-bottom: 20px;
+				color: #10232a;
+			}
+			.register-input label {
+				display: block;
+				margin-bottom: 5px;
+				font-size: 15px;
+			}
+			.register-input input {
+				border: 2px solid #d5e5e5;
+				/*2px solid #e55a5a*/
+				padding: 0 15px;
+				width: 100%;
+				height: 50px;
+				color: #10232a;
+				font-size: 14px;
+				background-color: #ccdocf;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			} 
+			.register-input input:active,
+			.register-input input:hover{
+				border: 2px solid #d5e5e5;
+				box-shadow: none;
+				outline: none;
+			}
+			.register-input input:focus{
+				border: 2px solid #bccdcd;
+				box-shadow: none;
+				outline: none;
+				background-color: #f3f3f3;
+			}
+			.register-input a{
+				font-size: 13px;
+				text-decoration: none;
+				color: #10232a;
+				display: block;
+			}
+			.account-link,
+			.submit-buttom {
+				text-align: center;
+				margin-bottom: 10px;
+				width: 100%;
+				background-color: #10232a;
+				border: 0;
+				text-transform: capitalize;
+				font-size: 13px;
+				letter-spacing: 1px;
+				font-weight: 400;
+				padding: 12px 20px;
+				color: #f1f7f7 !important;
+				cursor: pointer;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			}
+			.submit-buttom:hover,
+			.submit-buttom:focus,
+			.submit-buttom:active{
+				outline: none;
+				box-shadow: none;
+				border: 0;
+			}
+			.account-link{
+				display: block;
+				text-decoration: none;
+				background-color: #d5e5e5;
+				color: #10232a !important;
+			}
+			.register-title{
+				font-size: 25px;
+				color: #10232a !important;
+				text-transform: capitalize;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			.register-text {
+				padding: 5px 0;
+				font-size: 14px;
+			}
+			.register-msg{
+				font-size: 13px;
+			}
+			.register-input label span{
+				color: #e55a5a;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="register-content">
+			<form action="" method="POST" autocomplete="off" novalidate>
+				<h3 class="register-title">Create Account</h3>
+				<p class="register-text">Get the best of Shopping and Entertainment with our Online Store.</p>
+				<div class="register-input">
+					<label>First name <span>*</span></label>
+					<input type="text" name="firstname" placeholder="Enter Your First Name" maxLength="12" required>
+					<small class="register-msg first-msg"></small>
+				</div>
+				<div class="register-input">
+					<label>Last name <span>*</span></label>
+					<input type="text" name="lastname" placeholder="Enter Your Last Name" maxLength="12" required>
+					<small class="register-msg last-msg"></small>
+				</div>
+				<div class="register-input">
+					<label>E-mail <span>*</span></label>
+					<input type="email" name="email" placeholder="Enter Your E-mail" maxLength="80" required>
+					<small class="register-msg email-msg"></small>
+				</div>
+				<div class="register-input">
+					<label>Password <span>*</span></label>
+					<input type="password" name="password" placeholder="xxxxxxxx" maxLength="30" required>
+					<small class="register-msg password-msg"></small>
+				</div>
+				<div class="register-input">
+					<label>Confirm Password <span>*</span></label>
+					<input type="password" name="confirm_password" placeholder="xxxxxxxx" maxLength="30" required>
+					<small class="register-msg confirm-password-msg"></small>
+				</div>
+				<button type="submit" class="submit-buttom">Sign Up</button>
+				<a href="login.html" class="account-link">Already Have an Account?</a>
+			</form>
+			<script>
+				const form     = document.getElementsByTagName('form')[0]
+				const email    = document.getElementsByName('email')[0]
+				const password = document.getElementsByName('password')[0]
+				const first    = document.getElementsByName('firstname')[0]
+				const last     = document.getElementsByName('lastname')[0]
+				const confirm  = document.getElementsByName('confirm_password')[0]
+
+				const msg_email    = document.getElementsByClassName('email-msg')[0]
+				const msg_password = document.getElementsByClassName('password-msg')[0]
+				const msg_first    = document.getElementsByClassName('first-msg')[0]
+				const msg_last     = document.getElementsByClassName('last-msg')[0]
+				const msg_confirm  = document.getElementsByClassName('confirm-password-msg')[0]
+
+				const error_color = '0 0 0 2px #e55a5a'
+				const name_regex  = /^[a-zA-Z]+$/i
+				const email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+				form.addEventListener('submit', function (e) {
+					let error = ''
+
+					if (first.value == '') {
+						error = 'Please enter your first name'
+						msg_first.innerHTML = `<i>${error}</i>`
+						first.style.boxShadow = error_color
+					} else if (first.value.length > 12) {
+						error = 'Your name should be less than 12 character'
+						msg_first.innerHTML = `<i>${error}</i>`
+						first.style.boxShadow = error_color
+					} else if (!name_regex.test(first.value)) {
+						error = 'The name should contain only letters'
+						msg_first.innerHTML = `<i>${error}</i>`
+						first.style.boxShadow = error_color							
+					} else {
+						msg_first.innerHTML = ''
+						first.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (last.value == '') {
+						error = 'Please enter your last name'
+						msg_last.innerHTML = `<i>${error}</i>`
+						last.style.boxShadow = error_color
+					} else if (last.value.length > 12) {
+						error = 'Your name should be less than 12 character'
+						msg_last.innerHTML = `<i>${error}</i>`
+						last.style.boxShadow = error_color
+					} else if (!name_regex.test(last.value)) {
+						error = 'The name should contain only letters'
+						msg_last.innerHTML = `<i>${error}</i>`
+						last.style.boxShadow = error_color							
+					} else {
+						msg_last.innerHTML = ''
+						last.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (email.value == '') {
+						error = 'Please enter your e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color
+					} else if (email.value.length > 80) {
+						error = 'Not valid e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color					
+					} else if (!email_regex.test(email.value)) {
+						error = 'Not valid e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color							
+					} else {
+						msg_email.innerHTML = ''
+						email.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (password.value == '') {
+						error = 'Please enter your password'
+						msg_password.innerHTML = `<i>${error}</i>`
+						password.style.boxShadow = error_color
+					} else if (password.value.length < 8 || password.value.length > 30) {
+						error = 'password should be greater than 8 and less than 30 characters'
+						msg_password.innerHTML = `<i>${error}</i>`
+						password.style.boxShadow = error_color
+					} else {
+						msg_password.innerHTML = ''
+						password.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (confirm.value !== password.value) {
+						error = 'Password confirmation doesn\'t match the password'
+						msg_confirm.innerHTML = `<i>${error}</i>`
+						confirm.style.boxShadow = error_color						
+					} else {
+						msg_confirm.innerHTML = ''
+						confirm.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (error != '') {
+						e.preventDefault()
+						return false
+					} else {
+						return true
+					}
+				})
+			</script>
+		</div>
+	</body>
+</html>

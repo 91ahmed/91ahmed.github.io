@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Sign In</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				background-color: #f1f7f7;
+			}
+			.login-content {
+				font-family: "Roboto Mono", monospace;
+				max-width: 500px;
+				margin: auto;
+				padding: 30px;
+			}
+			.login-content form {
+				width: 100%;
+			}
+			.login-input {
+				margin-bottom: 20px;
+				color: #10232a;
+			}
+			.login-input label {
+				display: block;
+				margin-bottom: 5px;
+				font-size: 15px;
+			}
+			.login-input input {
+				border: 2px solid #d5e5e5;
+				/*2px solid #e55a5a*/
+				padding: 0 15px;
+				width: 100%;
+				height: 50px;
+				color: #10232a;
+				font-size: 14px;
+				background-color: #ccdocf;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			}
+			.login-input input:active,
+			.login-input input:hover{
+				border: 2px solid #d5e5e5;
+				box-shadow: none;
+				outline: none;
+			}
+			.login-input input:focus{
+				border: 2px solid #bccdcd;
+				box-shadow: none;
+				outline: none;
+				background-color: #f3f3f3;
+			}
+			.login-input a{
+				font-size: 13px;
+				text-decoration: none;
+				color: #10232a;
+				display: block;
+			}
+			.account-link,
+			.submit-buttom {
+				text-align: center;
+				margin-bottom: 10px;
+				width: 100%;
+				background-color: #10232a;
+				border: 0;
+				text-transform: capitalize;
+				font-size: 13px;
+				letter-spacing: 1px;
+				font-weight: 400;
+				padding: 12px 20px;
+				color: #f1f7f7 !important;
+				cursor: pointer;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			}
+			.submit-buttom:hover,
+			.submit-buttom:focus,
+			.submit-buttom:active{
+				outline: none;
+				box-shadow: none;
+				border: 0;
+			}
+			.account-link{
+				display: block;
+				text-decoration: none;
+				background-color: #d5e5e5;
+				color: #10232a !important;
+			}
+			.login-title{
+				font-size: 25px;
+				color: #10232a !important;
+				text-transform: capitalize;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			.login-text {
+				padding: 5px 0;
+				font-size: 14px;
+			}
+			.login-msg{
+				font-size: 13px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login-content">
+			<form action="" method="POST" autocomplete="off" novalidate>
+				<h3 class="login-title">Sign In</h3>
+				<p class="login-text">Get the best of Shopping and Entertainment with our Online Store.</p>
+				<div class="login-input">
+					<label>E-mail</label>
+					<input type="email" name="email" placeholder="Enter Your E-mail">
+					<small class="login-msg email-msg"></small>
+				</div>
+				<div class="login-input">
+					<label>Password</label>
+					<input type="password" name="password" placeholder="xxxxxxxx">
+					<small class="login-msg password-msg"></small>
+				</div>
+				<div class="login-input">
+					<a href="">Forgot Your Password?</a>
+				</div>
+				<button type="submit" class="submit-buttom">Sign In</button>
+				<a href="register.html" class="account-link">Create Account</a>
+			</form>
+			<script>
+				const form     = document.getElementsByTagName('form')[0]
+				const email    = document.getElementsByName('email')[0]
+				const password = document.getElementsByName('password')[0]
+
+				const msg_email    = document.getElementsByClassName('email-msg')[0]
+				const msg_password = document.getElementsByClassName('password-msg')[0]
+
+				const error_color = '0 0 0 2px #e55a5a'
+				const email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+				form.addEventListener('submit', function (e) {
+					let error = ''
+
+					if (email.value == '') {
+						error = 'Please enter your e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color
+					} else if (email.value.length > 80) {
+						error = 'Not valid e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color					
+					} else if (!email_regex.test(email.value)) {
+						error = 'Not valid e-mail address'
+						msg_email.innerHTML = `<i>${error}</i>`
+						email.style.boxShadow = error_color							
+					} else {
+						msg_email.innerHTML = ''
+						email.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (password.value == '') {
+						error = 'Please enter your password'
+						msg_password.innerHTML = `<i>${error}</i>`
+						password.style.boxShadow = error_color
+					} else if (password.value.length < 8) {
+						error = 'Not valid password'
+						msg_password.innerHTML = `<i>${error}</i>`
+						password.style.boxShadow = error_color
+					} else {
+						msg_password.innerHTML = ''
+						password.style.boxShadow = 'none' //'#d5e5e5'
+					}
+
+					if (error != '') {
+						e.preventDefault()
+						return false
+					} else {
+						return true
+					}
+				})
+			</script>
+		</div>
+	</body>
+</html>
