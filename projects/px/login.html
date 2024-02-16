@@ -3,14 +3,15 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="utf-8">
-		<title>PX - Project</title>
+		<title>Sign In</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="assets/css/px.css">
 	</head>
 	<body class="px-bg-cream">
-		<form method="POST" style="max-width: 500px;margin: auto;padding: 20px;">
+		<form method="POST" autocomplete="off" style="max-width: 500px;margin: auto;padding: 30px;">
 			<div class="px-input-group">
 				<label class="px-label">E-mail</label>
 				<input type="email" class="px-input" name="email" placeholder="enter your e-mail.">
@@ -23,7 +24,9 @@
 				<a href="" class="px-link">Forgot Your Password?</a>
 			</div>
 			<button type="submit" class="px-btn px-btn-primary px-btn-block">Sign In</button>
-			<a href="" class="px-btn px-btn-default px-btn-block">Create Account?</button>
+			<a href="register.html" class="px-btn px-btn-default px-btn-block">Create Account?</a>
 		</form>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</body>
 </html>
