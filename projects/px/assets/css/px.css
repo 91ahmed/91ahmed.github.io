@@ -192,3 +192,15 @@ input[type="password"] {
 .px-nav-link i{
 	font-size: 20px;
 }
+
+/** Side Menu (offcanvas) **/
+.px-menu-list .list-group-item {
+	padding: 0;
+	background-color: transparent;
+}
+.px-menu-list .list-group-item a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color: #10232a;
+}
