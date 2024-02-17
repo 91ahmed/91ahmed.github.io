@@ -16,6 +16,15 @@
 		<link rel="stylesheet" href="assets/css/px.css">
 	</head>
 	<body class="px-bg-cream">
+		<nav class="px-navbar">
+			<a href="" class="px-navlogo"><img src="assets/img/logo2.svg"></a>
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link px-nav-link" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"><i class="fa-solid fa-bars"></i></a>
+				</li>
+			</ul>
+		</nav>
+
 		<form method="POST" autocomplete="off" style="max-width: 500px;margin: auto;padding: 30px;">
 			<div class="row">
 				<h3 class="px-form-title">Create Account</h3>
@@ -55,14 +64,33 @@
 					<a href="login.html" class="px-link text-primary">Already have an account?</a>
 				</div>
 				<button type="submit" class="px-btn px-btn-primary px-btn-block">Sign Up</button>
-				<button type="reset" class="px-btn px-btn-default px-btn-block">Reset</button>
+				<button type="reset" class="px-btn px-btn-default px-btn-block px-reset">Reset</button>
 			</div>
 		</form>
 
+		<div class="offcanvas offcanvas-start px-bg-cream" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="list-group px-menu-list list-group-flush">
+					<li class="list-group-item"><a href="#">Home</a></li>
+					<li class="list-group-item"><a href="#">Categories</a></li>
+					<li class="list-group-item"><a href="#">Shop</a></li>
+					<li class="list-group-item"><a href="#">About Us</a></li>
+					<li class="list-group-item"><a href="#">Contact Us</a></li>
+					<li class="list-group-item"><a href="login.html">Sign In</a></li>
+					<li class="list-group-item"><a href="register.html">Create Account</a></li>
+				</ul>
+			</div>
+		</div>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			const password = document.getElementsByName('password')[0]
 			const strength = document.getElementsByClassName('px-password-strength')[0]
+			const reset    = document.getElementsByClassName('px-reset')[0]
 
 			const level1 = document.getElementsByClassName('px-level-1')[0]
 			const level2 = document.getElementsByClassName('px-level-2')[0]
@@ -120,9 +148,9 @@
 					level4.style.background = '#00bdaa'				
 				}
 
-				if (/\s/.test(password.value)) {
+				if (/\s/.test(password.value) || /[\u0600-\u06FF]/.test(password.value)) {
 					level1.style.background = '#d7415e'
-					strength.innerHTML = '<i class="text-warning">Not Valid</i>'
+					strength.innerHTML = '<i class="text-secondary">Not Valid</i>'
 					level1.style.background = '#bccad5'	
 					level2.style.background = '#bccad5'
 					level3.style.background = '#bccad5'
@@ -136,6 +164,14 @@
 					level4.style.background = '#bccad5'
 					strength.innerHTML = ''
 				}
+			}, true)
+
+			reset.addEventListener('click', function (e) {
+				level1.style.background = '#bccad5'
+				level2.style.background = '#bccad5'
+				level3.style.background = '#bccad5'
+				level4.style.background = '#bccad5'
+				strength.innerHTML = ''
 			}, true)
 
 			const showPass = document.getElementsByClassName('px-show-pass')[0]

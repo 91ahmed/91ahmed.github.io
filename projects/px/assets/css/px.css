@@ -181,10 +181,20 @@ input[type="password"] {
 
 /** Navbar **/
 .px-navbar{
+	position: relative;
 	width: 100%;
 	background-color: transparent;
 }
-.px-nav-link{
+.px-navlogo{
+    opacity: 0.8;
+    padding: 0 20px;
+    margin-top: 15px;
+    position: absolute;
+}
+.px-navlogo img {
+	width: 40px;
+}
+.px-nav-link {
     height: 60px;
     line-height: 61px;
     padding: 0 20px;
