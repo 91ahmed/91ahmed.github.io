@@ -156,3 +156,20 @@
 	display: inline-block;
 	margin: 0 10px;
 }
+.px-show-pass{
+	cursor: pointer;
+	opacity: 0.8;
+	position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 27px;
+    bottom: 0;
+    width: 45px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+}
+.px-show-pass i{
+	font-size: 15px;
+}
