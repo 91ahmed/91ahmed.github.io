@@ -12,6 +12,8 @@
 	background: rgb(245,248,250);
 	background: linear-gradient(90deg, rgba(245,248,250,1) 19%, rgba(215,230,230,1) 100%);
 }
+
+/** Inputs **/
 .px-input-group{
 	position: relative;
 	margin-bottom: 20px;
@@ -20,6 +22,10 @@
 	display: block;
 	margin-bottom: 5px;
 	letter-spacing: 1px;
+}
+input[type="password"] {
+	font:small-caption;
+	font-size:18px;
 }
 .px-input:hover,
 .px-input:focus,
@@ -63,11 +69,6 @@
 	border: 1px solid #657786;
 }
 
-.px-link{
-	text-decoration: none;
-	font-size: 14px;
-}
-
 /** Buttons **/
 .px-btn{
 	font-size: 13px;
@@ -90,6 +91,10 @@
 	-o-border-radius: 10px;
 	border-radius: 10px;
 	transition: 0.5s;
+}
+.px-link{
+	text-decoration: none;
+	font-size: 14px;
 }
 .px-btn:active{
 	-webkit-transform: scale(0.9);
@@ -174,7 +179,16 @@
 	font-size: 15px;
 }
 
-input[type="password"] {
-	font:small-caption;
-	font-size:20px;
+/** Navbar **/
+.px-navbar{
+	width: 100%;
+	background-color: transparent;
+}
+.px-nav-link{
+    height: 60px;
+    line-height: 61px;
+    padding: 0 20px;
+}
+.px-nav-link i{
+	font-size: 20px;
 }
