@@ -79,9 +79,9 @@
 
 				if (password.value.length >= 8 && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">strong</i>'
-					level1.style.background = '#1DA1F2'
-					level2.style.background = '#1DA1F2'
-					level3.style.background = '#1DA1F2'
+					level1.style.background = '#00bdaa'
+					level2.style.background = '#00bdaa'
+					level3.style.background = '#00bdaa'
 				} else {
 					level3.style.background = '#bccad5'
 					level1.style.background = '#d7415e'
@@ -89,9 +89,9 @@
 
 				if (password.value.length >= 8 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">very strong</i>'
-					level1.style.background = '#1DA1F2'
-					level2.style.background = '#1DA1F2'
-					level4.style.background = '#1DA1F2'
+					level1.style.background = '#00bdaa'
+					level2.style.background = '#00bdaa'
+					level4.style.background = '#00bdaa'
 				} else {
 					level4.style.background = '#bccad5'
 				}
