@@ -13,6 +13,7 @@
 	background: linear-gradient(90deg, rgba(245,248,250,1) 19%, rgba(215,230,230,1) 100%);
 }
 .px-input-group{
+	position: relative;
 	margin-bottom: 20px;
 }
 .px-label{

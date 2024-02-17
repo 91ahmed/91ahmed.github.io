@@ -42,7 +42,7 @@
 							<span class="px-level-3"></span>
 							<span class="px-level-4"></span>
 						</div>
-						<small class="text-mute">the strong password should be greater than 8 and less than 20, and contain at least 1 capital/small letter, digit, special character</small>
+						<small class="text-mute">the strong password should be greater than 6 and contain at least 1 capital/small letter, digit, special character</small>
 					</div>
 				</div>
 				<div class="px-input-group">
@@ -65,19 +65,19 @@
 			password.addEventListener("keyup", function (e) {
 				const status = 0
 
-				if (password.value.length < 8) {
+				if (password.value.length < 4) {
 					level1.style.background = '#d7415e'
-					strength.innerHTML = '<i class="text-danger">weak</i>'
+					strength.innerHTML = '<i class="text-danger">very weak</i>'
 				}
 
-				if (password.value.length >= 8) {
+				if (password.value.length >= 6) {
 					level2.style.background = '#d7415e'
 					strength.innerHTML = '<i class="text-danger">weak</i>'
 				} else {
 					level2.style.background = '#bccad5'
 				}
 
-				if (password.value.length >= 8 && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
+				if (password.value.length >= 6 && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">strong</i>'
 					level1.style.background = '#00bdaa'
 					level2.style.background = '#00bdaa'
@@ -87,7 +87,7 @@
 					level1.style.background = '#d7415e'
 				}
 
-				if (password.value.length >= 8 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
+				if (password.value.length >= 6 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">very strong</i>'
 					level1.style.background = '#00bdaa'
 					level2.style.background = '#00bdaa'
