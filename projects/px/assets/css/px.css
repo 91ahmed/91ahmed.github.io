@@ -155,6 +155,7 @@ input[type="password"] {
 	height: 18px;
 	border-radius: 50%;
 	background: #bccad5;
+	border: 2px solid #FFF;
 	transition: 0.5s;
 }
 .px-password-strength{
@@ -186,7 +187,7 @@ input[type="password"] {
 	background-color: transparent;
 }
 .px-navlogo{
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 0 20px;
     margin-top: 15px;
     position: absolute;
