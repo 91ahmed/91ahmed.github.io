@@ -108,12 +108,14 @@ input[type="password"] {
 	transition: 0.5s;
 }
 .px-btn-primary{
-	background-color: #1DA1F2;
+	background-color: #4361ee;/*#1DA1F2;*/
 	color: #F5F8FA;
 }
 .px-btn-primary-g{
-	background: rgb(98,192,250);
-	background: linear-gradient(90deg, rgba(98,192,250,1) 0%, rgba(29,161,242,1) 45%);
+/*	background: rgb(98,192,250);
+	background: linear-gradient(90deg, rgba(98,192,250,1) 0%, rgba(29,161,242,1) 45%);*/
+	background: rgb(101,127,252);
+	background: linear-gradient(90deg, rgba(101,127,252,1) 0%, rgba(67,97,238,1) 53%);
 	color: #F5F8FA;
 }
 .px-btn-default{
