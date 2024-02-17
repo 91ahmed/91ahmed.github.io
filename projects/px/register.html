@@ -13,6 +13,7 @@
 	<body class="px-bg-cream">
 		<form method="POST" autocomplete="off" style="max-width: 500px;margin: auto;padding: 30px;">
 			<div class="row">
+				<h3 class="px-form-title">Create Account</h3>
 				<div class="col-md-6">
 					<div class="px-input-group">
 						<label class="px-label">First Name</label>
@@ -33,9 +34,15 @@
 				</div>
 				<div class="col-12 mb-3">
 					<div class="px-input-group">
-						<label class="px-label">Password</label>
+						<label class="px-label">Password <div class="px-password-strength"></div></label>
 						<input type="password" class="px-input" name="password" placeholder="xxxxxxxx">
-						<small class="text-mute">the password should be greater than 8 and contain at least 1 capital and small letter.</small>
+						<div class="px-password-levels">
+							<span class="px-level-1"></span>
+							<span class="px-level-2"></span>
+							<span class="px-level-3"></span>
+							<span class="px-level-4"></span>
+						</div>
+						<small class="text-mute">the strong password should be greater than 8 and less than 20, and contain at least 1 capital/small letter, digit, special character</small>
 					</div>
 				</div>
 				<div class="px-input-group">
@@ -46,5 +53,57 @@
 		</form>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			const password = document.getElementsByName('password')[0]
+			const strength = document.getElementsByClassName('px-password-strength')[0]
+
+			const level1 = document.getElementsByClassName('px-level-1')[0]
+			const level2 = document.getElementsByClassName('px-level-2')[0]
+			const level3 = document.getElementsByClassName('px-level-3')[0]
+			const level4 = document.getElementsByClassName('px-level-4')[0]
+
+			password.addEventListener("keyup", function (e) {
+				const status = 0
+
+				if (password.value.length < 8) {
+					level1.style.background = '#d7415e'
+					strength.innerHTML = '<i class="text-danger">weak</i>'
+				}
+
+				if (password.value.length >= 8) {
+					level2.style.background = '#d7415e'
+					strength.innerHTML = '<i class="text-danger">weak</i>'
+				} else {
+					level2.style.background = '#bccad5'
+				}
+
+				if (password.value.length >= 8 && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
+					strength.innerHTML = '<i class="text-success">strong</i>'
+					level1.style.background = '#1DA1F2'
+					level2.style.background = '#1DA1F2'
+					level3.style.background = '#1DA1F2'
+				} else {
+					level3.style.background = '#bccad5'
+					level1.style.background = '#d7415e'
+				}
+
+				if (password.value.length >= 8 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
+					strength.innerHTML = '<i class="text-success">very strong</i>'
+					level1.style.background = '#1DA1F2'
+					level2.style.background = '#1DA1F2'
+					level4.style.background = '#1DA1F2'
+				} else {
+					level4.style.background = '#bccad5'
+				}
+
+				if (password.value == '') {
+					level1.style.background = '#bccad5'
+					level2.style.background = '#bccad5'
+					level3.style.background = '#bccad5'
+					level4.style.background = '#bccad5'
+					strength.innerHTML = ''
+				}
+			}, true)
+		</script>
     </body>
 </html>
