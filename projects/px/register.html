@@ -84,13 +84,6 @@
 					level2.style.background = '#bccad5'
 				}
 
-				if (password.value.length >= 15) {
-					strength.innerHTML = '<i class="text-success">strong</i>'
-					level1.style.background = '#00bdaa'
-					level2.style.background = '#00bdaa'
-					level3.style.background = '#00bdaa'					
-				}
-
 				if (password.value.length >= 6 && /[a-z]/.test(password.value) && /[0-9]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">strong</i>'
 					level1.style.background = '#00bdaa'
@@ -101,6 +94,15 @@
 					level1.style.background = '#d7415e'
 				}
 
+				if (password.value.length >= 6 && /[A-Z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
+					strength.innerHTML = '<i class="text-success">very strong</i>'
+					level1.style.background = '#00bdaa'
+					level2.style.background = '#00bdaa'
+					level4.style.background = '#00bdaa'
+				} else {
+					level4.style.background = '#bccad5'
+				}
+
 				if (password.value.length >= 6 && /[A-Z]/.test(password.value) && /[a-z]/.test(password.value) && /[0-9]/.test(password.value) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value)) {
 					strength.innerHTML = '<i class="text-success">very strong</i>'
 					level1.style.background = '#00bdaa'
@@ -108,6 +110,14 @@
 					level4.style.background = '#00bdaa'
 				} else {
 					level4.style.background = '#bccad5'
+				}
+
+				if (password.value.length >= 15) {
+					strength.innerHTML = '<i class="text-success">very strong</i>'
+					level1.style.background = '#00bdaa'
+					level2.style.background = '#00bdaa'
+					level3.style.background = '#00bdaa'	
+					level4.style.background = '#00bdaa'				
 				}
 
 				if (/\s/.test(password.value)) {
