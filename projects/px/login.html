@@ -14,17 +14,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Main Css -->
 		<link rel="stylesheet" href="assets/css/px.css">
-		<style>
-			.error{
-			    font-size: 12px;
-			    padding: 5px 0;
-			    display: inline-block;
-			    margin-left: 13px;
-			}
-			.brcolor{
-				border: 1px solid #cf4650 !important;
-			}
-		</style>
 	</head>
 	<body class="px-bg-cream">
 		<nav class="px-navbar">
@@ -104,17 +93,28 @@
 				const email_error    = document.getElementById('email-error')
 				const password_error = document.getElementById('password-error')
 
+				const email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
 				if (email.value == '') {
-					email_error.innerHTML = '<small class="error">-> Please enter your e-mail.</small>'
+					email_error.innerHTML = '<small class="px-input-error">-> Please enter your e-mail.</small>'
 					email.classList.add("brcolor")
+				} else if (email.value.length > 80) {
+					email_error.innerHTML = '<small class="px-input-error">-> Not valid e-mail.</small>'
+					email.classList.add("brcolor")				
+				} else if (!email_regex.test(email.value)) {
+					email_error.innerHTML = '<small class="px-input-error">-> Not valid e-mail.</small>'
+					email.classList.add("brcolor")						
 				} else {
 					email_error.innerHTML = ''
 					email.classList.remove("brcolor")
 				}
 
 				if (password.value == '') {
-					password_error.innerHTML = '<small class="error">-> Please enter your password.</small>'
+					password_error.innerHTML = '<small class="px-input-error">-> Please enter your password.</small>'
 					password.classList.add("brcolor")
+				} else if (password.value.length < 6) {
+					password_error.innerHTML = '<small class="px-input-error">-> Not valid password.</small>'
+					password.classList.add("brcolor")					
 				} else {
 					password_error.innerHTML = ''
 					password.classList.remove("brcolor")

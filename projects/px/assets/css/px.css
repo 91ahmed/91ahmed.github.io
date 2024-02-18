@@ -68,6 +68,15 @@ input[type="password"] {
 .px-input:focus{
 	border: 1px solid #657786;
 }
+.px-input-error{
+    font-size: 12px;
+    padding: 5px 0;
+    display: inline-block;
+    margin-left: 13px;
+}
+.brcolor{
+	border: 1px solid #cf4650 !important;
+}
 
 /** Buttons **/
 .px-btn{

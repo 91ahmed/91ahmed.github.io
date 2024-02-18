@@ -25,25 +25,28 @@
 			</ul>
 		</nav>
 
-		<form method="POST" autocomplete="off" style="max-width: 500px;margin: auto;padding: 30px;">
+		<form method="POST" style="max-width: 500px;margin: auto;padding: 30px;" id="form" autocomplete="off" novalidate>
 			<div class="row">
 				<h3 class="px-form-title">Create Account</h3>
 				<div class="col-md-6">
 					<div class="px-input-group">
 						<label class="px-label">First Name</label>
 						<input type="text" class="px-input" name="firstname" placeholder="your first name.">
+						<div id="first-error"></div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="px-input-group">
 						<label class="px-label">Last Name</label>
 						<input type="text" class="px-input" name="lastname" placeholder="your last name.">
+						<div id="last-error"></div>
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="px-input-group">
 						<label class="px-label">E-mail</label>
 						<input type="email" class="px-input" name="email" placeholder="enter your e-mail.">
+						<div id="email-error"></div>
 					</div>
 				</div>
 				<div class="col-12 mb-3">
@@ -51,6 +54,7 @@
 						<label class="px-label">Password <div class="px-password-strength"></div></label>
 						<input type="password" class="px-input" name="password" placeholder="xxxxxxxx">
 						<span class="px-show-pass"><i class="fa-regular fa-eye"></i></span>
+						<div id="password-error"></div>
 						<div class="px-password-levels">
 							<span class="px-level-1"></span>
 							<span class="px-level-2"></span>
@@ -88,7 +92,16 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
-			const password = document.getElementsByName('password')[0]
+			const firstname = document.getElementsByName('firstname')[0]
+			const lastname  = document.getElementsByName('lastname')[0]
+			const email     = document.getElementsByName('email')[0]
+			const password  = document.getElementsByName('password')[0]
+
+			const first_error    = document.getElementById('first-error')
+			const last_error     = document.getElementById('last-error')
+			const email_error    = document.getElementById('email-error')
+			const password_error = document.getElementById('password-error')
+
 			const strength = document.getElementsByClassName('px-password-strength')[0]
 			const reset    = document.getElementsByClassName('px-reset')[0]
 
@@ -113,6 +126,12 @@
 						level2.style.background = '#00AB55'
 						strength.innerHTML = '<i style="color:#00AB55;">fair</i>'
 					}
+					else if (/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value) && /[a-zA-Z]/.test(password.value)) 
+					{
+						level1.style.background = '#00AB55'
+						level2.style.background = '#00AB55'
+						strength.innerHTML = '<i style="color:#00AB55;">fair</i>'
+					}
 					else 
 					{
 						level1.style.background = '#E6505A'
@@ -124,6 +143,13 @@
 				}
 
 				if (password.value.length >= 8 && /[0-9]/.test(password.value) && /[a-z]/.test(password.value) && /[A-Z]/.test(password.value)) 
+				{
+					level1.style.background = '#2197F2'
+					level2.style.background = '#2197F2'
+					level3.style.background = '#2197F2'
+					strength.innerHTML = '<i style="color:#2197F2;">strong</i>'
+				}
+				else if (password.value.length >= 8 && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password.value) && /[a-zA-Z]/.test(password.value)) 
 				{
 					level1.style.background = '#2197F2'
 					level2.style.background = '#2197F2'
@@ -208,6 +234,58 @@
 					password.setAttribute('type', 'password')
 				}
 				
+			})
+
+			// Form validation
+			const form = document.getElementById('form')
+			form.addEventListener('submit', function (e)
+			{
+				e.preventDefault()
+
+				const email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
+				if (email.value == '') {
+					email_error.innerHTML = '<small class="px-input-error">-> E-mail is required.</small>'
+					email.classList.add("brcolor")
+				} else if (email.value.length > 80) {
+					email_error.innerHTML = '<small class="px-input-error">-> Not valid e-mail.</small>'
+					email.classList.add("brcolor")				
+				} else if (!email_regex.test(email.value)) {
+					email_error.innerHTML = '<small class="px-input-error">-> Not valid e-mail.</small>'
+					email.classList.add("brcolor")						
+				} else {
+					email_error.innerHTML = ''
+					email.classList.remove("brcolor")
+				}
+
+				if (firstname.value == '') {
+					first_error.innerHTML = '<small class="px-input-error">-> First name required.</small>'
+					firstname.classList.add("brcolor")					
+				} else if (!/[a-zA-Z]/.test(firstname.value) || firstname.value.length < 2) {
+					first_error.innerHTML = '<small class="px-input-error">-> Not valid name.</small>'
+					firstname.classList.add("brcolor")
+				}
+
+				if (lastname.value == '') {
+					last_error.innerHTML = '<small class="px-input-error">-> Last name required.</small>'
+					lastname.classList.add("brcolor")					
+				} else if (!/[a-zA-Z]/.test(lastname.value) || lastname.value.length < 2) {
+					last_error.innerHTML = '<small class="px-input-error">-> Not valid name.</small>'
+					lastname.classList.add("brcolor")
+				}
+
+				if (password.value == '') {
+					password_error.innerHTML = '<small class="px-input-error">-> Password is required.</small>'
+					password.classList.add("brcolor")
+				} else if (password.value.length < 6) {
+					password_error.innerHTML = '<small class="px-input-error">-> Not valid password.</small>'
+					password.classList.add("brcolor")					
+				} else {
+					password_error.innerHTML = ''
+					password.classList.remove("brcolor")
+				}
+
+				return false;
 			})
 		</script>
     </body>
