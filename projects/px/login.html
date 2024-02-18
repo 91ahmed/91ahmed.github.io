@@ -14,6 +14,21 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Main Css -->
 		<link rel="stylesheet" href="assets/css/px.css">
+		<style>
+			.error{
+			    color: #FFF;
+			    font-size: 11px;
+			    padding: 5px 15px;
+			    display: inline-block;
+			    margin-left: 13px;
+			    border-bottom-left-radius: 8px;
+			    border-bottom-right-radius: 8px;
+			    background-color: #cf4650;
+			}
+			.brcolor{
+				border: 1px solid #cf4650 !important;
+			}
+		</style>
 	</head>
 	<body class="px-bg-cream">
 		<nav class="px-navbar">
@@ -25,16 +40,18 @@
 			</ul>
 		</nav>
 
-		<form method="POST" autocomplete="off" style="max-width: 500px;margin: auto;padding: 30px;">
+		<form method="POST" style="max-width: 500px;margin: auto;padding: 30px;" id="form" autocomplete="off" novalidate>
 			<h3 class="px-form-title">Sign In</h3>
 			<div class="px-input-group">
 				<label class="px-label">E-mail</label>
 				<input type="email" class="px-input" name="email" placeholder="enter your e-mail.">
+				<div id="email-error"></div>
 			</div>
 			<div class="px-input-group">
 				<label class="px-label">Password</label>
 				<input type="password" class="px-input" name="password" placeholder="xxxxxxxx">
 				<span class="px-show-pass"><i class="fa-regular fa-eye"></i></span>
+				<div id="password-error"></div>
 			</div>
 			<div class="px-input-group">
 				<a href="" class="px-link text-primary">Forgot Your Password?</a>
@@ -78,7 +95,37 @@
 					password.setAttribute('type', 'password')
 				}
 				
-			})			
+			})	
+
+			// Form VAlidation
+			const form = document.getElementById('form')
+			form.addEventListener('submit', function (e)
+			{
+				e.preventDefault()
+
+				const email    = document.getElementsByName('email')[0]
+				const password = document.getElementsByName('password')[0]
+				const email_error    = document.getElementById('email-error')
+				const password_error = document.getElementById('password-error')
+
+				if (email.value == '') {
+					email_error.innerHTML = '<small class="error">Please enter your e-mail.</small>'
+					email.classList.add("brcolor")
+				} else {
+					email_error.innerHTML = ''
+					email.classList.remove("brcolor")
+				}
+
+				if (password.value == '') {
+					password_error.innerHTML = '<small class="error">Please enter your password.</small>'
+					password.classList.add("brcolor")
+				} else {
+					password_error.innerHTML = ''
+					password.classList.remove("brcolor")
+				}
+
+				return false
+			})
 		</script>
 	</body>
 </html>
