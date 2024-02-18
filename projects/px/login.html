@@ -16,14 +16,10 @@
 		<link rel="stylesheet" href="assets/css/px.css">
 		<style>
 			.error{
-			    color: #FFF;
-			    font-size: 11px;
-			    padding: 5px 15px;
+			    font-size: 12px;
+			    padding: 5px 0;
 			    display: inline-block;
 			    margin-left: 13px;
-			    border-bottom-left-radius: 8px;
-			    border-bottom-right-radius: 8px;
-			    background-color: #cf4650;
 			}
 			.brcolor{
 				border: 1px solid #cf4650 !important;
@@ -109,7 +105,7 @@
 				const password_error = document.getElementById('password-error')
 
 				if (email.value == '') {
-					email_error.innerHTML = '<small class="error">Please enter your e-mail.</small>'
+					email_error.innerHTML = '<small class="error">-> Please enter your e-mail.</small>'
 					email.classList.add("brcolor")
 				} else {
 					email_error.innerHTML = ''
@@ -117,7 +113,7 @@
 				}
 
 				if (password.value == '') {
-					password_error.innerHTML = '<small class="error">Please enter your password.</small>'
+					password_error.innerHTML = '<small class="error">-> Please enter your password.</small>'
 					password.classList.add("brcolor")
 				} else {
 					password_error.innerHTML = ''
