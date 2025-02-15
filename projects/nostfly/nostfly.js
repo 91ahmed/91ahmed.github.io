@@ -130,7 +130,7 @@ class Nostfly
 
 	    // Progress bar count down
 	    if (this.opt.loader == true && this.opt.auto == true) {
-	    	this.progressCountDown(this.opt.delay, message)
+	    	this.loaderCountDown(this.opt.delay, message)
 	    } else {
 	    	if (message.getElementsByClassName('_nostflyBar')[0]) {
 	    		message.getElementsByClassName('_nostflyBar')[0].style.display = 'none'
@@ -209,7 +209,7 @@ class Nostfly
 		}.bind(message) , 500)
 	}
 
-	progressCountDown (totalDuration, nostflyID) 
+	loaderCountDown (totalDuration, nostflyID) 
 	{
 	    let duration = totalDuration;
 	    let step = totalDuration / 100; // Each step represents 1%
@@ -217,7 +217,7 @@ class Nostfly
 	    let timer = setTimeout(function updateCountdown() {
 	        let percentage = Math.round((duration / totalDuration) * 100);
 
-	        nostflyID.getElementsByClassName('_nostflyBar')[0].style.width = percentage+'%'
+	        nostflyID.getElementsByClassName('_nostflyBar')[0].style.width = (percentage-7)+'%'
 
 	        if (percentage > 0) {
 	            duration -= step; // Reduce by 1%

@@ -29,19 +29,6 @@
 	bottom:0;right:0;left:0;margin:auto;max-width:400px;
 }
 
-._nostflyContainer,
-._nostflyMessage,
-._nostflyContent,
-.nostfly-close-slide-left,
-.nostfly-close-slide-right,
-.nostfly-close-fade {
-	-webkit-transition:all 0.5s ease-in-out !important;
-	-moz-transition:all 0.5s ease-in-out !important;
-	-ms-transition:all 0.5s ease-in-out !important;
-	-o-transition:all 0.5s ease-in-out !important;
-	transition:all 0.5s ease-in-out !important;
-}
-
 ._nostflyMessage {
 	opacity: 0;
 	position: relative;
