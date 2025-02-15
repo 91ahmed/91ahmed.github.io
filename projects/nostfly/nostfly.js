@@ -1,3 +1,12 @@
+/**
+ * Class representing a (Nostfly) Notification system.
+ * 
+ * @author Ahmed Hassan
+ * @github: github.com/91ahmed
+ * @website: 91ahmed.github.io
+ * @version 1.0
+ * @date 2025-02-15
+ */
 class Nostfly 
 {
 	constructor (opt = {}) 
