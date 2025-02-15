@@ -3,6 +3,7 @@ class Nostfly
 	constructor (opt = {}) 
 	{
 		this.opt = opt
+		this.opt.class ?? null
 		this.opt.iconHeader ??= true
 		this.opt.style ??= 'notify'
 		this.opt.loader ??= true
@@ -141,6 +142,11 @@ class Nostfly
 	    if (this.opt.loaderPosition == 'bottom') {
 	    	message.getElementsByClassName('_nostflyBar')[0].style.top = 'inherit'
 	    	message.getElementsByClassName('_nostflyBar')[0].style.bottom = 0
+	    }
+
+	    // add custom class
+	    if (!this.opt.class == null || !this.opt.class == '') {
+	    	message.classList.add(this.opt.class)
 	    }
 
 	   	// Show animation
