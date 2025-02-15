@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Nostfly</title>
+		<link rel="icon" type="image/png" href="icon.png" sizes="16x16">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="nostfly.css">
+		<style>
+			* {
+				font-family: "Nunito Sans", serif;
+				transition: 0.5s;
+			}
+			body{
+				background-color: #fdfaf1;
+			}
+			.btn-nostfly:hover,
+			.btn-nostfly:focus,
+			.btn-nostfly {
+				background-color: transparent;
+				color: transparent;
+				border: 0;
+				outline: 0;
+				-webkit-box-shadow: 'none';
+				-moz-box-shadow: 'none';
+				-ms-box-shadow: 'none';
+				-o-box-shadow: 'none';
+				box-shadow: 'none';
+			}
+			.btn-content {
+				min-width: 200px;
+				margin: auto;
+				text-align: center;
+			}
+			.btn-content .btn-group .btn:hover{
+				opacity: 0.9
+			}
+			#pick-position,
+			#pick-open-animate,
+			#pick-close-animate {
+				font-size: 14px;
+				display: inline-block;
+				outline: 0;
+				border: 1px solid #F3EDCF;
+				box-shadow: none;
+				background-color: #f8f4e0;
+				width: auto;
+				text-align: center;
+			}
+			#logo {
+				width: 280px;
+				display: block;
+				margin: 30px auto;
+				text-align: center;
+			}
+			.nostsection {
+				max-width: 490px;
+				margin: 50px auto 10px auto;
+				padding: 0 30px;
+			}
+			.nostcode {
+				background-color: #f8f4e0;
+				color: #01204E;
+				font-size: 13px;
+				font-family: monospace;
+				padding: 10px 20px;
+				-webkit-border-radius: 6px;				
+				-moz-border-radius: 6px;				
+				-ms-border-radius: 6px;				
+				-o-border-radius: 6px;				
+				border-radius: 6px;		
+				border: 1px solid rgb(233, 235, 237);
+				-webkit-box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+				-moz-box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+				-ms-box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+				-o-box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+				box-shadow: 0 1px 10px 0 rgb(53 58 62 / 6%), 0 2px 4px 0 rgb(53 58 62 / 8%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<img src="nostfly.png" id="logo" alt="logo">
+				</div>
+				<div class="col-12">
+					<div class="btn-content">
+						<h3 style="font-size: 20px;font-weight: 400;">Click to Explore</h3>
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-notify" style="background-color: #01204E;color: #EEEFC5;">Notify</button>
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-success" style="background-color: #028391;color: #EEEFC5;">Success</button>
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-note" style="background-color: #F6DCAC;color: #01204E;">Note</button>
+						</div>						
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-warning" style="background-color: #FAA968;color: #01204E;">Warning</button>
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-attention" style="background-color: #F85525;color: #FBFAF2;">Attention</button>
+							<button type="button" class="btn btn-light btn-nostfly" id="btn-nostfly-error" style="background-color: #D52429;color: #FBFAF2;">Error</button>
+						</div>
+						<div style="margin: 10px 0;"></div>
+						<div style="display: inline-block; margin: 5px;">
+							<select class="form-control" id="pick-position">
+								<option selected value="top-right">-Pick Position-</option>
+								<option value="top-right">Top Right</option>
+								<option value="top-left">Top Left</option>
+								<option value="top-center">Top Center</option>
+								<option value="bottom-right">Bottom Right</option>
+								<option value="bottom-left">Bottom Left</option>
+								<option value="bottom-center">Bottom Center</option>
+							</select>
+						</div>						
+						<div style="display: inline-block; margin: 5px;">
+							<select class="form-control" id="pick-close-animate">
+								<option selected value="nostfly-close-slide-right">-Close Animate-</option>
+								<option value="nostfly-close-slide-right">Slide Right</option>
+								<option value="nostfly-close-slide-left">Slide Left</option>
+								<option value="nostfly-close-slide-up">Slide Up</option>
+								<option value="nostfly-close-slide-down">Slide Down</option>
+								<option value="nostfly-close-fade">Fade Out</option>
+							</select>
+						</div>						
+						<div style="display: inline-block; margin: 5px;">
+							<select class="form-control" id="pick-open-animate">
+								<option selected value="nostfly-open-slide-right">-Open Animate-</option>
+								<option value="nostfly-open-slide-right">Slide Right</option>
+								<option value="nostfly-open-slide-left">Slide Left</option>
+								<option value="nostfly-open-slide-up">Slide Up</option>
+								<option value="nostfly-open-slide-down">Slide Down</option>
+								<option value="nostfly-open-fade">Fade In</option>
+							</select>
+						</div>
+					</div>	
+				</div>
+				<div class="col-12">
+					<div class="nostsection">
+						<h6><b>Install</b></h6>
+						<div class="nostcode">
+							<div style="color:#a6a2a2;font-style: italic;">// add css file</div>
+							<span style="color: #D52429;">&lt;link rel=</span>"stylesheet" <span style="color: #D52429;">href=</span>"nostfly.css"<span style="color: #D52429;">&gt;</span>
+							<div style="margin-top: 8px;"></div>
+							<div style="color:#a6a2a2;font-style: italic;">// add js file</div>
+							<span style="color: #D52429;">&lt;script src=</span>"nostfly.js"<span style="color: #D52429;">&gt;&lt;/script&gt;</span>
+						</div>
+					</div>					
+					<div class="nostsection">
+						<h6><b>Run</b></h6>
+						<div class="nostcode">
+							<div style="margin-top: 8px;"></div>
+							<span style="color: #D52429;">&lt;script&gt;</span>
+							<br>
+							&nbsp;&nbsp;&nbsp;<span style="color: #358bb6;font-weight: 500;">new</span> Nostfly ({
+							<div style="margin-left: 50px;">
+								<div>style: <span style="color:#a6a2a2;font-style: italic;">'warning',</span></div>
+								<div>position: <span style="color:#a6a2a2;font-style: italic;">'top-right',</span></div>
+								<div>header: <span style="color:#a6a2a2;font-style: italic;">'Your header here',</span></div>
+								<div>content: <span style="color:#a6a2a2;font-style: italic;">'Your content here',</span></div>
+								<div>delay: <span style="color:#F85525;font-style: italic;">5000</span></div>
+							</div>
+							&nbsp;&nbsp;&nbsp;})
+							<br>
+							<span style="color: #D52429;">&lt;/script&gt;</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="nostfly.js"></script>
+
+		<script>
+			let position = 'bottom-right'
+			document.getElementById('pick-position').addEventListener('change', function () {
+				position = this.value
+			})			
+
+			let closeAnimation = 'nostfly-close-slide-right'
+			document.getElementById('pick-close-animate').addEventListener('change', function () {
+				closeAnimation = this.value
+			})
+
+			let openAnimation = 'nostfly-open-slide-right'
+			document.getElementById('pick-open-animate').addEventListener('change', function () {
+				openAnimation = this.value
+			})
+
+			let notify = document.getElementById('btn-nostfly-notify')
+			let success = document.getElementById('btn-nostfly-success')
+			let note = document.getElementById('btn-nostfly-note')
+			let warning = document.getElementById('btn-nostfly-warning')
+			let attention = document.getElementById('btn-nostfly-attention')
+			let error = document.getElementById('btn-nostfly-error')
+
+			notify.addEventListener('click', function () {
+				new Nostfly({
+					style: 'notify',
+					position: position,
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'If you have any questions or need assistance, please do not hesitate to reach out to support contact.'
+				})
+			})
+
+			success.addEventListener('click', function () {
+				new Nostfly({
+					iconHeader: false,
+					style: 'success',
+					position: position,
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'Your request has been processed without any issues. Everything is working as expected.'
+				})
+			})
+
+			note.addEventListener('click', function () {
+				new Nostfly({
+					style: 'note',
+					position: position,
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'Make sure to review this carefully and take any necessary actions.'
+				})
+			})
+
+			warning.addEventListener('click', function () {
+				new Nostfly({
+					style: 'warning',
+					position: position,
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'Please geist be advised that proceeding beyond this point may pose potential risks.'
+				})
+			})	
+
+			attention.addEventListener('click', function () {
+				new Nostfly({
+					style: 'attention',
+					position: position,
+					header: 'Heelo',
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'If you have any questions or need assistance, please reach out as soon as possible.'
+				})
+			})	
+
+			error.addEventListener('click', function () {
+				new Nostfly({
+					style: 'error',
+					position: position,
+					closeAnimate: closeAnimation,
+					openAnimate: openAnimation,
+					content: 'An unexpected error has occurred. Please check your input and try again.'
+				})
+			})
+		</script>
+	</body>
+</html>
