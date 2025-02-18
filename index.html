@@ -2,26 +2,19 @@
 <html lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Ahmed Hassan - Software Engineer</title>
-	<meta name="description" content="Ahmed Hassan Hassan Mohamed Software Engineer born and raised in Egypt, Cairo. Has a solid knowledge of building web applications using PHP, Node.Js and many technologies.">
-	<meta name="keywords" content="ahmed, ahmedhassan, ahmed hassan, ahmed hassan hassan, ahmed hassan hassan mohamed, ahmed hassan hassan muhammed, ahmed hassan hassan muhamed, ahmed hassan hassan mohamed software engineer, ahmed hassan official website, ahmed hassan software developer, ahmed hassan hassan php nodejs developer, ahmed hassan hassan mohamed full-stack developer, ahmed hassan php developer, ahmed hassan nodejs developer, ahmed hassan software engineer, ahmed hassan hassan programmer, أحمد حسن حسن محمد, أحمد حسن حسن مطور برمجيات, أحمد حسن حسن مهندس برمجيات, أحمد حسن مبرمج,أحمد حسن مطور ويب, ahmed hassan hassan node.js javascript developer, ahmed hassan hassan mohammed, ahmed hassan hassan mohamed web developer php node.js">
-	<meta name="author" content="ahmed hassan hassan mohamed">
+	<title>Ahmed Hassan - Official Website</title>
+	<meta name="description" content="Ahmed Hassan - Portfolio / CV / Resume HTML Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
 
 	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
-	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/snackbar.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="web-assets/css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/all.min.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/simple-line-icons.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/slick.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/animate.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/magnific-popup.css" media="all">
+	<link rel="stylesheet" href="web-assets/css/style.css" media="all">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,46 +22,83 @@
     <![endif]-->
 
     <style>
-		.logo-a-light{
-			font-family: 'Rubik', sans-serif;
-			position: absolute;
-			top: -25px;
-			left: 67px;
-			
-		}  
-		.logo-a-light span{
+    	#logo-a{
+			color: #353353;
+			font-family: "Rubik", sans-serif;
 			font-size: 35px;
-			font-weight: 700;
-			color: #FFF;
-		}  
-		.logo-a-light i:hover,
-		.logo-a-light i{
-			font-size: 55px;
-			margin: 0 2px;
-			color: #FF4C60 !important;
-			font-style: initial;
-		}	
+			font-weight: 600;
+    	}    	
+    	#logo-dot{
+			position: absolute;
+			bottom: 4px;
+			margin-left: 2px;
+			display: inline-block;
+			width: 7px;
+			height: 7px;
+			background-color: #FF4C60;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
 
-		.logo-a-dark{
-			font-family: 'Rubik', sans-serif;
-			position: absolute;
-			top: 10px;
-			left: 36px;
-		}  
-		.logo-a-dark span{
-			font-size: 35px;
-			font-weight: 700;
-			color: #454360;
-		}  
-		.logo-a-dark i:hover,
-		.logo-a-dark i{
-			font-size: 55px;
-			margin: 0 2px;
-			color: #FF4C60 !important;
-			font-style: initial;
-		}	
+/*	bottom: 7.8px;
+	width: 25px;
+	height: 4px;
+	left: -2px;
+	border-radius: 1px;
+	right: 0;
+	text-align: center;
+	margin: auto;*/
+    	}
+    	#img-ahmed{
+    		border: 4px solid #FFF;
+    		margin: auto;
+    		width: 160px;
+    		height: 160px;
+    		background-image: url('web-assets/images/ahmed.jpg');
+    		background-color: #FFF;
+    		background-position: 0px -54px;
+    		background-size: cover;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+
+			margin-bottom: 20px;
+    	}
+    	@media screen and (max-width: 770px) {
+    		.about-img{
+    			display: none;
+    		}
+    	}
+
+    	.portfolio-item{
+    		height: 185px;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		background-color: #FFF;
+    		background-position: center top;
+    	}
+    	.ph-details{
+		    height: 60px;
+		    margin-top: 15px;
+		    margin-bottom: 0;
+		    padding: 0 40px;
+		    line-height: 22px;
+		    font-weight: 400;
+		    font-style: inherit;
+		    font-size: 15px;
+		    text-align: left;
+    	}
+    	.tools-sec span{
+    		display: inline-block;
+    	}
+    	.ahmed{
+    		background-image: url('web-assets/images/ahmed-2.jpg') !important;
+    	}
     </style>
-
 </head>
 
 <body>
@@ -118,10 +148,10 @@
 			</button>
 		</div>
 		<!-- logo image -->
-		<div class="site-logo">
-			<a href="index-2-light.html">
-				<span class="logo-a-light"><span>A</span><i>.</i></span>
-				<!--<img src="images/logo.svg" alt="Ahmed" />-->
+		<div class="site-logo" style="height: 0;position: absolute;top:14px;right:50px;">
+			<a href="index-2-light.html" style="position: relative;top: -4px;">
+				<img src="web-assets/images/logo.png" style="width: 48px;max-height: none !important;" alt="Bolby" />
+				<!-- <span id="logo-a" style="color: #FFF;font-size: 32px">A</span><span id="logo-dot"></span> -->
 			</a>
 		</div>
 	</div>
@@ -131,20 +161,22 @@
 <header class="desktop-header-2 light d-flex align-items-start flex-column">
 	
 	<!-- logo image -->
-	<div class="site-logo">
-		<a href="index-2-light.html">
-			<span class="logo-a-dark"><span>A</span><i>.</i></span>
-			<!--<img src="images/logo-b-dark.svg" alt="Ahmed" />-->
+<!-- 	<div class="site-logo">
+		<a href="index-2-light.html" style="position: relative;">
+			<img src="web-assets/images/logo-b-dark.svg" alt="Bolby" />
+			<span id="logo-a">A</span><span id="logo-dot"></span>
 		</a>
-	</div>
+	</div> -->
 	
 	<!-- main menu -->
 	<nav>
-		<ul class="vertical-menu scrollspy">
+		<ul class="vertical-menu scrollspy m-0">
 			<li class="active"><a href="#home"><i class="icon-home"></i></a></li>
 			<li><a href="#about"><i class="icon-user-following"></i></a></li>
+			<li><a href="#services"><i class="icon-briefcase"></i></a></li>
 			<li><a href="#experience"><i class="icon-graduation"></i></a></li>
 			<li><a href="#works"><i class="icon-layers"></i></a></li>
+			<li><a href="#blog"><i class="icon-note"></i></a></li>
 			<li><a href="#contact"><i class="icon-bubbles"></i></a></li>
 		</ul>
 	</nav>
@@ -167,18 +199,18 @@
 			<!-- intro -->
 			<div class="intro">
 				<!-- avatar image -->
-				<img src="images/photo/main_photo_180px.jpg" alt="Ahmed" class="mb-4" style="border-radius: 50%;" />
+				<div id="img-ahmed">
+					<!-- <img src="images/ahmed.jpg" alt="Bolby" class="mb-4" /> -->
+				</div>
 
 				<!-- info -->
 				<h1 class="mb-2 mt-0">Ahmed Hassan</h1>
-				<!--
-				<span>I'm a <span class="text-rotating">UI/UX designer, Front-End developer, Photography lover</span></span>
-				-->
 				<span>I'm a <span class="text-rotating">Software Engineer</span></span>
 
 				<!-- social icons -->
 				<ul class="social-icons light list-inline mb-0 mt-4">
 					<li class="list-inline-item"><a href="https://github.com/91ahmed" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/ahmed-hassan-921426345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
 
 				<!-- buttons -->
@@ -242,7 +274,9 @@
 				<div class="col-md-3">
 					<div class="text-center text-md-left">
 						<!-- avatar image -->
-						<img src="images/photo/main_photo_150px.jpg" style="border-radius: 50%;" alt="Ahmed" />
+						<div id="img-ahmed" class="about-img ahmed" style="/*filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-o-filter: grayscale(100%);-ms-filter: grayscale(100%);*/">
+							<!-- <img src="web-assets/images/ahmed.jpg" alt="Bolby" class="mb-4" /> -->
+						</div>
 					</div>
 					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 				</div>
@@ -250,56 +284,23 @@
 				<div class="col-md-9 triangle-left-md triangle-top-sm">
 					<div class="rounded bg-white shadow-dark padding-30">
 						<div class="row">
-							<div class="col-md-11">
+							<div class="col-12">
 								<!-- about text -->
-								<p>I am a software engineer from Egypt. Interested in developing scalable and sustainable web-based software using PHP, NodeJs, Python. expert in using modern web libraries and technologies to turn any software vision into a real application.
+								<!-- 
+I am a skilled software engineer based in Egypt, with a strong focus on building scalable and sustainable web-based applications. I specialize in leveraging modern technologies such as PHP, Node.js, and Python to develop high-performance software solutions. With a deep understanding of contemporary web libraries and frameworks, I excel at turning complex software visions into fully-realized applications, ensuring both functionality and user experience are optimized. My expertise includes designing efficient architectures, optimizing performance, and implementing best practices to create maintainable and future-proof systems.
 
-									<!--If you need help for your next project contact me, I would be grateful to help you.-->
+أنا مهندس برمجيات ماهر من مصر، أركز بشكل رئيسي على بناء التطبيقات الويب القابلة للتوسع والمستدامة. أتخصص في استخدام التقنيات الحديثة مثل PHP وNode.js وPython لتطوير حلول برمجية عالية الأداء. بفضل فهمي العميق لأحدث المكتبات والإطارات البرمجية، أتميز في تحويل الرؤى البرمجية المعقدة إلى تطبيقات واقعية بالكامل، مع ضمان تحسين الوظائف وتجربة المستخدم. تشمل خبرتي تصميم هياكل فعّالة، وتحسين الأداء، وتطبيق أفضل الممارسات لإنشاء أنظمة قابلة للصيانة وقوية لمواكبة المستقبل.
+								-->
+								<p>
+								I am a software engineer based in Egypt, specializing in building scalable and sustainable web-based applications. My expertise lies in PHP, Python, and Node.js which enables me to develop innovative and efficient software solutions.
+								<div></div>
+								My programming journey began in 2018, after completing my bachelor’s degree in Management Information Systems (MIS). Since then, I’ve worked as a freelance software developer and have continued in this role to date.
 								</p>
 								<div class="mt-3">
-									<a href="cv/ahmedhassan-software-engineer-cv.pdf" class="btn btn-default">Download CV</a>
+									<a href="#" class="btn btn-default">Download CV</a>
 								</div>
 								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 							</div>
-							<!--
-							<div class="col-md-6">
-								<div class="skill-item">
-									<div class="skill-info clearfix">
-										<h4 class="float-left mb-3 mt-0">Development</h4>
-										<span class="float-right">85%</span>
-									</div>
-									<div class="progress">
-										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FFD15C">
-										</div>
-									</div>
-									<div class="spacer" data-height="20"></div>
-								</div>
-
-								<div class="skill-item">
-									<div class="skill-info clearfix">
-										<h4 class="float-left mb-3 mt-0">UI/UX design</h4>
-										<span class="float-right">95%</span>
-									</div>
-									<div class="progress">
-										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-color="#FF4C60">
-										</div>
-									</div>
-									<div class="spacer" data-height="20"></div>
-								</div>
-
-								<div class="skill-item">
-									<div class="skill-info clearfix">
-										<h4 class="float-left mb-3 mt-0">Photography</h4>
-										<span class="float-right">70%</span>
-									</div>
-									<div class="progress">
-										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5">
-										</div>
-									</div>
-								</div>
-							</div>
-							-->
-
 						</div>
 					</div>
 				</div>
@@ -312,6 +313,7 @@
 		</div>
 		
 	</section>
+	
 	
 	<!-- section experience -->
 	<section id="experience">
@@ -334,9 +336,10 @@
 						<div class="timeline-container wow fadeInUp">
 							<div class="content">
 								<span class="time">2014 - 2017</span>
-								<h3 class="title">Bachelor’s Degree</h3>
-								<p>I got a bachelor's degree in Management Information System (MIS) from Cairo Higher Institute. 
-									<!--This major focuses on how to associate the administration knowledge with the modern technology to develop analytical and statistical information systems.-->
+								<h3 class="title">Bachelor of Management Information System (MIS)</h3>
+								<p><i>Cairo Higher Institute.</i></p>
+								<p class="mt-2">
+									The association between administrative sciences and modern technology is what attracted me to study this discipline.
 								</p>
 							</div>
 						</div>
@@ -344,9 +347,12 @@
 						<!-- timeline item -->
 						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
 							<div class="content">
-								<span class="time">2015</span>
-								<h3 class="title">PHP & MySQL Master (course)</h3>
-								<p>I learned everything from fundamental concepts to the nuts and bolts of performing specific tasks.</p>
+								<span class="time">Oct 2015</span>
+								<h3 class="title">PHP & MySQL Master Course</h3>
+								<p><i>Yat Learning Center.</i></p>
+								<p class="mt-2">
+									I learned everything, from fundamental concepts to the essential details required to perform specific tasks.
+								</p>
 							</div>
 						</div>
 
@@ -368,31 +374,11 @@
 						<!-- timeline item -->
 						<div class="timeline-container wow fadeInUp">
 							<div class="content">
-								<span class="time">2022 - Present</span>
-								<h3 class="title">Software Developer</h3>
-								<p>Dedicated myself for working remotely as a freelancer software developer. I have accomplished a lot of diverse web solutions which helped me to acquire good skills and experiance.</p>
-							</div>
-						</div>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-							<div class="content">
 								<span class="time">2018 - 2019</span>
 								<h3 class="title">PHP Developer</h3>
-								<p>Worked with a small team of developers to build and manage web projects.</p>
+								<p>I collaborated with a small team to build and manage a variety of web projects. My role involved working closely with front-end developers to ensure seamless integration and overseeing all aspects of the back-end development process.</p>
 							</div>
 						</div>
-
-						<!-- timeline item -->
-						<!--
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-							<div class="content">
-								<span class="time">2013 - 2009</span>
-								<h3 class="title">Back-End Developer</h3>
-								<p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-							</div>
-						</div>
-						-->
 
 						<!-- main line -->
 						<span class="line"></span>
@@ -413,7 +399,7 @@
 		<div class="container">
 			
 			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">My works</h2>
+			<h2 class="section-title wow fadeInUp">Recent works</h2>
 
 			<div class="spacer" data-height="60"></div>
 
@@ -421,10 +407,10 @@
 			<ul class="portfolio-filter list-inline wow fadeInUp">
 				<li class="current list-inline-item" data-filter="*">All</li>
 				<li class="list-inline-item" data-filter=".php">PHP</li>
-				<li class="list-inline-item" data-filter=".nodejs">Node.js</li>
-				<li class="list-inline-item" data-filter=".javascript">JavaScript</li>
+				<li class="list-inline-item" data-filter=".node">Node.Js</li>
 				<li class="list-inline-item" data-filter=".python">Python</li>
-				<li class="list-inline-item" data-filter=".sql">SQl</li>
+				<li class="list-inline-item" data-filter=".sql">SQL</li>
+				<li class="list-inline-item" data-filter=".js">Javascript</li>
 			</ul>
 			
 			<!-- portfolio filter (mobile) -->
@@ -432,32 +418,242 @@
 				<select class="portfolio-filter-mobile">
 					<option value="*">All</option>
 					<option value=".php">PHP</option>
-					<option value=".nodejs">Node.js</option>
-					<option value=".javascript">JavaScript</option>
+					<option value=".node">Node.Js</option>
 					<option value=".python">Python</option>
 					<option value=".sql">SQL</option>
+					<option value=".js">Javascript</option>
 				</select>
 			</div>
 			
 			<!-- portolio wrapper -->
 			<div class="row portfolio-wrapper">
-				
-				<!--
-				<div class="col-md-4 col-sm-6 grid-item art">
-					<a href="https://via.placeholder.com/330x267" class="work-image">
-						<div class="portfolio-item rounded shadow-dark">
+		
+				<div class="col-md-6 col-sm-12 grid-item php">
+					<a href="http://ah12491.lovestoblog.com/kshop" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/kshop/1.png')">
 							<div class="details">
-								<span class="term">Art</span>
-								<h4 class="title">Project Managment Illustration</h4>
+								<span class="term">PHP</span>
+								<h4 class="title">Professional laravel online store.</h4>
 								<span class="more-button"><i class="icon-magnifier-add"></i></span>
 							</div>
 							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
+								<!--<img src="web-assets/images/works/kshop/1.png" alt="Portfolio-title" />-->
 								<div class="mask"></div>
 							</div>
 						</div>
 					</a>
+					<p class="ph-details">
+						<b>K-shop:</b>&nbsp;&nbsp;Professional laravel online store.
+					</p>
+				</div>	
+
+				<div class="col-md-6 col-sm-12 grid-item php">
+					<a href="http://ah12491.lovestoblog.com/shopdash" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/shopdash/1.png')">
+							<div class="details">
+								<span class="term">PHP</span>
+								<h4 class="title">E-commerce Dashboard</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/shopdash/1.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>Dash:</b>&nbsp;&nbsp;Shop management dashboard for monitoring sales, inventory, and customer interactions.
+					</p>
 				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item python">
+					<a href="javascript:{}" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/clinic/1.png')">
+							<div class="details">
+								<span class="term">Python</span>
+								<h4 class="title">Clinic Reservation System</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/clinic/1.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>Clinic:</b>&nbsp;&nbsp;Reservation system for managing appointments and patient schedules.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item node">
+					<a href="ah12491.lovestoblog.com/tvflix" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/tvflix/1.png')">
+							<div class="details">
+								<span class="term">Node.Js</span>
+								<h4 class="title">Movies Platform</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/tvflix/1.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>TVFLIX:</b>&nbsp;&nbsp;Platform for old and newly released movies and TV shows.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item node">
+					<a href="https://nodechat-qjcc.onrender.com/" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/nodechat/1.png')">
+							<div class="details">
+								<span class="term">Node.Js</span>
+								<h4 class="title">Socket.io Chat System</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/nodechat/1.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>Nodechat:</b>&nbsp;&nbsp;Socket.io simple client-server chat system.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item python">
+					<a href="https://github.com/91ahmed/StructFlask" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
+							<div class="details">
+								<span class="term">Python</span>
+								<h4 class="title">StructFlask</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>StructFlask:</b>&nbsp;&nbsp;Python mvc framework built on top of Flask.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item php">
+					<a href="https://github.com/91ahmed/JsonModifier" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
+							<div class="details">
+								<span class="term">PHP</span>
+								<h4 class="title">JsonModify</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>JsonModify:</b>&nbsp;&nbsp;PHP package allows developers to manipulate JSON files.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item node">
+					<a href="https://github.com/91ahmed/nodeEstablishSQL" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
+							<div class="details">
+								<span class="term">Node.Js</span>
+								<h4 class="title">nodeEstablishSQL</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>NodeSQL:</b>&nbsp;&nbsp;Query builder for postgresql and mysql.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item php">
+					<a href="https://github.com/91ahmed/CsvtoSql" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
+							<div class="details">
+								<span class="term">PHP</span>
+								<h4 class="title">CsvtoSql</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>CsvtoSql:</b>&nbsp;&nbsp;PHP library to extract data from (csv) file and transform it to (sql) insert statement.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item js">
+					<a href="https://github.com/91ahmed/JsInspector" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
+							<div class="details">
+								<span class="term">JS</span>
+								<h4 class="title">JsInspector</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>JsInspector:</b>&nbsp;&nbsp;Javascript library for client-side data validation.
+					</p>
+				</div>
+
+				<div class="col-md-6 col-sm-12 grid-item js">
+					<a href="https://github.com/91ahmed/RetroNotify" target="_blank">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/retronotify/1.png');">
+							<div class="details">
+								<span class="term">JS</span>
+								<h4 class="title">RetroNotify</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<!--<img src="web-assets/images/works/retronotify/1.png" alt="Portfolio-title" />-->
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<p class="ph-details">
+						<b>RetroNotify:</b>&nbsp;&nbsp;Javascript library to display notification messages with sleek and modern design.
+					</p>
+				</div>
+
+
+				<!-- 				
+				<div class="col-md-4 col-sm-6 grid-item php">
+					<a href="images/works/kshop/2.png" class="work-image">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">PHP</span>
+								<h4 class="title">Professional laravel online store.</h4>
+								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/works/kshop/1.png" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> 
 
 				<div class="col-md-4 col-sm-6 grid-item creative design">
 					<a href="#small-dialog" class="work-content">
@@ -533,257 +729,25 @@
 						<a href="https://via.placeholder.com/330x267"></a>
 					</div>
 				</div>
+
+				<div class="col-md-4 col-sm-6 grid-item creative design">
+					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Creative, Design</span>
+								<h4 class="title">Game Store App Concept</h4>
+								<span class="more-button"><i class="icon-link"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
 				-->
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="http://ah12491.lovestoblog.com/shop-dashboard" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">App</span>
-								<h4 class="title">PHP: Dashboard</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/dashboard.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="http://ah12491.lovestoblog.com/k-shop" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">App</span>
-								<h4 class="title">PHP: K-Shop Store</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/shop.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="https://github.com/91ahmed/crm-system" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">App</span>
-								<h4 class="title">Laravel: Customer Relationship management</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/crm.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="https://github.com/91ahmed/JsonModifier" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Library</span>
-								<h4 class="title">PHP: JSON Modifier</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="https://github.com/91ahmed/CsvtoSql" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Library</span>
-								<h4 class="title">PHP: Convert CSV to SQL</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nodejs all">
-					<a href="https://github.com/91ahmed/nodeEstablishSQL" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Library</span>
-								<h4 class="title">NodeJs: Query Builder</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item php all">
-					<a href="https://github.com/91ahmed/DbtoExcel" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Script</span>
-								<h4 class="title">PHP: Convert Database to Execl</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nodejs all">
-					<a href="https://nodechat-qjcc.onrender.com/" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">App</span>
-								<h4 class="title">NodeJs Chat</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/node-chat.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nodejs all">
-					<a href="https://moviedoc.onrender.com/" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">App</span>
-								<h4 class="title">NodeJs App for Newly Released Movies</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/movies.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item javascript all">
-					<a href="https://github.com/91ahmed/RetroNotify" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Library</span>
-								<h4 class="title">Javascript Toast Messages</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item javascript all">
-					<a href="https://github.com/91ahmed/JsInspector" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Library</span>
-								<h4 class="title">Javascript Validator</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item sql all">
-					<a href="https://github.com/91ahmed/E-commerce-DB" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Database</span>
-								<h4 class="title">SQL: database store design for sqlserver, mysql, postgresql</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item python all">
-					<a href="https://github.com/91ahmed/Cipher" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Script</span>
-								<h4 class="title">Python script for data encryption</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item python all">
-					<a href="https://github.com/91ahmed/Pymvc" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Framework</span>
-								<h4 class="title">Python: Pymvc framework</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/work/github.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
 			</div>
-			
-			<!-- more button 
-			<div class="load-more text-center mt-4">
-				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
-				<ul class="portfolio-pagination list-inline d-none">
-					<li class="list-inline-item">1</li>
-					<li class="list-inline-item"><a href="works-2.html">2</a></li>
-				</ul>
-			</div>
-			-->
 
 		</div>
 
@@ -804,10 +768,8 @@
 				<div class="col-md-4">
 					<!-- contact info -->
 					<div class="contact-info">
-						<h3 class="wow fadeInUp">Let's talk!</h3>
-						<p><i class="fa-regular fa-envelope"></i>: ahmdohssn@gmail.com</p>
-						<p><i class="fa-solid fa-mobile-screen"></i>: +201270930751</p>
-						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:ahmdohssn@gmail.com">email</a>. 👋</p>
+						<h3 class="wow fadeInUp">Let's talk about everything!</h3>
+						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>. 👋</p>
 					</div>
 				</div>
 
@@ -871,38 +833,23 @@
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
 <!-- SCRIPTS -->
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/infinite-scroll.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/morphext.min.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/snackbar.min.js"></script>
-<script src="js/custom.js"></script>
-<script>
-	$(document).ready(function(){
-		$('#contact-form').on('submit', function(){
-            Snackbar.show({
-                text: `Sorry, this service isn't available now you can try again later`,
-                width: 'auto',
-                pos: 'top-center',
-                duration: 10000,
-                //actionTextColor: '#fff',
-                backgroundColor: '#1f2232'
-            }); 
-		});
-	});
-</script>
+<script src="web-assets/js/jquery-1.12.3.min.js"></script>
+<script src="web-assets/js/jquery.easing.min.js"></script>
+<script src="web-assets/js/jquery.waypoints.min.js"></script>
+<script src="web-assets/js/jquery.counterup.min.js"></script>
+<script src="web-assets/js/popper.min.js"></script>
+<script src="web-assets/js/bootstrap.min.js"></script>
+<script src="web-assets/js/isotope.pkgd.min.js"></script>
+<script src="web-assets/js/infinite-scroll.min.js"></script>
+<script src="web-assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="web-assets/js/slick.min.js"></script>
+<script src="web-assets/js/contact.js"></script>
+<script src="web-assets/js/validator.js"></script>
+<script src="web-assets/js/wow.min.js"></script>
+<script src="web-assets/js/morphext.min.js"></script>
+<script src="web-assets/js/parallax.min.js"></script>
+<script src="web-assets/js/jquery.magnific-popup.min.js"></script>
+<script src="web-assets/js/custom.js"></script>
 
 </body>
 </html>
