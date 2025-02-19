@@ -98,6 +98,19 @@
     	.ahmed{
     		background-image: url('web-assets/images/ahmed-2.jpg') !important;
     	}
+    	#my-menu{
+    		display: block !important;
+    		padding: 5px 0;
+    		cursor: pointer;
+    	}
+    	#my-menu div{
+			width: 30px;
+			height: 3px;
+			background-color: #FFF;
+			border-radius: 2px;
+			margin: 5px 0;
+			display: block;
+    	}
     </style>
 </head>
 
@@ -142,15 +155,18 @@
 <header class="mobile-header-2">
 	<div class="container">
 		<!-- menu icon -->
-		<div class="menu-icon d-inline-flex mr-4">
-			<button>
+		<div class="menu-icon d-inline-flex mr-4" id="my-menu">
+<!-- 			<button>
 				<span></span>
-			</button>
+			</button> -->
+			<div class="line-1"></div>
+			<div class="line-2"></div>
+			<div class="line-3"></div>
 		</div>
 		<!-- logo image -->
 		<div class="site-logo" style="height: 0;position: absolute;top:14px;right:50px;">
 			<a href="index-2-light.html" style="position: relative;top: -4px;">
-				<img src="web-assets/images/logo.png" style="width: 48px;max-height: none !important;" alt="Bolby" />
+				<!-- <img src="web-assets/images/logo.png" style="width: 48px;max-height: none !important;" alt="Bolby" /> -->
 				<!-- <span id="logo-a" style="color: #FFF;font-size: 32px">A</span><span id="logo-dot"></span> -->
 			</a>
 		</div>
@@ -851,5 +867,14 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 <script src="web-assets/js/jquery.magnific-popup.min.js"></script>
 <script src="web-assets/js/custom.js"></script>
 
+
+<script>
+	$(document).ready(function () {
+		$('#my-menu').click(function () {
+			$(this).toggleClass('openMenu')
+			$('.mobile-header-2, .desktop-header-2, .content-2').toggleClass('open')
+		})
+	})
+</script>
 </body>
 </html>
