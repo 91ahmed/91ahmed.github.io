@@ -2304,7 +2304,7 @@ body {
   }
 
   .portfolio-item, .blog-item {
-    max-width: 360px;
+    max-width: auto; /*360px*/
     margin: auto;
   }
 
