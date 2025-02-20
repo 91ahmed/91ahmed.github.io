@@ -7,6 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="web-assets/css/bootstrap.min.css" media="all">
 	<link rel="stylesheet" href="web-assets/css/all.min.css" media="all">
@@ -189,10 +193,8 @@
 		<ul class="vertical-menu scrollspy m-0">
 			<li class="active"><a href="#home"><i class="icon-home"></i></a></li>
 			<li><a href="#about"><i class="icon-user-following"></i></a></li>
-			<li><a href="#services"><i class="icon-briefcase"></i></a></li>
 			<li><a href="#experience"><i class="icon-graduation"></i></a></li>
-			<li><a href="#works"><i class="icon-layers"></i></a></li>
-			<li><a href="#blog"><i class="icon-note"></i></a></li>
+			<li><a href="#works"><i class="icon-briefcase"></i></a></li>
 			<li><a href="#contact"><i class="icon-bubbles"></i></a></li>
 		</ul>
 	</nav>
@@ -300,7 +302,7 @@
 				<div class="col-md-9 triangle-left-md triangle-top-sm">
 					<div class="rounded bg-white shadow-dark padding-30">
 						<div class="row">
-							<div class="col-12">
+							<div class="col-12" style="font-family: 'Nunito Sans', serif;font-size: 16px">
 								<!-- about text -->
 								<!-- 
 I am a skilled software engineer based in Egypt, with a strong focus on building scalable and sustainable web-based applications. I specialize in leveraging modern technologies such as PHP, Node.js, and Python to develop high-performance software solutions. With a deep understanding of contemporary web libraries and frameworks, I excel at turning complex software visions into fully-realized applications, ensuring both functionality and user experience are optimized. My expertise includes designing efficient architectures, optimizing performance, and implementing best practices to create maintainable and future-proof systems.
@@ -446,7 +448,7 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 		
 				<div class="col-md-6 col-sm-12 grid-item php">
 					<a href="http://ah12491.lovestoblog.com/kshop" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/kshop/1.PNG')">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/kshop/1.png')">
 							<div class="details">
 								<span class="term">PHP</span>
 								<h4 class="title">Professional laravel online store.</h4>
@@ -465,7 +467,7 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 
 				<div class="col-md-6 col-sm-12 grid-item php">
 					<a href="http://ah12491.lovestoblog.com/shopdash" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/shopdash/1.PNG')">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/shopdash/1.png')">
 							<div class="details">
 								<span class="term">PHP</span>
 								<h4 class="title">E-commerce Dashboard</h4>
@@ -484,7 +486,7 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 
 				<div class="col-md-6 col-sm-12 grid-item python">
 					<a href="javascript:{}" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/clinic/1.PNG')">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/clinic/1.png')">
 							<div class="details">
 								<span class="term">Python</span>
 								<h4 class="title">Clinic Reservation System</h4>
@@ -503,7 +505,7 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 
 				<div class="col-md-6 col-sm-12 grid-item node">
 					<a href="ah12491.lovestoblog.com/tvflix" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/tvflix/1.PNG')">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/tvflix/1.png')">
 							<div class="details">
 								<span class="term">Node.Js</span>
 								<h4 class="title">Movies Platform</h4>
@@ -522,7 +524,7 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 
 				<div class="col-md-6 col-sm-12 grid-item node">
 					<a href="https://nodechat-qjcc.onrender.com/" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/nodechat/1.PNG')">
+						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/nodechat/1.png')">
 							<div class="details">
 								<span class="term">Node.Js</span>
 								<h4 class="title">Socket.io Chat System</h4>
@@ -871,9 +873,18 @@ I am a skilled software engineer based in Egypt, with a strong focus on building
 <script>
 	$(document).ready(function () {
 		$('#my-menu').click(function () {
-			$(this).toggleClass('openMenu')
 			$('.mobile-header-2, .desktop-header-2, .content-2').toggleClass('open')
 		})
+
+		/*
+		$('.desktop-header-2').on('change', function () {
+			if ($(this).hasClass('open')) {
+				$('.line-2').animate({'margin-left': '20px'})
+			} else {
+				$('.line-2').animate({'margin-left': '0'})
+			}			
+		})
+		*/
 	})
 </script>
 </body>
