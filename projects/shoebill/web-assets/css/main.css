@@ -71,7 +71,6 @@ a:active {
 
 /** Navbar **/
 .nav,
-.nav li,
 .nav li a{
 	height: 60px;
 	line-height: 60px;
@@ -96,4 +95,29 @@ a:active {
 }
 .icon-list li svg {
 	width: 20px;
+}
+.icon-list li a:hover,
+.icon-list li a:active,
+.icon-list li a:focus,
+.icon-list li a {
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.icon-list-notify {
+    position: absolute;
+    top: 7px;
+    left: -6px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 50%;
+	background-color: #FF0000;
+    color: #FFF;
+    display: inline-block;
+    float: left;
 }
