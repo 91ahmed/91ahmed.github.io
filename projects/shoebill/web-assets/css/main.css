@@ -1,0 +1,99 @@
+body {
+	font-family: 'Nunito Sans', serif !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+input, select, textarea, p, .bootstrap-select .btn, .bootstrap-select .dropdown-menu li a {
+	font-size: 14px !important;
+}
+.bootstrap-select .btn,
+.bootstrap-select .btn:focus,
+.bootstrap-select .btn:active,
+.btn-light:not(:disabled):not(.disabled).active, 
+.btn-light:not(:disabled):not(.disabled):active, 
+.show>.btn-light.dropdown-toggle,
+.form-control:focus,
+.form-control {
+	border-color: #ebe5eb;
+	outline: 0 !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	box-shadow: none !important;
+	background-color: #FBFAFA;
+}
+h1,h2,h3,h4,h5,h6,p {
+	color: #37003c;
+}
+p {
+	/*color: #696969;*/
+	font-weight: 300;
+}
+a {
+	color: #e90052;
+	text-decoration: none;
+}
+a:hover {
+	color: #e90052;
+}
+a:active {
+	opacity: 0.8;
+}
+::-moz-selection {
+	background: #e90052;
+	color: #ffffff;	
+}
+::-ms-selection {
+	background: #e90052;
+	color: #ffffff;	
+}
+::-webkit-selection {
+	background: #e90052;
+	color: #ffffff;	
+}
+::selection {
+	background: #e90052;
+	color: #ffffff;
+}
+.bootstrap-select .dropdown-menu li a {
+    background-color: #fff !important;
+    color: #37003c !important;
+}
+.bootstrap-select .dropdown-menu li a:hover,
+.bootstrap-select .dropdown-menu li.selected a {
+    background-color: #e90052 !important;
+    color: #fff !important;
+}
+
+/** Navbar **/
+.nav,
+.nav li,
+.nav li a{
+	height: 60px;
+	line-height: 60px;
+}
+.nav {
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid #ebe5eb;
+}
+.icon-list {
+	float: right;
+}
+.icon-list li {
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+}
+.icon-list li svg,
+.icon-list li a {
+	color: #37003c;
+	font-size: 14px;
+}
+.icon-list li svg {
+	width: 20px;
+}
