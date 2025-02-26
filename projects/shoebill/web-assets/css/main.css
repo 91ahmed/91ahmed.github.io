@@ -106,6 +106,7 @@ a:active {
 	text-decoration: none;
 }
 .icon-list-notify {
+	display: inline-block;
     position: absolute;
     top: 7px;
     left: -6px;
@@ -118,6 +119,4 @@ a:active {
     border-radius: 50%;
 	background-color: #FF0000;
     color: #FFF;
-    display: inline-block;
-    float: left;
 }
