@@ -118,6 +118,11 @@ a:active {
     font-size: 12px;
     font-weight: 800;
     border-radius: 50%;
-    background-color: #FF0000;
+    background-color: #F3354B;
     color: #FFF;
+}
+
+
+.logo img {
+	width: 125px;
 }
