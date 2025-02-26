@@ -102,21 +102,22 @@ a:active {
 .icon-list li a {
 	position: relative;
 	display: block;
-	padding: 0 10px;
+	padding: 0 8px;
 	text-decoration: none;
 }
 .icon-list-notify {
 	display: inline-block;
     position: absolute;
-    top: 7px;
-    left: -6px;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    top: 9px;
+    left: -5px;
+    width: auto;
+    height: auto;
+    padding: 0 8px;
+    line-height: 23px;
     text-align: center;
     font-size: 12px;
     font-weight: 800;
     border-radius: 50%;
-	background-color: #FF0000;
+    background-color: #FF0000;
     color: #FFF;
 }
