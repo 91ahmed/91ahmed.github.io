@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Specific Meta
+    ================================================== -->
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="keyword"
+        content="resume, cv, portfolio, vcard, responsive, retina, jquery, css3, tailwindcss, material CV, creative, designer, developer, online cv, online resume, powerful portfolio, professional, landing page">
+    <meta name="description" 
+        content="Minfo vCard/Resume TailwindCSS HTML Template">
+    <meta name="author" 
+        content="Themearray">
+
+    <!-- Site Title
+    ================================================== -->
+    <title>Minfo - Tailwind CSS Personal Resume/vCard Template</title>
+
+    <!-- Site Favicon
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/img/user-sidebar-thumb.png" sizes="any">
+
+    <!-- Google Fonts
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- All CSS Here
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+    <link rel="stylesheet" href="assets/css/cdheadline.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body class="relative custom_cursor">
+    <!-- Custom Cursor Start -->
+    <div
+        class="custom_cursor_one fixed top-0 left-0 w-8 h-8 border border-gray-400 rounded-full pointer-events-none">
+    </div>
+    <div
+        class="custom_cursor_two w-1 h-1 rounded-full border border-gray-400 bg-metborder-gray-400 fixed pointer-events-none left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+    </div>
+    <!-- Custom Cursor End -->
+
+
+    <!-- App Preloader Start -->
+    <div id="preloader">
+        <div class="loader_line"></div>
+        <div
+            class="absolute w-20 h-20 transition-all delay-300 -translate-x-1/2 -translate-y-1/2 rounded-full logo top-1/2 left-1/2 bg-nightBlack border-greyBlack flex-center">
+            <img src="assets/img/site-logo.svg" alt="Minfo">
+        </div>
+    </div>
+    <!-- App Preloader End -->
+
+
+    <!-- App Start -->
+    <div class="relative pt-10 minfo__app max-xl:pt-20">
+        <div
+            class="menu-overlay fixed top-0 left-0 w-full h-full bg-black/60 transition-all duration-200 z-999 opacity-0 invisible [&.is-menu-open]:visible [&.is-menu-open]:opacity-100">
+        </div>
+        <div class="max-lg:px-4">
+
+            <!-- Mobile Menu Bar Start -->
+            <div
+                class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
+                <div class="text-lg font-medium name">
+                    <a href="index.html" class="flex items-center gap-2 text-black dark:text-white">
+                        <img src="assets/img/site-logo.svg" alt="Minfo">
+                        <span>Minfo</span>
+                    </a>
+                </div>
+                <!-- Mobile Hamburger Menu Start -->
+                <button
+                    class="w-12 h-12 border rounded-full hamburger menu_toggle bg-white dark:bg-nightBlack border-platinum dark:border-greyBlack flex-center"
+                    type="button"
+                    aria-label="Open Mobile Menu">
+                    <svg viewBox="0 0 20 12" class="w-6"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.33333 11.3333C5.33333 11.1565 5.40357 10.987 5.5286 10.8619C5.65362 10.7369 5.82319 10.6667 6 10.6667H19.3333C19.5101 10.6667 19.6797 10.7369 19.8047 10.8619C19.9298 10.987 20 11.1565 20 11.3333C20 11.5101 19.9298 11.6797 19.8047 11.8047C19.6797 11.9298 19.5101 12 19.3333 12H6C5.82319 12 5.65362 11.9298 5.5286 11.8047C5.40357 11.6797 5.33333 11.5101 5.33333 11.3333ZM2.66667 6C2.66667 5.82319 2.7369 5.65362 2.86193 5.5286C2.98695 5.40357 3.15652 5.33333 3.33333 5.33333H16.6667C16.8435 5.33333 17.013 5.40357 17.1381 5.5286C17.2631 5.65362 17.3333 5.82319 17.3333 6C17.3333 6.17681 17.2631 6.34638 17.1381 6.4714C17.013 6.59643 16.8435 6.66667 16.6667 6.66667H3.33333C3.15652 6.66667 2.98695 6.59643 2.86193 6.4714C2.7369 6.34638 2.66667 6.17681 2.66667 6ZM0 0.666667C0 0.489856 0.0702379 0.320287 0.195262 0.195262C0.320286 0.070238 0.489856 0 0.666667 0H14C14.1768 0 14.3464 0.070238 14.4714 0.195262C14.5964 0.320287 14.6667 0.489856 14.6667 0.666667C14.6667 0.843478 14.5964 1.01305 14.4714 1.13807C14.3464 1.2631 14.1768 1.33333 14 1.33333H0.666667C0.489856 1.33333 0.320286 1.2631 0.195262 1.13807C0.0702379 1.01305 0 0.843478 0 0.666667Z"
+                            class="fill-theme dark:fill-white" />
+                    </svg>
+                </button>
+                <!-- Mobile Hamburger Menu End -->
+            </div>
+            <!-- Mobile Menu Bar End -->
+
+
+            <!-- Mobile Menu Sidebar Start -->
+            <div
+                class="mobile-menu fixed top-0 -right-full w-full max-w-mobilemenu bg-flashWhite dark:bg-nightBlack z-999 h-full xl:hidden transition-all duration-300 [&.is-menu-open]:right-0 py-12 px-8 overflow-y-scroll">
+                <button
+                    class="absolute flex items-center justify-center w-9 h-9 text-sm text-white rounded-full close-menu top-4 right-4 bg-greyBlack" aria-label="Close Menu">
+                    <i class="fal fa-times"></i>
+                </button>
+                <div class="mb-6 text-lg font-medium text-black dark:text-white menu-title">
+                    Menu
+                </div>
+                <ul class="space-y-5 font-normal main-menu">
+                    <li data-scroll-nav="1" class="relative group active">
+                        <a href="#about" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-user"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                About
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="2" class="relative group">
+                        <a href="#" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-briefcase"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Service
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="3" class="relative group">
+                        <a href="#skill" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-graduation-cap"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Skills
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="4" class="relative group">
+                        <a href="#resume" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-file-alt"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Resume
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="5" class="relative group">
+                        <a href="#portfolio" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-tasks-alt"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Poftfolio
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="6" class="relative group">
+                        <a href="#blog" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-blog"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Blog
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="7" class="relative group">
+                        <a href="#testimonial" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-comment-alt-lines"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Testimonial
+                            </span>
+                        </a>
+                    </li>
+                    <li data-scroll-nav="8" class="relative group">
+                        <a href="#contact" class="flex items-center space-x-2 group">
+                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
+                                <i class="fal fa-envelope"></i>
+                            </span>
+                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
+                                Contact
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <br><br>
+                <div class="mb-4 font-medium text-black dark:text-white menu-title text-md">
+                    Get in Touch
+                </div>
+                <!-- Social Share Icon Start  -->
+                <div class="flex items-center space-x-4 social-icons *:flex">
+                    <a href="#" title="Share with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" title="Share with Linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" title="Share with X">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" title="Share with X">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- Social Share Icon End  -->
+            </div>
+            <!-- Mobile Menu Sidebar End -->
+
+
+            <!-- Sidebar Profile Start -->
+            <div
+                class="w-full mx-auto minfo__sidebar__wrapper xl:fixed xl:top-1/2 xl:left-4 2xl:left-14 xl:-translate-y-1/2 md:max-w-sidebar xl:max-2xl:max-w-xs z-999">
+
+                <div class="p-3 max-xl:mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack rounded-2xl">
+                    <div class="mx-4 mt-12 text-center user-info lg:mx-6">
+                        <a href="index.html"
+                            class="w-36 h-36 mb-2.5 block mx-auto border-6 border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full *:w-full *:h-full *:rounded-full">
+                            <img 
+                                src="assets/img/user-sidebar-thumb.png" 
+                                class="hidden dark:block "
+                                alt="Brown Reddick"> <!--Image for Dark Version -->
+                            <img 
+                                src="assets/img/ahmed.jpg" 
+                                class="dark:hidden"
+                                alt="Brown Reddick"
+                                style="height: auto;"> <!--Image for Light Version -->
+                        </a>
+                        <h6 class="mb-1 text-lg font-semibold text-black dark:text-white name">Ahmed Hassan</h6>
+                        <div class="leading-none cd-headline clip is-full-width">
+                            <h6 class="text-sm cd-words-wrapper designation text-theme after:!bg-theme *:font-normal">
+                                <b class="is-visible">Software Engineer</b>
+                                <b>PHP, Python, Node.Js</b>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="pt-6 mx-4 border-t lg:mx-6 user-meta-info md:mx-7 my-7 border-platinum dark:border-metalBlack">
+                        <ul class="space-y-3 *:flex *:text-sm">
+                            <li>
+                                <span class="flex-1 font-medium text-black dark:text-white">Residence:</span>
+                                <span>Egypt / Giza</span>
+                            </li>
+                            <li>
+                                <span class="flex-1 font-medium text-black dark:text-white">City:</span>
+                                <span>Giza</span>
+                            </li>
+                            <li>
+                                <span class="flex-1 font-medium text-black dark:text-white">Date of Birth:</span>
+                                <span>Dec 4, 1991</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
+                        <div class="text-sm font-medium text-black dark:text-white">Skills</div>
+                        <div class="flex items-center justify-between my-4 space-x-4 skills_circle *:space-y-2 *:text-center">
+                            <div class="progressCircle">
+                                <div class="relative w-12 h-12 circle" data-percent="90" data-circlefill="#00BC91" data-circleempty="#777777">
+                                    <div class="absolute inset-0 text-[13px] font-medium label flex-center">90%</div>
+                                </div>
+                                <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">HTML</p>
+                            </div>
+                            <div class="progressCircle">
+                                <div class="relative w-12 h-12 circle" data-percent="80" data-circlefill="#00BC91" data-circleempty="#777777">
+                                    <div class="absolute inset-0 text-[13px] font-medium label flex-center">80%</div>
+                                </div>
+                                <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">CSS</p>
+                            </div>
+                            <div class="progressCircle">
+                                <div class="relative w-12 h-12 circle" data-percent="80" data-circlefill="#00BC91" data-circleempty="#777777">
+                                    <div class="absolute inset-0 text-[13px] font-medium label flex-center">80%</div>
+                                </div>
+                                <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">JS</p>
+                            </div>
+                            <div class="progressCircle">
+                                <div class="relative w-12 h-12 circle" data-percent="90" data-circlefill="#00BC91" data-circleempty="#777777">
+                                    <div class="absolute inset-0 text-[13px] font-medium label flex-center">90%</div>
+                                </div>
+                                <p class="text-[13px] font-normal dark:font-light text-black dark:text-white/90">PHP</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="mycv.pdf" download target="_blank"
+                                class="text-center text-sm border border-theme bg-theme flex items-center justify-center gap-2 text-white rounded-4xl py-3.5 transition duration-300 text-[15px] font-semibold hover:bg-themeHover hover:border-themeHover">
+                                DOWNLOAD CV
+                                <span class="animate-bounce">
+                                    <svg width="18" height="18" viewBox="0 0 15 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0724 4.92378C12.0726 4.91034 12.0726 4.89691 12.0726 4.88368C12.0726 2.53968 10.1657 0.632812 7.82171 0.632812C5.47771 0.632812 3.57084 2.53968 3.57084 4.88368C3.57084 4.89691 3.57084 4.91055 3.57104 4.92378C1.95417 5.0992 0.691406 6.47267 0.691406 8.13554C0.691406 9.91704 2.14059 11.3662 3.92209 11.3662H4.33138C4.55606 11.3662 4.7384 11.1839 4.7384 10.9592C4.7384 10.7345 4.55606 10.5522 4.33138 10.5522H3.92209C2.58952 10.5522 1.50544 9.46811 1.50544 8.13554C1.50544 6.80297 2.58952 5.71888 3.92209 5.71888H4.00309C4.11868 5.71888 4.22898 5.66963 4.30611 5.58355C4.38345 5.49726 4.42028 5.38248 4.40766 5.2673C4.3924 5.12769 4.38487 5.00233 4.38487 4.88348C4.38487 2.98842 5.92665 1.44664 7.82171 1.44664C9.71678 1.44664 11.2586 2.98842 11.2586 4.88348C11.2586 5.00233 11.251 5.12769 11.2358 5.2673C11.2231 5.38228 11.26 5.49726 11.3373 5.58355C11.4144 5.66963 11.5247 5.71888 11.6403 5.71888H11.7217C13.0541 5.71888 14.138 6.80297 14.138 8.13554C14.138 9.46811 13.0541 10.5522 11.7217 10.5522H11.288C11.0634 10.5522 10.881 10.7345 10.881 10.9592C10.881 11.1839 11.0634 11.3662 11.288 11.3662H11.7217C13.5028 11.3662 14.952 9.91704 14.952 8.13554C14.952 6.47247 13.6892 5.099 12.0724 4.92378Z"
+                                            fill="white" />
+                                        <path
+                                            d="M6.26314 11.942C6.0877 12.1876 6.26327 12.5288 6.5651 12.5288H8.81272L7.3764 14.5396C7.25728 14.7064 7.29591 14.9382 7.46268 15.0573C7.62945 15.1764 7.86122 15.1378 7.98034 14.971L9.83579 12.3734C10.0112 12.1278 9.83566 11.7866 9.53382 11.7866H7.2862L8.72252 9.77578C8.84164 9.609 8.80302 9.37724 8.63624 9.25811C8.46947 9.13899 8.23771 9.17762 8.11858 9.34439L6.26314 11.942Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <svg class="absolute w-0 h-0">
+                        <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox" stroke="white" stroke-width="2">
+                            <path
+                                d="M0.001,0.031 C0.001,0.014,0.026,0.001,0.055,0.001 H0.492 C0.506,0.001,0.52,0.004,0.53,0.009 L0.61,0.052 C0.62,0.057,0.634,0.06,0.649,0.06 H0.947 C0.977,0.06,1,0.074,1,0.091 V0.971 C1,0.987,0.977,1,0.947,1 H0.055 C0.026,1,0.001,0.987,0.001,0.971 V0.031">
+                            </path>
+                        </clipPath>
+                    </svg>
+                </div>
+
+            </div>
+            <!-- Sidebar Profile End -->
+
+
+            <!-- Nav/Navigation Start -->
+            <div class="minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4">
+
+
+                <!-- Main Menu/Navigation Start -->
+                <div class="my-4 menu">
+                    <ul class="space-y-2 text-center *:relative">
+                        <li data-scroll-nav="1" class="group active">
+                            <a href="#about"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="About">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-user"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <!--   
+                        <li data-scroll-nav="3" class="group">
+                            <a href="#skill"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Skills">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-graduation-cap"></i>
+                                </span>
+                            </a>
+                        </li> -->
+                        <li data-scroll-nav="3" class="group">
+                            <a href="#resume"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Resume">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <!-- <i class="fal fa-file-alt"></i> -->
+                                    <i class="fal fa-graduation-cap"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-scroll-nav="4" class="group">
+                            <a href="#skill"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Skills">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-briefcase"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-scroll-nav="5" class="group">
+                            <a href="#portfolio"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Poftfolio">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-tasks-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-scroll-nav="6" class="group">
+                            <a href="#blog"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Blog">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-blog"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li data-scroll-nav="8" class="group">
+                            <a href="#contact"
+                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Contact">
+                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                    <i class="fal fa-envelope"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main Menu/Navigation End -->
+
+                <!-- Share Button Wrapper Start -->
+                <div class="relative share group">
+                    <button
+                        class="w-10 h-10 text-sm border rounded-full border-platinum dark:border-metalBlack flex-center group-hover:bg-white dark:group-hover:bg-metalBlack text-black dark:text-white"
+                        aria-label="Share">
+                        <i class="fal fa-share-alt"></i>
+                    </button>
+
+                    <!-- Social Share Icon Start  -->
+                    <div
+                        class="absolute bottom-0 flex items-center invisible px-5 py-6 space-x-3 transition-all duration-300 -translate-y-1/2 opacity-0 social-icons top-1/2 bg-white dark:bg-nightBlack rounded-4xl right-6 group-hover:opacity-100 group-hover:visible group-hover:right-10 -z-1 *:flex *:transition *:duration-200">
+                        <a href="#" class="hover:text-theme" title="Share with Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="hover:text-theme" title="Share with Linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="hover:text-theme" title="Share with X">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="hover:text-theme" title="Share with X">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <!-- Social Share Icon End  -->
+                </div>
+                <!-- Share Button Wrapper End -->
+
+            </div>
+            <!-- Nav/Navigation End -->
+
+
+            <!-- Main Content Start -->
+            <div class="minfo__contentBox relative mx-auto max-w-container xl:max-2xl:max-w-65rem *:py-5 xl:*:py-3.5 *:max-w-content max-xl:*:mx-auto xl:*:ml-auto xl:max-2xl:*:max-w-50rem">
+
+
+                <!-- About Me Section Start -->
+                <div data-scroll-index="1" id="about">
+
+                    <div class="about-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-user text-theme"></i>
+                            ABOUT ME
+                        </div>
+                        <div class="mt-7 md:mt-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                About <span class="font-semibold text-theme">Me</span>
+                            </h2>
+                            <p class="max-w-2xl mt-4 md:mt-6 subtitle">
+                                I am a <span class="text-black dark:text-white">software engineer</span> based in Egypt, specializing in building scalable and sustainable web-based applications. My expertise lies in PHP, Python, and Node.js which enables me to develop innovative and efficient software solutions.
+                                <div style="margin: 15px 0;"></div>
+                                My programming journey began in 2018, after completing my bachelor’s degree in Management Information Systems (MIS). Since then, I’ve worked as a freelance software developer and have continued in this role to date.
+                            </p>
+                        </div>
+                        <div class="mt-2 section-content">
+
+                            <div class="text-content pt-7 lg:pt-4 max-lg:max-w-[30rem]">
+                                <ul class="flex items-center mt-4 -mx-3 lg:mt-5 *:flex *:items-center *:mx-3 *:text-regular">
+                                    <li>
+                                        <i class="mr-2 fal fa-check-double text-theme"></i>
+                                        Available for work
+                                    </li>
+                                    <li>
+                                        <i class="mr-2 fal fa-check-double text-theme"></i>
+                                        Full Time Job
+                                    </li>
+                                </ul>
+                                <ul class="mt-7 buttons">
+                                    <li data-scroll-nav="8">
+                                        <a href="#contact"
+                                            class="btn-theme inline-flex items-center gap-2 bg-theme py-4 md:py-4.5 lg:px-9 px-7 rounded-4xl leading-none transition-all duration-300 hover:shadow-theme_shadow text-white font-medium text-[15px] md:text-base">
+                                            <i class="fal fa-paper-plane"></i>
+                                            HIRE ME
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- About Me Section End -->
+
+                <!-- My Resume Section Start -->
+                <div data-scroll-index="3" id="resume">
+
+                    <div class="resume-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-folder-open text-theme"></i>
+                            RESUME
+                        </div>
+                        <div class="mb-8 mt-7 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                Work <span class="font-semibold text-theme">Experience</span>
+                            </h2>
+                            <p class="max-w-xl mt-4 md:mt-6 subtitle">
+                                I design products that are more than pretty. I make them shippable and usable, tempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div><!--./section-title-->
+
+                        <div class="experience">
+                            <ul
+                                class="space-y-5 md:space-y-11 relative md:before:content-[''] md:before:absolute md:before:left-64 md:before:border-r md:before:border-platinum md:dark:before:border-metalBlack md:before:h-[calc(100%_-1.5rem)] md:before:top-1/2 md:before:-translate-y-1/2 *:p-5 *:border *:rounded-xl md:*:flex max-md:*:space-y-2 *:border-platinum dark:*:border-metalBlack md:*:border-0 md:*:p-0 md:*:rounded-none">
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Envato Market
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            Mar, 2022 - Current
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            Lead UX Designer
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Google
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            2018 - 2022
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            UX Designer
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Apple
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            2014-2018
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            Human Interface Designer
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="mb-8 mt-7 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                My <span class="font-semibold text-theme">Education</span>
+                            </h2>
+                            <p class="max-w-xl mt-4 md:mt-6 subtitle">
+                                I design products that are more than pretty. I make them shippable and usable, tempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div>
+
+                        <div class="experience">
+                            <ul
+                                class="space-y-5 md:space-y-11 relative md:before:content-[''] md:before:absolute md:before:left-64 md:before:border-r md:before:border-platinum md:dark:before:border-metalBlack md:before:h-[calc(100%_-1.5rem)] md:before:top-1/2 md:before:-translate-y-1/2 *:p-5 *:border *:rounded-xl md:*:flex max-md:*:space-y-2 *:border-platinum dark:*:border-metalBlack md:*:border-0 md:*:p-0 md:*:rounded-none">
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Oxford University
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            2016-2018
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            Diploma in Computer
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Google
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            2018 - 2022
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            BSc in Engineering
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
+                                        <h6
+                                            class="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
+                                            Oxford University
+                                        </h6>
+                                        <p class="text-[13px] md:text-sm text-theme">
+                                            2014-2018
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
+                                        <h4
+                                            class="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
+                                            Php Development
+                                        </h4>
+                                        <p>
+                                            Owing to advancements in product other designer technologies aute voluptate.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- My Resume Section End -->
+
+                <!-- Skills Section Start -->
+                <div data-scroll-index="4" id="skill">
+
+                    <div class="service-section relative px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-graduation-cap text-theme"></i>
+                            SKILLS
+                        </div>
+                        <div class="mb-8 mt-7 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                My <span class="font-semibold text-theme">Advantages</span>
+                            </h2>
+                            <p class="max-w-xl mt-4 md:mt-6 subtitle">
+                                I design products that are more than pretty. I make them shippable and usable, ttempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div>
+
+                        <div class="mt-12 skills-slider xl:mt-16">
+                            <ul class="grid mt-4 mb-10 text-sm lg:mt-6 md:grid-cols-2 gap-x-8 gap-y-3 *:flex *:items-center">
+                                <li>
+                                    <span class="flex-[0_0_6rem]">Back-End</span>
+                                    <span class="flex-[0_0_2rem]">:</span>
+                                    <span class="text-black dark:text-white">PHP - Python - Node</span>
+                                </li>
+                                <li>
+                                    <span class="flex-[0_0_6rem]">Front-End</span>
+                                    <span class="flex-[0_0_2rem]">:</span>
+                                    <span class="text-black dark:text-white">Vue - JQuery - Ajax</span>
+                                </li>
+                                <li>
+                                    <span class="flex-[0_0_6rem]">Frameworks</span>
+                                    <span class="flex-[0_0_2rem]">:</span>
+                                    <span class="text-black dark:text-white">Laravel - Flask - Express</span>
+                                </li>
+                                <li>
+                                    <span class="flex-[0_0_6rem]">Data Storage</span>
+                                    <span class="flex-[0_0_2rem]">:</span>
+                                    <span class="text-black dark:text-white">MySQl - PostgreSQl - MongoDB - JSON - SQL Server</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Skills Section End -->
+
+
+                <!-- Portfolio Section Start -->
+                <div data-scroll-index="5" id="portfolio">
+
+                    <div class="portfolio-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-tasks-alt text-theme"></i>
+                            PORTFOLIO
+                        </div>
+                        <div class="mt-5 mb-8 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                Featured <span class="font-semibold text-theme">Projects</span>
+                            </h2>
+                            <p class="max-w-xl mt-4 md:mt-6 subtitle">
+                                I design products that are more than pretty. I make them shippable and usable, ttempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div><!--./section-title-->
+
+                        <div class="portfolio_wrapper grid sm:grid-cols-2 gap-4 lg:gap-7.5 *:relative *:z-1">
+                            <div class="item md:col-span-2 group">
+                                <a href="project-single.html"
+                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">
+                                    <div class="img-wrapper">
+                                        <img src="assets/img/portfolio/portfolio-img1.png"
+                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"
+                                            alt="portfolio">
+                                        <div
+                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">
+                                        Design
+                                        <span>
+                                            Specialization
+                                        </span>
+                                    </div>
+                                </a>
+                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
+                                    <li>
+                                        <a href="#"
+                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--./portfolio-card-->
+
+                            <div class="item md:col-span-1 group">
+                                <a href="project-single.html"
+                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">
+                                    <div class="img-wrapper">
+                                        <img src="assets/img/portfolio/portfolio-img2.png"
+                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"
+                                            alt="portfolio">
+                                        <div
+                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">
+                                        Design
+                                        <span>
+                                            Specialization
+                                        </span>
+                                    </div>
+                                </a>
+                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
+                                    <li>
+                                        <a href="#"
+                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--./portfolio-card-->
+
+                            <div class="item md:col-span-1 group">
+                                <a href="project-single.html"
+                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">
+                                    <div class="img-wrapper">
+                                        <img src="assets/img/portfolio/portfolio-img3.png"
+                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"
+                                            alt="portfolio">
+                                        <div
+                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">
+                                        Design
+                                        <span>
+                                            Specialization
+                                        </span>
+                                    </div>
+                                </a>
+                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
+                                    <li>
+                                        <a href="#"
+                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--./portfolio-card-->
+
+                            <div class="item md:col-span-2 group">
+                                <a href="project-single.html"
+                                    class="block p-3 overflow-hidden border md:p-4 rounded-xl border-platinum dark:border-greyBlack">
+                                    <div class="img-wrapper">
+                                        <img src="assets/img/portfolio/portfolio-img4.png"
+                                            class="rounded-lg max-md:h-[17rem] w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs"
+                                            alt="portfolio">
+                                        <div
+                                            class="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-white dark:from-black to-transparent rounded-xl group-hover:opacity-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="info text-center position-center max-lg:text-3xl text-lead font-semibold text-black dark:text-white leading-1.15 transition duration-500 scale-110 opacity-0 group-hover:scale-100 group-hover:opacity-100 relative z-10">
+                                        Design
+                                        <span>
+                                            Specialization
+                                        </span>
+                                    </div>
+                                </a>
+                                <ul class="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
+                                    <li>
+                                        <a href="#"
+                                            class="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl hover:text-theme">
+                                            Branding
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--./portfolio-card-->
+                        </div>
+
+
+                        <div class="mt-10 text-center more-blogs md:mt-13">
+                            <a href="all-projects.html"
+                                class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover">
+                                More Projects
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Portfolio Section End -->
+
+
+                <!-- Blog Section Start -->
+                <div data-scroll-index="6" id="blog">
+
+                    <div class="blog-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-blog text-theme"></i>
+                            BLOG
+                        </div>
+                        <div class="mt-5 mb-8 md:my-10 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                Latest <span class="font-semibold text-theme">Insights</span>
+                            </h2>
+                            <p class="max-w-xl mt-4 md:mt-6 subtitle">
+                                I design products that are more than pretty. I make them shippable and usable, tempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div><!--./section-title-->
+
+                        <div class="blog-list md:space-y-7.5 space-y-5 *:grid md:*:gap-2 *:grid-cols-12 *:overflow-hidden *:bg-flashWhite dark:*:bg-metalBlack *:items-center *:rounded-2xl *:p-3.5">
+
+                            <div class="article group">
+                                <div class="thumbnail overflow-hidden flex col-span-12 sm:col-span-6 md:col-span-5">
+                                    <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
+                                        <img src="assets/img/blog/article1.png"
+                                            class="object-cover object-center w-full h-full min-h-[288px] max-h-60 md:min-h-60 transition-all duration-300 ease-in-out group-hover:scale-105"
+                                            alt="Post Title">
+                                    </a>
+                                </div>
+                                <div
+                                    class="post-content relative px-3 pt-6 pb-2 md:p-5 flex flex-col col-span-12 sm:col-span-6 md:col-span-7">
+                                    <div class="flex items-center gap-5">
+                                        <div class="text-sm font-medium tags">
+                                            <a href="#" class="transition-colors hover:text-theme">
+                                                UI Design
+                                            </a>,
+                                            <span class="post_date">
+                                                03 May 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
+                                        <a href="article-details.html"
+                                            class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
+                                            Elevate your mornings with perfectly brewed coffee
+                                        </a>
+                                    </div>
+                                    <div class="read-details">
+                                        <a href="article-details.html"
+                                            class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article group">
+                                <div class="thumbnail overflow-hidden flex col-span-12 sm:col-span-6 md:col-span-5">
+                                    <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
+                                        <img src="assets/img/blog/article2.png"
+                                            class="object-cover object-center w-full h-full min-h-[288px] max-h-60 md:min-h-60 transition-all duration-300 ease-in-out group-hover:scale-105"
+                                            alt="Post Title">
+                                    </a>
+                                </div>
+                                <div
+                                    class="post-content relative px-3 pt-6 pb-2 md:p-5 flex flex-col col-span-12 sm:col-span-6 md:col-span-7">
+                                    <div class="flex items-center gap-5">
+                                        <div class="text-sm font-medium tags">
+                                            <a href="#" class="transition-colors hover:text-theme">
+                                                UI Design
+                                            </a>,
+                                            <span class="post_date">
+                                                03 May 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
+                                        <a href="article-details.html"
+                                            class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
+                                            Mastering the clock: A guide to time management
+                                        </a>
+                                    </div>
+                                    <div class="read-details">
+                                        <a href="article-details.html"
+                                            class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article group">
+                                <div class="thumbnail overflow-hidden flex col-span-12 sm:col-span-6 md:col-span-5">
+                                    <a href="article-details.html" class="block w-full overflow-hidden rounded-xl">
+                                        <img src="assets/img/blog/article3.png"
+                                            class="object-cover object-center w-full h-full min-h-[288px] max-h-60 md:min-h-60 transition-all duration-300 ease-in-out group-hover:scale-105"
+                                            alt="Post Title">
+                                    </a>
+                                </div>
+                                <div
+                                    class="post-content relative px-3 pt-6 pb-2 md:p-5 flex flex-col col-span-12 sm:col-span-6 md:col-span-7">
+                                    <div class="flex items-center gap-5">
+                                        <div class="text-sm font-medium tags">
+                                            <a href="#" class="transition-colors hover:text-theme">
+                                                UI Design
+                                            </a>,
+                                            <span class="post_date">
+                                                03 May 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="post-title mt-3 md:mt-4.5 mb-6 md:mb-8">
+                                        <a href="article-details.html"
+                                            class="text-xl font-semibold leading-normal text-black dark:text-white transition-colors line-clamp-2 2xl:text-2xl 2xl:leading-normal hover:text-theme">
+                                            Homeward bound: Crafting a productive home pffice
+                                        </a>
+                                    </div>
+                                    <div class="read-details">
+                                        <a href="article-details.html"
+                                            class="inline-flex items-center gap-2 border border-theme text-theme text-sm py-3.5 px-6 rounded-3xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover dark:font-medium hover:text-white">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-10 text-center more-blogs md:mt-13">
+                            <a href="all-blogs.html"
+                                class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover">
+                                More Post
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Blog Section End -->
+
+
+                <!-- Contact Section Start -->
+                <div data-scroll-index="8" id="contact">
+
+                    <div class="contact-section px-5 py-8 md:p-8 bg-white dark:bg-nightBlack rounded-2xl lg:p-10 2xl:p-13">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name border-platinum dark:border-greyBlack200 rounded-4xl">
+                            <i class="fal fa-envelope-open text-theme"></i>
+                            CONTACT
+                        </div>
+                        <div class="mb-10 mt-7 section-title">
+                            <h2
+                                class="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
+                                Contact <span class="font-semibold text-theme">Me.</span>
+                            </h2>
+                            <p class="mt-3.5 md:mt-5 subtitle max-w-sectionTitle">
+                                I design products that are more than pretty. I make them shippable and usable, ttempor
+                                non mollit dolor et do aute
+                            </p>
+                        </div><!--./section-title-->
+
+                        <div class="grid gap-12 mt-8 mb-10 md:my-12 md:grid-cols-12">
+                            <div class="md:col-span-5">
+                                <ul class="contact-info space-y-6 md:space-y-10 2xl:space-y-12 *:flex *:flex-wrap *:items-center *:gap-5">
+                                    <li>
+                                        <div class="flex justify-center w-12 icon">
+                                            <svg width="29" height="42" viewBox="0 0 29 42" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.9647 14.6023C21.9647 13.1428 21.5323 11.7161 20.7221 10.5026C19.9119 9.28904 18.7603 8.34321 17.4129 7.78469C16.0656 7.22617 14.5831 7.08003 13.1527 7.36476C11.7224 7.6495 10.4086 8.35231 9.3774 9.38432C8.3462 10.4163 7.64394 11.7312 7.35943 13.1627C7.07492 14.5941 7.22095 16.0778 7.77903 17.4262C8.33711 18.7746 9.28219 19.9271 10.4947 20.738C11.7073 21.5488 13.1329 21.9816 14.5912 21.9816C16.5461 21.9793 18.4203 21.2011 19.8026 19.8177C21.1849 18.4343 21.9624 16.5587 21.9647 14.6023ZM8.19081 14.6023C8.19081 13.3354 8.56618 12.097 9.26947 11.0436C9.97276 9.99021 10.9724 9.1692 12.1419 8.68439C13.3114 8.19957 14.5983 8.07272 15.8399 8.31988C17.0815 8.56703 18.2219 9.1771 19.117 10.0729C20.0121 10.9687 20.6217 12.1101 20.8687 13.3526C21.1156 14.5952 20.9889 15.8831 20.5045 17.0536C20.02 18.224 19.1997 19.2244 18.1471 19.9283C17.0946 20.6321 15.8571 21.0078 14.5912 21.0078C12.8943 21.0059 11.2674 20.3304 10.0675 19.1296C8.86764 17.9287 8.1927 16.3005 8.19081 14.6023ZM24.2873 33.543C22.5204 32.783 20.65 32.2913 18.738 32.0842C20.9575 29.4709 23.0322 26.7378 24.9528 23.8972C27.4103 20.1273 28.6053 17.0871 28.6053 14.6013C28.6053 10.8818 27.1289 7.31453 24.5008 4.68439C21.8728 2.05426 18.3084 0.57666 14.5917 0.57666C10.8751 0.57666 7.31067 2.05426 4.68261 4.68439C2.05455 7.31453 0.578125 10.8818 0.578125 14.6013C0.578125 17.0871 1.77411 20.1273 4.23066 23.8967C6.15138 26.7371 8.22592 29.4701 10.445 32.0837C8.54054 32.2902 6.67728 32.7786 4.9162 33.5329C2.63665 34.5891 2.15778 35.7693 2.15778 36.5736C2.15778 37.9338 3.51546 39.1671 5.98063 40.0466C8.76145 40.9426 11.6708 41.374 14.5917 41.3235C17.5127 41.3739 20.422 40.9425 23.2028 40.0466C25.6675 39.1671 27.0252 37.9338 27.0252 36.5736C27.0252 35.7741 26.5511 34.5963 24.2873 33.543ZM1.5507 14.6023C1.5507 11.141 2.92461 7.82145 5.37018 5.37394C7.81576 2.92644 11.1327 1.55144 14.5912 1.55144C18.0498 1.55144 21.3667 2.92644 23.8123 5.37394C26.2579 7.82145 27.6318 11.141 27.6318 14.6023C27.6318 19.8104 21.5983 27.1016 17.1932 32.4255C16.2503 33.5655 15.3514 34.6518 14.5912 35.6209C13.8311 34.6518 12.9322 33.5655 11.9893 32.4255C7.5842 27.1016 1.5507 19.8104 1.5507 14.6023ZM14.5912 40.3506C7.83727 40.3506 3.13083 38.3609 3.13083 36.5751C3.13083 35.8397 3.91014 35.0736 5.32475 34.4206C7.19133 33.6402 9.16768 33.1547 11.1832 32.9814L11.2396 33.0494C12.3399 34.3813 13.3833 35.64 14.2057 36.7134C14.2511 36.7728 14.3095 36.8209 14.3765 36.854C14.4435 36.8871 14.5172 36.9043 14.592 36.9043C14.6667 36.9043 14.7404 36.8871 14.8074 36.854C14.8744 36.8209 14.9328 36.7728 14.9783 36.7134C15.7997 35.64 16.8411 34.3818 17.9443 33.0494L18.0007 32.9814C20.0231 33.1548 22.0061 33.6433 23.8778 34.4292C25.2805 35.0827 26.0531 35.8454 26.0531 36.5774C26.0516 38.3609 21.3452 40.3506 14.5912 40.3506Z"
+                                                    fill="#00BC91" />
+                                                <circle cx="14.5889" cy="14.6548" r="3.69277" stroke="white"
+                                                    stroke-width="0.7" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="text-lg text-black dark:text-white">Location</h6>
+                                            <p class="text-sm">Melbourne Street. No 20</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex justify-center w-12 icon">
+                                            <svg width="41" height="42" viewBox="0 0 41 42" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M31.6257 9.60099V6.29746H27.5763L20.6254 0.64209L13.6843 6.29746H9.62601V9.57337L0.300781 17.1443V40.133C0.300781 40.7549 0.806087 41.261 1.42707 41.261H39.7609C40.3819 41.261 40.8872 40.7549 40.8872 40.133V17.1447L31.6257 9.60099ZM40.2455 40.2187L26.9416 28.7431L40.2536 17.9864V40.1326C40.2536 40.1622 40.2504 40.1907 40.2455 40.2187ZM40.0832 17.308L31.6257 24.1422V10.4195L40.0832 17.308ZM20.6258 1.46056L26.5706 6.29746H14.6888L20.6258 1.46056ZM30.9913 6.93233V24.6548L26.4529 28.3214L20.6262 23.2957L14.7643 28.3186L10.26 24.6791V6.93233H30.9913ZM0.936777 40.1663C0.935965 40.1553 0.935153 40.1444 0.935153 40.133V17.96L14.274 28.7386L0.936777 40.1663ZM9.62601 24.1665L1.12185 17.295L9.62601 10.3906V24.1665ZM1.37877 40.6237L20.625 24.1328L39.7463 40.6257H1.42707C1.41083 40.6261 1.3946 40.6253 1.37877 40.6237ZM26.1534 13.8802H15.0979V13.2453H26.1534V13.8802ZM26.1534 20.2789H15.0979V19.6436H26.1534V20.2789Z"
+                                                    fill="#00BC91" />
+                                                <path
+                                                    d="M30.9531 7.00537L31.0128 24.7123L31.6389 24.2046L31.6389 7.00537L30.9531 7.00537Z"
+                                                    fill="white" />
+                                                <rect x="15.1133" y="13.2266" width="11.0781" height="0.685791"
+                                                    fill="white" />
+                                                <rect x="9.625" y="6.3042" width="22.0156" height="0.700928"
+                                                    fill="white" />
+                                                <path
+                                                    d="M10.3125 7.00488L10.2528 24.7118L9.62671 24.2041L9.62671 7.00488L10.3125 7.00488Z"
+                                                    fill="white" />
+                                                <path d="M15.0547 19.6567H26.1328V20.27H15.0547V19.6567Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="text-lg text-black dark:text-white">E-mail</h6>
+                                            <p class="text-sm">smith@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex justify-center w-12 icon">
+                                            <svg width="41" height="42" viewBox="0 0 41 42" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M28.7321 41.2896C28.9475 41.3359 29.1625 41.3587 29.3795 41.3587C31.885 41.3583 34.5278 38.3392 37.6673 34.4367C38.2236 33.7461 38.1415 32.7236 37.4767 32.0582L31.1742 25.7508C30.4817 25.0581 29.4031 25.0065 28.7163 25.6328C25.6475 28.4315 24.916 28.2488 23.6753 27.6103C19.528 25.4754 16.0691 22.0138 13.9367 17.864C13.2987 16.6231 13.1162 15.8902 15.9126 12.819C16.5381 12.1317 16.4865 11.0514 15.7948 10.3592L9.4919 4.05133C8.82743 3.38593 7.80574 3.30459 7.11608 3.86017C2.87895 7.27501 -0.315768 10.1013 0.26823 12.8032C2.72899 24.1841 17.3602 38.8269 28.7321 41.2896ZM29.2771 26.2486C29.6286 25.9289 30.2155 25.9692 30.5857 26.3397L36.8882 32.6471C37.2454 33.0051 37.3031 33.5614 37.019 33.9141C36.4137 34.6666 35.8221 35.3909 35.2449 36.0686L27.1619 27.9789C27.7588 27.5708 28.4449 27.0077 29.2771 26.2486ZM7.6379 4.5093C7.78827 4.38809 7.97562 4.32912 8.16907 4.32912C8.42876 4.32912 8.69861 4.43527 8.90343 4.64026L15.2063 10.9481C15.5765 11.3186 15.6176 11.9063 15.2973 12.2578C14.5389 13.0908 13.9762 13.7775 13.5686 14.3748L5.4852 6.28504C6.16231 5.7073 6.88601 5.11521 7.6379 4.5093ZM4.85451 6.83173L13.1231 15.1069C12.4931 16.3176 12.6377 17.1583 13.1962 18.2447C15.4075 22.5482 18.994 26.1371 23.2949 28.3513C24.38 28.9106 25.2204 29.0554 26.4304 28.4247L34.6986 36.6998C32.5226 39.1709 30.5677 40.8352 28.9085 40.4753C17.791 38.0675 3.48774 23.7529 1.08184 12.6267C0.722586 10.9658 2.38527 9.00967 4.85451 6.83173Z"
+                                                    fill="#00BC91" />
+                                                <path
+                                                    d="M23.3107 1.37642C32.5978 1.37642 40.1532 8.93738 40.1532 18.231C40.1532 18.4612 40.3393 18.6475 40.5693 18.6475C40.7993 18.6475 40.9855 18.4612 40.9855 18.231C40.9855 8.4782 33.0566 0.543457 23.3107 0.543457C23.0807 0.543457 22.8945 0.729736 22.8945 0.95994C22.8945 1.19014 23.0807 1.37642 23.3107 1.37642Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M23.3107 8.02633C28.9336 8.02633 33.5081 12.604 33.5081 18.231C33.5081 18.4612 33.6942 18.6475 33.9242 18.6475C34.1543 18.6475 34.3404 18.4612 34.3404 18.231C34.3404 12.1448 29.3925 7.19336 23.3107 7.19336C23.0807 7.19336 22.8945 7.37964 22.8945 7.60984C22.8945 7.84005 23.0807 8.02633 23.3107 8.02633Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M22.8945 14.2597C22.8945 14.4899 23.0807 14.6762 23.3107 14.6762C25.2691 14.6762 26.8626 16.271 26.8626 18.2314C26.8626 18.4616 27.0488 18.6479 27.2788 18.6479C27.5088 18.6479 27.6949 18.4616 27.6949 18.2314C27.6949 15.8118 25.7284 13.8433 23.3107 13.8433C23.0807 13.8433 22.8945 14.0295 22.8945 14.2597Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="text-lg text-black dark:text-white">Phone</h6>
+                                            <p class="text-sm">+976 34 99 99</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div><!-- Contact info end -->
+
+                            <div class="md:col-span-7">
+                                <form id="contactForm" action="contact-form.php" method="POST" class="space-y-4">
+                                    <div class="form-group">
+                                        <input type="text" name="client__name" id="client__name" placeholder="Name"
+                                            class="w-full p-5 text-sm outline-none h-13 focus:border-theme dark:focus:border-theme dark:placeholder:text-white/40"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="client_email" id="client_email" placeholder="E-Mail"
+                                            class="w-full p-5 text-sm outline-none h-13 focus:border-theme dark:focus:border-theme dark:placeholder:text-white/40"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="contact__message" name="contact__message" placeholder="Message" rows="5"
+                                            class="w-full px-5 py-4 text-sm outline-none focus:border-theme dark:placeholder:text-white/40"></textarea>
+                                    </div>
+                                    <div class=" form-group">
+                                        <button type="submit"
+                                            class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover"
+                                            aria-label="Send Message">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                                <!-- Contact form end -->
+                            </div>
+                        </div>
+                        <iframe
+                            class="w-full overflow-hidden border-10 border-platinum dark:border-greyBlack embed-map h-80 2xl:h-96 rounded-2xl"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25908.703277839155!2d-74.18208878159237!3d40.640176526919696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1699271377092!5m2!1sen!2sbd"
+                            aria-label="Contact Map">
+                        </iframe>
+                    </div>
+
+                </div>
+                <!-- Contact Section End -->
+
+            </div>
+            <!-- Main Content End -->
+            
+            <!-- Footer Start -->
+            <footer class="mx-auto minfo__contentBox max-w-container xl:max-2xl:max-w-65rem">
+                <div class="footer-container text-center py-6 max-w-content xl:max-2xl:max-w-50rem max-xl:mx-auto xl:ml-auto">
+                    <p>
+                        Copyright by
+                        <a href="#" class="transition-colors">@domain.com</a>
+                    </p>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- App End -->
+
+
+    <!-- Background Line and Animation -->
+    <div class="bg-lines fixed inset-0 -z-1 md:max-xl:max-w-[45rem] xl:max-w-60rem 2xl:max-w-container mx-auto max-sm:px-8 sm:max-xl:px-12">
+        <div class="line-wrapper max-w-[1130px] w-full h-full ml-auto 2xl:-mr-24 relative flex justify-between *:w-px *:h-full *:border-r *:border-dashed *:border-slate-300 dark:*:border-metalBlack *:relative *:before:absolute *:before:bg-theme *:before:rotate-45 *:before:-left-1 *:before:w-2 *:before:h-2">
+            <div class="line1 before:animate-top_bottom"></div>
+            <div class="line2 before:bottom-0 before:animate-bottom_top before:animate-delay-3s"></div>
+            <div class="line3 before:animate-top_bottom before:animate-delay-3s"></div>
+            <div class="line4 before:bottom-0 before:animate-bottom_top before:animate-delay-2s"></div>
+        </div>
+    </div>
+    <!-- Ends Here -->
+
+    <!-- Js Library Start -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/tw-elements.umd.min.js"></script>
+    <script src="assets/js/cd-headline.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scrollIt.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme-mode.js"></script>
+    <!-- Js Library End -->
+</body>
+
+</html>
