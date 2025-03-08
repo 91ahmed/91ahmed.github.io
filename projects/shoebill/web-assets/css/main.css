@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Nunito Sans', serif !important;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -5,9 +8,22 @@ body {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	background-color: #F6F6F6;
 }
 input, select, textarea, p, .bootstrap-select .btn, .bootstrap-select .dropdown-menu li a {
 	font-size: 14px !important;
+}
+.wrapper{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.wrap-container {
+	display: block;
+	margin: auto;
+	width: auto;
+	height: auto;
+	max-width: 1315px;
 }
 .bootstrap-select .btn,
 .bootstrap-select .btn:focus,
@@ -79,6 +95,9 @@ a:active {
 	width: 100%;
 	display: block;
 	border-bottom: 1px solid #ebe5eb;
+	background-color: #FFF;
+	overflow: hidden;
+	padding: 0 20px;
 }
 .icon-list {
 	float: right;
@@ -90,11 +109,11 @@ a:active {
 }
 .icon-list li svg,
 .icon-list li a {
-	color: #37003c;
+	color: #151931; /*#37003c*/
 	font-size: 14px;
 }
 .icon-list li svg {
-	width: 20px;
+	width: 22px;
 }
 .icon-list li a:hover,
 .icon-list li a:active,
@@ -105,24 +124,38 @@ a:active {
 	padding: 0 8px;
 	text-decoration: none;
 }
+.icon-list li a:focus svg,
+.icon-list li a:hover svg {
+	color: #f4473a;
+}
+.icon-list li a:focus,
+.icon-list li a:hover {
+	background-color: #fdfdfd;
+}
 .icon-list-notify {
 	display: inline-block;
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: -5px;
     width: auto;
     height: auto;
-    padding: 0 8px;
-    line-height: 23px;
+    padding: 0 6px;
+    line-height: 18px;
     text-align: center;
     font-size: 12px;
     font-weight: 800;
-    border-radius: 50%;
-    background-color: #F3354B;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.icon-list-notify-red{
+	border: 1px solid #e84337;
+    background-color: #f4473a;
     color: #FFF;
 }
 
 
 .logo img {
-	width: 125px;
+	width: 115px;
 }
+
+/** Tooltip **/
