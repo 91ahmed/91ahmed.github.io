@@ -24,6 +24,7 @@ input, select, textarea, p, .bootstrap-select .btn, .bootstrap-select .dropdown-
 	width: auto;
 	height: auto;
 	max-width: 1315px;
+	padding: 0 10px;
 }
 .bootstrap-select .btn,
 .bootstrap-select .btn:focus,
@@ -91,7 +92,16 @@ a:active {
 	height: 60px;
 	line-height: 60px;
 }
+.nav li,
+.nav li a {
+	outline: none;
+	box-shadow: none;
+}
 .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 	width: 100%;
 	display: block;
 	border-bottom: 1px solid #ebe5eb;
@@ -135,7 +145,7 @@ a:active {
 .icon-list-notify {
 	display: inline-block;
     position: absolute;
-    top: 10px;
+	top: 9px;
     left: -5px;
     width: auto;
     height: auto;
@@ -154,8 +164,11 @@ a:active {
 }
 
 
+.logo {
+	display: inline-block;
+}
 .logo img {
-	width: 115px;
+	width: 150px;
 }
 
 /** Tooltip **/
