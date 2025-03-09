@@ -168,7 +168,13 @@ a:active {
 	display: inline-block;
 }
 .logo img {
-	width: 120px;
+	width: 150px;
+}
+
+@media screen and (max-width: 772px) {
+	.logo img {
+		width: 115px;
+	}
 }
 
 /** Tooltip **/
