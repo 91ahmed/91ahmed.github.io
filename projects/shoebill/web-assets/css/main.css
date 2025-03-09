@@ -164,17 +164,16 @@ a:active {
 }
 
 
-.logo {
+/** LOGO **/
+.shoebill-logo {
 	display: inline-block;
 }
-.logo img {
+.shoebill-logo img {
 	width: 150px;
 }
 
 @media screen and (max-width: 772px) {
-	.logo img {
+	.shoebill-logo img {
 		width: 123px;
 	}
 }
-
-/** Tooltip **/
