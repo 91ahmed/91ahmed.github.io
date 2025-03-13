@@ -251,12 +251,12 @@
                                 <span>Egypt, Giza</span>
                             </li>
                             <li>
-                                <span class="flex-1 font-medium text-black dark:text-white">City:</span>
-                                <span>Giza</span>
+                                <span class="flex-1 font-medium text-black dark:text-white">Phone:</span>
+                                <span><a href="tel:+201270930751">+20 127 093 0751</a></span>
                             </li>
                             <li>
-                                <span class="flex-1 font-medium text-black dark:text-white">Date of Birth:</span>
-                                <span>Dec 4, 1991</span>
+                                <span class="flex-1 font-medium text-black dark:text-white">E-mail:</span>
+                                <span><a href="mailto:91ahmedhassan@gmail.com">91ahmedhassan@gmail</a></span>
                             </li>
                         </ul>
                     </div>
@@ -836,8 +836,7 @@
                                 Contact <span class="font-semibold text-theme">Me.</span>
                             </h2>
                             <p class="mt-3.5 md:mt-5 subtitle max-w-sectionTitle">
-                                I design products that are more than pretty. I make them shippable and usable, ttempor
-                                non mollit dolor et do aute
+                                Feel free to reach out if you have an existing project or team and need an extra hand to help improve it.
                             </p>
                         </div><!--./section-title-->
 
@@ -883,7 +882,7 @@
                                         </div>
                                         <div class="flex-1">
                                             <h6 class="text-lg text-black dark:text-white">E-mail</h6>
-                                            <p class="text-sm">smith@gmail.com</p>
+                                            <p class="text-sm"><a href="mailto:91ahmedhassan@gmail.com">91ahmedhassan@gmail</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -906,14 +905,14 @@
                                         </div>
                                         <div class="flex-1">
                                             <h6 class="text-lg text-black dark:text-white">Phone</h6>
-                                            <p class="text-sm">+20 127 093 0751</p>
+                                            <p class="text-sm"><a href="tel:+201270930751">+20 127 093 0751</a></p>
                                         </div>
                                     </li>
                                 </ul>
                             </div><!-- Contact info end -->
 
                             <div class="md:col-span-7">
-                                <form id="contactForm" action="contact-form.php" method="POST" class="space-y-4">
+                                <form id="contactForm" action="" method="POST" class="space-y-4">
                                     <div class="form-group">
                                         <input type="text" name="client__name" id="client__name" placeholder="Name"
                                             class="w-full p-5 text-sm outline-none h-13 focus:border-theme dark:focus:border-theme dark:placeholder:text-white/40"
@@ -929,7 +928,7 @@
                                             class="w-full px-5 py-4 text-sm outline-none focus:border-theme dark:placeholder:text-white/40"></textarea>
                                     </div>
                                     <div class=" form-group">
-                                        <button type="submit"
+                                        <button type="submit" id="contact-form"
                                             class="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300 hover:bg-themeHover hover:border-themeHover"
                                             aria-label="Send Message">
                                             Send Message
@@ -939,10 +938,16 @@
                                 <!-- Contact form end -->
                             </div>
                         </div>
+                        <!--  ARABIC MAP                      
                         <iframe
                             class="w-full overflow-hidden border-10 border-platinum dark:border-greyBlack embed-map h-80 2xl:h-96 rounded-2xl"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.3539017045327!2d31.202013670947537!3d30.07390901716731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410e1e7a7a87%3A0x300f4d654fc6bcf4!2zMTAg2KfZhNiz2YjZitiz2Ykg2KfZhNi62LHYqNmK2Iwg2KfZhNmF2LfYp9ix2Iwg2KXZhdio2KfYqNip2Iwg2YXYrdin2YHYuNipINin2YTYrNmK2LLYqSAzODUwMjEy!5e0!3m2!1sar!2seg!4v1741672905667!5m2!1sar!2seg"
                             aria-label="Contact Map">
+                        </iframe> -->
+                        <iframe
+                          class="w-full overflow-hidden border-10 border-platinum dark:border-greyBlack embed-map h-80 2xl:h-96 rounded-2xl"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.3539017045327!2d31.202013670947537!3d30.07390901716731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410e1e7a7a87%3A0x300f4d654fc6bcf4!2zMTAg2KfZhNiz2YjZitiz2Ykg2KfZhNi62LHYqNmK2Iwg2KfZhNmF2LfYp9ix2Iwg2KXZhdio2KfYqNip2Iwg2YXYrdin2YHYuNipINin2YTYrNmK2LLYqSAzODUwMjEy!5e0!3m2!1sen!2sus&hl=en"
+                          aria-label="Contact Map">
                         </iframe>
                     </div>
                 </div>
@@ -999,6 +1004,14 @@
                 fetch ('https://api.github.com/repos/91ahmed/'+repo)
                      .then(response => response.json())
                      .then(data => {
+                        if (data.description != 'undefined') {
+                            details = data.description
+                        }                        
+
+                        if (data.stargazers_count != 'undefined') {
+                            stars = data.stargazers_count
+                        }
+
                         document.getElementById('github-list').innerHTML += `
                             <div class="article group" style="position:relative;">
                                 <div class="post-content relative px-3 pt-2 pb-2 md:p-2 flex flex-col col-span-12 sm:col-span-12 md:col-span-12">

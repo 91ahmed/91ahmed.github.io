@@ -342,5 +342,16 @@
         return false;
     });
 
+
+
+    // Contact form
+    $('#contact-form').on('click', function () {
+        alert('This service is currently unavailable. Please try again later.')
+    })    
+
+    $('#contactForm').on('submit', function () {
+        alert('This service is currently unavailable. Please try again later.')
+    })
+
 })(jQuery);
 // jQuery Ended
