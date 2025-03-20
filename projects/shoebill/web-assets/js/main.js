@@ -7,12 +7,16 @@ $(document).ready(function () {
 	new WOW().init();
 
 	// Dropdown list
-	$('.list-btn').on('click', function () {
-		// $('.link-drop-ul').removeClass('active-li-list')
-		// if ($(this).find('.link-drop-ul').hasClass('active-li-list')) {
-			
-		// }
-		$(this).find('.link-drop-ul').toggleClass('active-li-list')
-	})	
+	$('.list-l').on('click', function () {
+		if ($('.list-drop-ul').hasClass('active-li-list')) {
+			$('.list-drop-ul').removeClass('active-li-list')
+		} else {
+			$(this).find('.list-drop-ul').addClass('active-li-list')
+		}
+	})
+
+	$('.list-l ul li').on('focusout', function () {
+		$('.list-drop-ul').removeClass('active-li-list')
+	})
 
 })

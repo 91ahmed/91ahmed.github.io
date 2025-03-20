@@ -165,19 +165,21 @@ a:active {
     background-color: #f4473a;
     color: #FFF;
 }
-.link-drop-ul {
+
+.list-drop-ul {
 	position: absolute;
     width: 150px;
     background-color: #FFFFFF;
     right: 0;
     top: 59px;
+    padding: 5px 0;
     display: none;
 }
-.link-drop-ul li,
-.link-drop-ul li a {
+.list-drop-ul li,
+.list-drop-ul li a {
 	display: block;
 }
-.link-drop-ul li a {
+.list-drop-ul li a {
     padding: 10px 15px !important;
     height: auto;
     line-height: normal !important;
