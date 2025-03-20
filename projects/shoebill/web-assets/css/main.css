@@ -87,9 +87,12 @@ a:active {
 }
 
 /** Navbar **/
-.nav,
-.nav li a{
+.nav{
 	height: 60px;
+	line-height: 60px;
+}
+.nav li a {
+	height: 58px;
 	line-height: 60px;
 }
 .nav li,
@@ -106,12 +109,13 @@ a:active {
 	display: block;
 	border-bottom: 1px solid #ebe5eb;
 	background-color: #FFF;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .icon-list {
 	float: right;
 }
 .icon-list li {
+	position: relative;
 	display: inline-block;
 	list-style: none;
 	cursor: pointer;
@@ -160,6 +164,26 @@ a:active {
 	border: 1px solid #e84337;
     background-color: #f4473a;
     color: #FFF;
+}
+.link-drop-ul {
+	position: absolute;
+    width: 150px;
+    background-color: #FFFFFF;
+    right: 0;
+    top: 59px;
+    display: none;
+}
+.link-drop-ul li,
+.link-drop-ul li a {
+	display: block;
+}
+.link-drop-ul li a {
+    padding: 10px 15px !important;
+    height: auto;
+    line-height: normal !important;
+}
+.active-li-list {
+	display: block;
 }
 
 
