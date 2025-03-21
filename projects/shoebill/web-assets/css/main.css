@@ -8,7 +8,8 @@ body {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-color: #F6F6F6;
+	/*background-color: #F6F6F6;*/
+	background-color: #FFF;
 }
 input, select, textarea, p, .bootstrap-select .btn, .bootstrap-select .dropdown-menu li a {
 	font-size: 14px !important;
@@ -228,4 +229,15 @@ a:active {
 	.shoebill-logo img {
 		width: 123px;
 	}
+}
+
+/** Content **/
+.content {
+	background-color: #FFF;
+	min-height: 100px;
+	margin-top: 70px;
+}
+.content .slider-box {
+	background-color: #F6F6F6;
+	padding: 20px;
 }
