@@ -91,6 +91,7 @@ a:active {
 	height: 60px;
 	line-height: 60px;
 }
+.nav li button,
 .nav li a {
 	height: 58px;
 	line-height: 60px;
@@ -111,38 +112,54 @@ a:active {
 	background-color: #FFF;
 	/*overflow: hidden;*/
 }
-.icon-list {
+.icon-menu {
 	float: right;
 }
-.icon-list li {
+.icon-menu button {
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	background-color: transparent;
+}
+.icon-menu li {
 	position: relative;
 	display: inline-block;
 	list-style: none;
 	cursor: pointer;
 }
-.icon-list li svg,
-.icon-list li a {
+.icon-menu button,
+.icon-menu li svg,
+.icon-menu li a {
 	color: #151931; /*#37003c*/
 	font-size: 14px;
 }
-.icon-list li svg {
+.icon-menu button svg,
+.icon-menu li svg {
 	width: 22px;
 }
-.icon-list li a:hover,
-.icon-list li a:active,
-.icon-list li a:focus,
-.icon-list li a {
+.icon-menu li button:hover,
+.icon-menu li button:active,
+.icon-menu li button:focus,
+.icon-menu li button,
+.icon-menu li a:hover,
+.icon-menu li a:active,
+.icon-menu li a:focus,
+.icon-menu li a {
 	position: relative;
 	display: block;
 	padding: 0 8px;
 	text-decoration: none;
 }
-.icon-list li a:focus svg,
-.icon-list li a:hover svg {
+.icon-menu li button:hover svg,
+.icon-menu li button:focus svg,
+.icon-menu li a:focus svg,
+.icon-menu li a:hover svg {
 	color: #f4473a;
 }
-.icon-list li a:focus,
-.icon-list li a:hover {
+.icon-menu li button:hover,
+.icon-menu li button:focus,
+.icon-menu li a:focus,
+.icon-menu li a:hover {
 	background-color: #fdfdfd;
 }
 .icon-list-notify {
@@ -166,7 +183,7 @@ a:active {
     color: #FFF;
 }
 
-.list-drop-ul {
+.list-drop-menu {
 	position: absolute;
     width: 150px;
     background-color: #FFFFFF;
@@ -174,15 +191,25 @@ a:active {
     top: 59px;
     padding: 5px 0;
     display: none;
+    border: 1px solid #f1eff1;
+    border-radius: 2px;
 }
-.list-drop-ul li,
-.list-drop-ul li a {
+.list-drop-menu ul li,
+.list-drop-menu ul li a {
 	display: block;
 }
-.list-drop-ul li a {
+.list-drop-menu ul li a {
     padding: 10px 15px !important;
     height: auto;
     line-height: normal !important;
+    text-align: left;
+}
+.list-drop-btn:has(+ .list-drop-menu:focus),
+.list-drop-btn:focus + .list-drop-menu,
+.list-drop-btn:hover + .list-drop-menu,
+.list-drop-btn:focus > .list-drop-menu,
+.list-drop-btn:hover > .list-drop-menu {
+	display: block;
 }
 .active-li-list {
 	display: block;
