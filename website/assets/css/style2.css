@@ -1,0 +1,17 @@
+#contact {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+#contact #linkedin {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	#contact {
+		position: initial;
+	}
+	#contact #linkedin {
+		display: block;
+	}
+}
