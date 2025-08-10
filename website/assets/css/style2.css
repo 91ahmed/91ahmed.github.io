@@ -17,6 +17,9 @@
 	#contact #linkedin {
 		display: block;
 	}
+	#title {
+		margin-top: 30px;
+	}
 }
 #avatar {
 	position: absolute;
