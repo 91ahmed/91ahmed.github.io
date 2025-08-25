@@ -1,0 +1,47 @@
+.cs-container {
+	margin-top: 90px;
+}
+#contact {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+#contact #linkedin {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	#contact {
+		position: initial;
+	}
+	#contact #linkedin {
+		display: block;
+	}
+	#title {
+		margin-top: 30px;
+	}
+}
+#avatar {
+	position: absolute;
+	top: -90px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+}
+#avatar div{
+	width: 130px;
+	height: 130px;
+	margin: auto;
+	background-color: #FFF;
+	border: 5px solid #FFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/ahmed.jpg');
+	background-position: center;
+	-webkit-border-radius: 50%;	
+	-moz-border-radius: 50%;	
+	-ms-border-radius: 50%;	
+	-o-border-radius: 50%;	
+	border-radius: 50%;	
+}
