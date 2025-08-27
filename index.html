@@ -1,898 +1,306 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Ahmed Hassan - Official Website</title>
-	<meta name="description" content="Ahmed Hassan - Portfolio / CV / Resume HTML Template">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shared on THEMELOCK.COM - Merinda - HTML Bootstrap Template Like Medium Blog Platform</title>
+    <!--favincon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="web-assets/css/bootstrap.min.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/all.min.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/simple-line-icons.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/slick.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/animate.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/magnific-popup.css" media="all">
-	<link rel="stylesheet" href="web-assets/css/style.css" media="all">
+    <!-- Site CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/widgets.css" rel="stylesheet">
+    <link href="assets/css/color-default.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Bunny fonts-->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=b612-mono:400,400i,700,700i|cabin:400,700|lora:400,400i,700,700i" rel="stylesheet" />
 
-    <style>
-    	#logo-a{
-			color: #353353;
-			font-family: "Rubik", sans-serif;
-			font-size: 35px;
-			font-weight: 600;
-    	}    	
-    	#logo-dot{
-			position: absolute;
-			bottom: 4px;
-			margin-left: 2px;
-			display: inline-block;
-			width: 7px;
-			height: 7px;
-			background-color: #FF4C60;
-			border-radius: 50%;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			-ms-border-radius: 50%;
-			-o-border-radius: 50%;
+    <!-- Icons fonts-->
+    <link href="assets/css/fontello.css" rel="stylesheet">
 
-/*	bottom: 7.8px;
-	width: 25px;
-	height: 4px;
-	left: -2px;
-	border-radius: 1px;
-	right: 0;
-	text-align: center;
-	margin: auto;*/
-    	}
-    	#img-ahmed{
-    		border: 4px solid #FFF;
-    		margin: auto;
-    		width: 160px;
-    		height: 160px;
-    		background-image: url('web-assets/images/ahmed.jpg');
-    		background-color: #FFF;
-    		background-position: 0px -54px;
-    		background-size: cover;
-			border-radius: 50%;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			-ms-border-radius: 50%;
-			-o-border-radius: 50%;
-
-			margin-bottom: 20px;
-    	}
-    	@media screen and (max-width: 770px) {
-    		.about-img{
-    			display: none;
-    		}
-    	}
-
-    	.portfolio-item{
-    		height: 185px;
-    		background-size: cover;
-    		background-repeat: no-repeat;
-    		background-color: #FFF;
-    		background-position: center top;
-    	}
-    	.ph-details{
-		    height: 60px;
-		    margin-top: 15px;
-		    margin-bottom: 0;
-		    padding: 0 15px;
-		    line-height: 22px;
-		    font-weight: 400;
-		    font-style: inherit;
-		    font-size: 15px;
-		    text-align: left;
-    	}
-    	.tools-sec span{
-    		display: inline-block;
-    	}
-    	.ahmed{
-    		background-image: url('web-assets/images/ahmed-2.jpg') !important;
-    	}
-    	#my-menu{
-    		display: block !important;
-    		padding: 5px 0;
-    		cursor: pointer;
-    	}
-    	#my-menu div{
-			width: 30px;
-			height: 3px;
-			background-color: #FFF;
-			border-radius: 2px;
-			margin: 5px 0;
-			display: block;
-    	}
-    	.pr-bg {
-			background-color: #F2E142;
-			padding: 1px 5px;
-			border-radius: 5px;
-			text-transform: lowercase;
-			color: #353353;
-    	}
-    </style>
 </head>
 
-<body>
-
-<!-- Preloader -->
-<div id="preloader" class="light">
-	<div class="outer">
-		<!-- Google Chrome -->
-		<div class="infinityChrome">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-
-		<!-- Safari and others -->
-		<div class="infinity">
-			<div>
-				<span></span>
-			</div>
-			<div>
-				<span></span>
-			</div>
-			<div>
-				<span></span>
-			</div>
-		</div>
-		<!-- Stuff -->
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-					<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in="SourceGraphic" in2="goo" />
-				</filter>
-			</defs>
-		</svg>
-	</div>
-</div>
-
-<!-- mobile header -->
-<header class="mobile-header-2">
-	<div class="container">
-		<!-- menu icon -->
-		<div class="menu-icon d-inline-flex mr-4" id="my-menu">
-<!-- 			<button>
-				<span></span>
-			</button> -->
-			<div class="line-1"></div>
-			<div class="line-2"></div>
-			<div class="line-3"></div>
-		</div>
-		<!-- logo image -->
-		<div class="site-logo" style="height: 0;position: absolute;top:14px;right:50px;">
-			<a href="index-2-light.html" style="position: relative;top: -4px;">
-				<!-- <img src="web-assets/images/logo.png" style="width: 48px;max-height: none !important;" alt="Bolby" /> -->
-				<!-- <span id="logo-a" style="color: #FFF;font-size: 32px">A</span><span id="logo-dot"></span> -->
-			</a>
-		</div>
-	</div>
-</header>
-
-<!-- desktop header -->
-<header class="desktop-header-2 light d-flex align-items-start flex-column">
-	
-	<!-- logo image -->
-<!-- 	<div class="site-logo">
-		<a href="index-2-light.html" style="position: relative;">
-			<img src="web-assets/images/logo-b-dark.svg" alt="Bolby" />
-			<span id="logo-a">A</span><span id="logo-dot"></span>
-		</a>
-	</div> -->
-	
-	<!-- main menu -->
-	<nav>
-		<ul class="vertical-menu scrollspy m-0">
-			<li class="active"><a href="#home"><i class="icon-home"></i></a></li>
-			<li><a href="#about"><i class="icon-user-following"></i></a></li>
-			<li><a href="#experience"><i class="icon-graduation"></i></a></li>
-			<li><a href="#works"><i class="icon-briefcase"></i></a></li>
-			<li><a href="#contact"><i class="icon-bubbles"></i></a></li>
-		</ul>
-	</nav>
-	
-	<!-- site footer -->
-	<div class="footer">
-		<!-- copyright text -->
-		<span class="copyright">© 2020 Ahmed Hassan.</span>
-	</div>
-
-</header>
-
-<!-- main layout -->
-<main class="content-2">
-	
-	<!-- section home -->
-	<section id="home" class="home d-flex light align-items-center">
-		<div class="container">
-
-			<!-- intro -->
-			<div class="intro">
-				<!-- avatar image -->
-				<div id="img-ahmed">
-					<!-- <img src="images/ahmed.jpg" alt="Bolby" class="mb-4" /> -->
-				</div>
-
-				<!-- info -->
-				<h1 class="mb-2 mt-0">Ahmed Hassan</h1>
-				<span>I'm a <span class="text-rotating">Software Engineer</span></span>
-
-				<!-- social icons -->
-				<ul class="social-icons light list-inline mb-0 mt-4">
-					<li class="list-inline-item"><a href="https://github.com/91ahmed" target="_blank"><i class="fab fa-github"></i></a></li>
-					<li class="list-inline-item"><a href="https://www.linkedin.com/in/ahmed-hassan-921426345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-				</ul>
-
-				<!-- buttons -->
-				<div class="mt-4">
-					<a href="#contact" class="btn btn-default">Hire me</a>
-				</div>
-			</div>
-			
-			<!-- scroll down mouse wheel -->
-			<div class="scroll-down light">
-				<a href="#about" class="mouse-wrapper">
-					<span>Scroll Down</span>
-					<span class="mouse">
-						<span class="wheel"></span>
-					</span>
-				</a>
-			</div>
-
-			<!-- parallax layers -->
-			<div class="parallax" data-relative-input="true">
-
-				<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"/><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"/></g></svg>
-
-				<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"/><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"/></g></svg>
-
-				<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-			</div>
-		</div>
-		
-	</section>
-
-	<!-- section about -->
-	<section id="about">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">About Me</h2>
-
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row">
-
-				<div class="col-md-3">
-					<div class="text-center text-md-left">
-						<!-- avatar image -->
-						<div id="img-ahmed" class="about-img ahmed" style="/*filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-o-filter: grayscale(100%);-ms-filter: grayscale(100%);*/">
-							<!-- <img src="web-assets/images/ahmed.jpg" alt="Bolby" class="mb-4" /> -->
-						</div>
-					</div>
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-				</div>
-
-				<div class="col-md-9 triangle-left-md triangle-top-sm">
-					<div class="rounded bg-white shadow-dark padding-30">
-						<div class="row">
-							<div class="col-12" style="font-family: 'Nunito Sans', serif;font-size: 16px">
-								<!-- about text -->
-								<!-- 
-I am a skilled software engineer based in Egypt, with a strong focus on building scalable and sustainable web-based applications. I specialize in leveraging modern technologies such as PHP, Node.js, and Python to develop high-performance software solutions. With a deep understanding of contemporary web libraries and frameworks, I excel at turning complex software visions into fully-realized applications, ensuring both functionality and user experience are optimized. My expertise includes designing efficient architectures, optimizing performance, and implementing best practices to create maintainable and future-proof systems.
-
-أنا مهندس برمجيات ماهر من مصر، أركز بشكل رئيسي على بناء التطبيقات الويب القابلة للتوسع والمستدامة. أتخصص في استخدام التقنيات الحديثة مثل PHP وNode.js وPython لتطوير حلول برمجية عالية الأداء. بفضل فهمي العميق لأحدث المكتبات والإطارات البرمجية، أتميز في تحويل الرؤى البرمجية المعقدة إلى تطبيقات واقعية بالكامل، مع ضمان تحسين الوظائف وتجربة المستخدم. تشمل خبرتي تصميم هياكل فعّالة، وتحسين الأداء، وتطبيق أفضل الممارسات لإنشاء أنظمة قابلة للصيانة وقوية لمواكبة المستقبل.
-								-->
-								<p>
-								I am a software engineer based in Egypt, specializing in building scalable and sustainable web-based applications. My expertise lies in PHP, Python, and Node.js which enables me to develop innovative and efficient software solutions.
-								<div></div>
-								My programming journey began in 2018, after completing my bachelor’s degree in Management Information Systems (MIS). Since then, I’ve worked as a freelance software developer and have continued in this role to date.
-								</p>
-								<div class="mt-3">
-									<a href="#" class="btn btn-default">Download CV</a>
-								</div>
-								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- row end -->
-
-			<div class="spacer" data-height="70"></div>
-
-		</div>
-		
-	</section>
-	
-	
-	<!-- section experience -->
-	<section id="experience">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Experience</h2>
-
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row">
-
-				<div class="col-md-6">
-					
-					<!-- timeline wrapper -->
-					<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden" style="font-family: 'Nunito Sans', serif;">
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2014 - 2017</span>
-								<h3 class="title">Bachelor of Management Information System (MIS)</h3>
-								<p><i>Cairo Higher Institute.</i></p>
-								<p class="mt-2">
-									The association between administrative sciences and modern technology is what attracted me to study this discipline.
-								</p>
-							</div>
-						</div>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-							<div class="content">
-								<span class="time">Oct 2015</span>
-								<h3 class="title">PHP & MySQL Master Course</h3>
-								<p><i>Yat Learning Center.</i></p>
-								<p class="mt-2">
-									I learned everything, from fundamental concepts to the essential details required to perform specific tasks.
-								</p>
-							</div>
-						</div>
-
-						<!-- main line -->
-						<span class="line"></span>
-
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					
-					<!-- responsive spacer -->
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-
-					<!-- timeline wrapper -->
-					<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden" style="font-family: 'Nunito Sans', serif;">
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2018 - 2019</span>
-								<h3 class="title">PHP Developer</h3>
-								<p>I collaborated with a small team to build and manage a variety of web projects. My role involved working closely with front-end developers to ensure seamless integration and overseeing all aspects of the back-end development process.</p>
-							</div>
-						</div>
-
-						<!-- main line -->
-						<span class="line"></span>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-		
-	</section>
-	
-	<!-- section works -->
-	<section id="works">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Recent works</h2>
-
-			<div class="spacer" data-height="60"></div>
-
-			<!-- portfolio filter (desktop) -->
-			<ul class="portfolio-filter list-inline wow fadeInUp">
-				<li class="current list-inline-item" data-filter="*">All</li>
-				<li class="list-inline-item" data-filter=".php">PHP</li>
-				<li class="list-inline-item" data-filter=".node">Node.Js</li>
-				<li class="list-inline-item" data-filter=".python">Python</li>
-				<li class="list-inline-item" data-filter=".sql">SQL</li>
-				<li class="list-inline-item" data-filter=".js">Javascript</li>
-			</ul>
-			
-			<!-- portfolio filter (mobile) -->
-			<div class="pf-filter-wrapper">
-				<select class="portfolio-filter-mobile">
-					<option value="*">All</option>
-					<option value=".php">PHP</option>
-					<option value=".node">Node.Js</option>
-					<option value=".python">Python</option>
-					<option value=".sql">SQL</option>
-					<option value=".js">Javascript</option>
-				</select>
-			</div>
-			
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper" style="font-family: 'Nunito Sans', serif !important;">
-		
-				<div class="col-md-6 col-sm-12 grid-item php">
-					<a href="http://ah12491.lovestoblog.com/kshop" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/kshop/1.PNG')">
-							<div class="details">
-								<span class="term">PHP</span>
-								<h4 class="title">Professional laravel online store.</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/kshop/1.PNG" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">K-shop</b>&nbsp;&nbsp;Professional laravel online store.
-					</p>
-				</div>	
-
-				<div class="col-md-6 col-sm-12 grid-item php">
-					<a href="http://ah12491.lovestoblog.com/shopdash" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/shopdash/1.PNG')">
-							<div class="details">
-								<span class="term">PHP</span>
-								<h4 class="title">E-commerce Dashboard</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/shopdash/1.PNG" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">Dash</b>&nbsp;&nbsp;Shop management dashboard for monitoring sales, inventory, and customer interactions.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item python">
-					<a href="javascript:{}" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/clinic/1.PNG')">
-							<div class="details">
-								<span class="term">Python</span>
-								<h4 class="title">Clinic Reservation System</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/clinic/1.PNG" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">Clinic</b>&nbsp;&nbsp;Reservation system for managing appointments and patient schedules.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item node">
-					<a href="ah12491.lovestoblog.com/tvflix" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/tvflix/1.PNG')">
-							<div class="details">
-								<span class="term">Node.Js</span>
-								<h4 class="title">Movies Platform</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/tvflix/1.PNG" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">TVFLIX</b>&nbsp;&nbsp;Platform for old and newly released movies and TV shows.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item node">
-					<a href="https://nodechat-qjcc.onrender.com/" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/nodechat/1.PNG')">
-							<div class="details">
-								<span class="term">Node.Js</span>
-								<h4 class="title">Socket.io Chat System</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/nodechat/1.PNG" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">Nodechat</b>&nbsp;&nbsp;Socket.io simple client-server chat system.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item python">
-					<a href="https://github.com/91ahmed/StructFlask" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
-							<div class="details">
-								<span class="term">Python</span>
-								<h4 class="title">StructFlask</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">StructFlask</b>&nbsp;&nbsp;Python mvc framework built on top of Flask.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item php">
-					<a href="https://github.com/91ahmed/JsonModifier" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
-							<div class="details">
-								<span class="term">PHP</span>
-								<h4 class="title">JsonModify</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">JsonModify</b>&nbsp;&nbsp;PHP package allows developers to manipulate JSON files.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item node">
-					<a href="https://github.com/91ahmed/nodeEstablishSQL" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
-							<div class="details">
-								<span class="term">Node.Js</span>
-								<h4 class="title">nodeEstablishSQL</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">NodeSQL</b>&nbsp;&nbsp;Query builder for postgresql and mysql.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item php">
-					<a href="https://github.com/91ahmed/CsvtoSql" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
-							<div class="details">
-								<span class="term">PHP</span>
-								<h4 class="title">CsvtoSql</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">CsvtoSql</b>&nbsp;&nbsp;PHP library to extract data from (csv) file and transform it to (sql) insert statement.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item js">
-					<a href="https://github.com/91ahmed/JsInspector" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/default.png');filter: contrast(1.2);-webkit-filter:contrast(1.2);">
-							<div class="details">
-								<span class="term">JS</span>
-								<h4 class="title">JsInspector</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/default.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">JsInspector</b>&nbsp;&nbsp;Javascript library for client-side data validation.
-					</p>
-				</div>
-
-				<div class="col-md-6 col-sm-12 grid-item js">
-					<a href="https://github.com/91ahmed/RetroNotify" target="_blank">
-						<div class="portfolio-item rounded shadow-dark" style="background-image: url('web-assets/images/works/retronotify/1.png');">
-							<div class="details">
-								<span class="term">JS</span>
-								<h4 class="title">RetroNotify</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<!--<img src="web-assets/images/works/retronotify/1.png" alt="Portfolio-title" />-->
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<p class="ph-details">
-						<b class="pr-bg">RetroNotify</b>&nbsp;&nbsp;Javascript library to display notification messages with sleek and modern design.
-					</p>
-				</div>
-
-
-				<!-- 				
-				<div class="col-md-4 col-sm-6 grid-item php">
-					<a href="images/works/kshop/2.png" class="work-image">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">PHP</span>
-								<h4 class="title">Professional laravel online store.</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/works/kshop/1.png" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div> 
-
-				<div class="col-md-4 col-sm-6 grid-item creative design">
-					<a href="#small-dialog" class="work-content">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Creative</span>
-								<h4 class="title">Guest App Walkthrough Screens</h4>
-								<span class="more-button"><i class="icon-options"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
-						<img src="https://via.placeholder.com/590x280" alt="Title" />
-						<h2>Guest App Walkthrough Screens</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
-						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
-						<a href="#" class="btn btn-default">View on Dribbble</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 grid-item branding">
-					<a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Branding</span>
-								<h4 class="title">Delivery App Wireframe</h4>
-								<span class="more-button"><i class="icon-camrecorder"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-6 grid-item creative">
-					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Creative</span>
-								<h4 class="title">Onboarding Motivation</h4>
-								<span class="more-button"><i class="icon-music-tone-alt"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-md-4 col-sm-6 grid-item art branding">
-					<a href="#gallery-1" class="gallery-link">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Art, Branding</span>
-								<h4 class="title">iMac Mockup Design</h4>
-								<span class="more-button"><i class="icon-picture"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<div id="gallery-1" class="gallery mfp-hide">
-						<a href="https://via.placeholder.com/330x267"></a>
-						<a href="https://via.placeholder.com/330x267"></a>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 grid-item creative design">
-					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Creative, Design</span>
-								<h4 class="title">Game Store App Concept</h4>
-								<span class="more-button"><i class="icon-link"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/330x267" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-				-->
-
-			</div>
-
-		</div>
-
-	</section>
-	
-	<!-- section contact -->
-	<section id="contact">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Get In Touch</h2>
-
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row">
-				
-				<div class="col-md-4">
-					<!-- contact info -->
-					<div class="contact-info">
-						<h3 class="wow fadeInUp">Let's talk about everything!</h3>
-						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:name@example.com">email</a>. 👋</p>
-					</div>
-				</div>
-
-				<div class="col-md-8">
-					<!-- Contact Form -->
-					<form id="contact-form" class="contact-form mt-6" method="post" action="form/contact.php">
-						
-						<div class="messages"></div>
-						
-						<div class="row">
-							<div class="column col-md-6">
-								<!-- Name input -->
-								<div class="form-group">
-									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							
-							<div class="column col-md-6">
-								<!-- Email input -->
-								<div class="form-group">
-									<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required="required" data-error="Email is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-
-							<div class="column col-md-12">
-								<!-- Email input -->
-								<div class="form-group">
-									<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject" required="required" data-error="Subject is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-					
-							<div class="column col-md-12">
-								<!-- Message textarea -->
-								<div class="form-group">
-									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-
-						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send Message</button><!-- Send Button -->
-
-					</form>
-					<!-- Contact Form end -->
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<div class="spacer" data-height="96"></div>
-	
-</main>
-
-<!-- Go to top button -->
-<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-
-<!-- SCRIPTS -->
-<script src="web-assets/js/jquery-1.12.3.min.js"></script>
-<script src="web-assets/js/jquery.easing.min.js"></script>
-<script src="web-assets/js/jquery.waypoints.min.js"></script>
-<script src="web-assets/js/jquery.counterup.min.js"></script>
-<script src="web-assets/js/popper.min.js"></script>
-<script src="web-assets/js/bootstrap.min.js"></script>
-<script src="web-assets/js/isotope.pkgd.min.js"></script>
-<script src="web-assets/js/infinite-scroll.min.js"></script>
-<script src="web-assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="web-assets/js/slick.min.js"></script>
-<script src="web-assets/js/contact.js"></script>
-<script src="web-assets/js/validator.js"></script>
-<script src="web-assets/js/wow.min.js"></script>
-<script src="web-assets/js/morphext.min.js"></script>
-<script src="web-assets/js/parallax.min.js"></script>
-<script src="web-assets/js/jquery.magnific-popup.min.js"></script>
-<script src="web-assets/js/custom.js"></script>
-
-
-<script>
-	$(document).ready(function () {
-		$('#my-menu').click(function () {
-			$('.mobile-header-2, .desktop-header-2, .content-2').toggleClass('open')
-		})
-
-		/*
-		$('.desktop-header-2').on('change', function () {
-			if ($(this).hasClass('open')) {
-				$('.line-2').animate({'margin-left': '20px'})
-			} else {
-				$('.line-2').animate({'margin-left': '0'})
-			}			
-		})
-		*/
-	})
-</script>
+<body class="home">
+    <div class="top-scroll-bar"></div>
+    <!--Mobile navigation-->
+    <div class="sticky-header fixed d-lg-none d-md-block">
+        <div class="text-end">
+            <div class="container mobile-menu-fixed pe-5">
+                <h1 class="logo-small navbar-brand"><a href="index.html" class="logo">M</a></h1>
+
+                <a class="author-avatar" href="#"><img src="assets/images/ahmed.jpg" alt=""></a>
+                <a href="#" class="dark-light-toggle mt-05"><i class="icon-adjust"></i></a>
+                <ul class="social-network heading navbar-nav d-lg-flex align-items-center">
+                    <li>
+                        <a href="#">
+                            <svg style="width: 10px; height: 10px; color: rgba(0, 0, 0, .54); margin-top: -3px;" id="fi_5968958" enable-background="new 0 0 1226.37 1226.37" viewBox="0 0 1226.37 1226.37" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m727.348 519.284 446.727-519.284h-105.86l-387.893 450.887-309.809-450.887h-357.328l468.492 681.821-468.492 544.549h105.866l409.625-476.152 327.181 476.152h357.328l-485.863-707.086zm-144.998 168.544-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721h-162.604l-323.311-462.446z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                </ul>
+
+                <a href="javascript:void(0)" class="menu-toggle-icon">
+                    <span class="lines"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Header and navigation-->
+    <div id="wrapper">
+        <header id="header" class="d-lg-block d-none">
+            <div class="container">
+                <div class="align-items-center w-100">
+                    <h1 class="logo float-start navbar-brand"><a href="index.html" class="logo">Ahmed</a></h1>
+                    <div class="header-right float-end w-50">
+
+                        <div class="d-inline-flex float-end text-end align-items-center">
+                            <a href="#" class="dark-light-toggle"><i class="icon-adjust"></i></a>
+                            <ul class="social-network heading navbar-nav d-lg-flex align-items-center">
+                                <li><a href="#"><svg style="width: 10px; height: 10px; color: rgba(0, 0, 0, .54); margin-top: -3px;" id="fi_5968958" enable-background="new 0 0 1226.37 1226.37" viewBox="0 0 1226.37 1226.37" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m727.348 519.284 446.727-519.284h-105.86l-387.893 450.887-309.809-450.887h-357.328l468.492 681.821-468.492 544.549h105.866l409.625-476.152 327.181 476.152h357.328l-485.863-707.086zm-144.998 168.544-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721h-162.604l-323.311-462.446z"></path>
+                                        </svg></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            </ul>
+                            <ul class="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
+                                <li><a href="#" class="btn">Contact</a></li>
+                            </ul>
+
+                            <a class="author-avatar" href="#"><img src="assets/images/ahmed.jpg" alt=""></a>
+
+                        </div>
+                        <form action="#" method="get" class="search-form d-lg-flex float-end">
+                            <a href="javascript:void(0)" class="searh-toggle">
+                                <i class="icon-search"></i>
+                            </a>
+                            <input type="text" class="search_field" placeholder="Search..." value="" name="s">
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <nav id="main-menu" class="stick d-lg-block d-none" style="padding: 10px 0;">
+            </nav>
+        </header>
+        <main id="content">
+            <div class="section-featured featured-style-1">
+                <div class="container" style="direction: rtl; text-align: right;">
+                    <div class="row">
+                        <!--begin featured-->
+                        <div class="col-12">
+                            <h2 class="spanborder h4">
+                                <span>Editor's Picks</span>
+                            </h2>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <article class="post-has-bg">
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-700x512.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <h5 class="entry-title mb-3"><a href="single.html">The Night My Doorbell Camera Captured a Shooting</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Alentica</a> in <a href="archive.html">Police</a><br>
+                                                    <span>Jun 16</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">7 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-512x512-2.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <h5 class="entry-title mb-3"><a href="single.html">Privacy Is Just the Beginning of the Debate Over Tech</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Otimus</a> in <a href="archive.html">Startup</a><br>
+                                                    <span>May 15</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">6 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-700x512-2.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <div class="capsSubtle mb-2">based on your reading history</div>
+                                                <h5 class="entry-title mb-3"><a href="single.html">Want To Make Millions? Then Act Like a Millionaire</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Mark Harris</a> in <a href="archive.html">Heated</a><br>
+                                                    <span>May 13</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">12 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>                                
+                                <div class="col-sm-12 col-md-6">
+                                    <article class="post-has-bg">
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-700x512.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <h5 class="entry-title mb-3"><a href="single.html">The Night My Doorbell Camera Captured a Shooting</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Alentica</a> in <a href="archive.html">Police</a><br>
+                                                    <span>Jun 16</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">7 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-512x512-2.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <h5 class="entry-title mb-3"><a href="single.html">Privacy Is Just the Beginning of the Debate Over Tech</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Otimus</a> in <a href="archive.html">Startup</a><br>
+                                                    <span>May 15</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">6 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="mb-3 d-flex row">
+                                            <figure class="col-4 col-md-4"><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-700x512-2.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                            <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                                                <div class="capsSubtle mb-2">based on your reading history</div>
+                                                <h5 class="entry-title mb-3"><a href="single.html">Want To Make Millions? Then Act Like a Millionaire</a></h5>
+                                                <div class="entry-meta align-items-center">
+                                                    <a href="author.html">Mark Harris</a> in <a href="archive.html">Heated</a><br>
+                                                    <span>May 13</span>
+                                                    <span class="middotDivider"></span>
+                                                    <span class="readingTime" title="3 min read">12 min read</span>
+                                                    <span class="svgIcon svgIcon--star">
+                                                        <svg class="svgIcon-use" width="15" height="15">
+                                                            <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!--
+                                <div class="col-sm-12 col-md-6">
+                                    <article class="first mb-3">
+                                        <figure><a href="single.html"><img class="lazy" data-src="assets/images/thumb/thumb-1240x700.jpg" src="assets/images/thumb/placeholder.png" alt="post-title"></a></figure>
+                                        <h3 class="entry-title mb-3" style="direction: rtl; text-align: right;"><a href="single.html">Home Internet Is Becoming a Luxury for the Wealthy</a></h3>
+                                        <div class="entry-excerpt" style="direction: rtl; text-align: right;">
+                                            <p>
+                                                And black on meretriciously regardless well fearless irksomely as about hideous wistful bat less oh much and occasional useful rat darn jeepers far.
+                                            </p>
+                                        </div>
+                                        <div class="entry-meta align-items-center" style="direction: rtl; text-align: right;">
+                                            <a href="author.html">Dave Gershgorn</a> in <a href="archive.html">OneZero</a><br>
+                                            <span>Jun 14</span>
+                                            <span class="middotDivider"></span>
+                                            <span class="readingTime" title="3 min read">3 min read</span>
+                                            <span class="svgIcon svgIcon--star">
+                                                <svg class="svgIcon-use" width="15" height="15">
+                                                    <path d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </article>
+                                </div>
+                                -->
+                            </div>
+                        </div><!--end featured-->
+
+                    </div> <!--end row-->
+                    <div class="divider"></div>
+                </div> <!--end container-->
+            </div> <!--section-featured-->
+        </main>
+
+        <footer class="mt-5">
+            <div class="container">
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-md-6 copyright text-xs-center">
+                        <p>Copyright 2019. Developed by <a href="https://github.com/91ahmed" target="_blank">Ahmed Hassan</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-network inline text-md-end text-sm-center">
+                            <li class="list-inline-item"><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><svg style="width: 10px; height: 10px; color: rgba(0, 0, 0, .54); margin-top: -3px;" id="fi_5968958" enable-background="new 0 0 1226.37 1226.37" viewBox="0 0 1226.37 1226.37" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m727.348 519.284 446.727-519.284h-105.86l-387.893 450.887-309.809-450.887h-357.328l468.492 681.821-468.492 544.549h105.866l409.625-476.152 327.181 476.152h357.328l-485.863-707.086zm-144.998 168.544-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721h-162.604l-323.311-462.446z"></path>
+                                    </svg></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="icon-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!--#wrapper-->
+    <a href="#" class="back-to-top heading"><i class="icon-left-open-big"></i><span class="d-lg-inline d-md-none">Top</span></a>
+
+    <!--Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.js"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>
