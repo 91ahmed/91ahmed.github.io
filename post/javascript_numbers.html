@@ -35,6 +35,7 @@
     <link href="../assets/css/widgets.css" rel="stylesheet">
     <link href="../assets/css/color-default.css" rel="stylesheet">
     <link href="../assets/css/responsive.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
 
     <!-- Bunny fonts-->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -143,27 +144,62 @@
                 <!--figure-->
                 <article class="entry-wraper mb-5">
                     <div class="excerpt mb-4">
-                        <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.</p>
+                        <p>لغة جافاسكربت من اللغات اللي بتحتوي على تفاصيل دقيقة ممكن تسبب ارتباك للمبتدئين وحتى للمستوى المتوسط. من أبرز الأمثلة على ده طريقة تمثيل الأعداد. فمثلًا، ممكن تكتب كود لاسترجاع رقم معين، لكن في النهاية تلاقي أن المخرجات مختلفة عن اللي كنت متوقعه.</p>
                     </div>
-                    <div class="entry-main-content dropcap">
-                        <p>Gosh jaguar ostrich quail one excited dear hello and <a href="#">bound</a><sup><a href="#">[1]</a></sup> and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.</p>
-                        <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness <a href="#">nightingale</a> the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
-                        <hr class="section-divider">
-                        <p>Yet more some certainly yet alas abandonedly whispered <a href="#">intriguingly</a><sup><a href="#">[2]</a></sup> well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less <a href="#">however</a> hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
-                        <h2>The Guitar Legends</h2>
-                        <p>Furrowed this in the upset <a href="#">some across</a><sup><a href="#">[3]</a></sup> tiger oh loaded house gosh whispered <a href="#">faltering alas</a><sup><a href="#">[4]</a></sup> ouch cuckoo coward in scratched undid together bit fumblingly so besides salamander heron during the jeepers hello fitting jauntily much smoothly globefish darn blessedly far so along bluebird leopard and.</p>
-                        <blockquote>
-                            <p>Integer eu faucibus <a href="#">dolor</a><sup><a href="#">[5]</a></sup>. Ut venenatis tincidunt diam elementum imperdiet. Etiam accumsan semper nisl eu congue. Sed aliquam magna erat, ac eleifend lacus rhoncus in.</p>
-                        </blockquote>
-                        <p>Fretful human far recklessly while caterpillar well a well blubbered added one a some far whispered rampantly whispered while irksome far clung irrespective wailed more rosily and where saluted while black dear so yikes as considering recast to some crass until cow much less and rakishly overdrew consistent for by responsible oh one hypocritical less bastard hey oversaw zebra browbeat a well.</p>
-                        <h3>Getting Crypto Rich</h3>
-                        <p>And far contrary smoked some contrary among stealthy engagingly suspiciously a cockatoo far circa sank dully lewd slick cracked llama the much gecko yikes more squirrel sniffed this and the the much within uninhibited this abominable a blubbered overdid foresaw through alas the pessimistic.</p>
-                        <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.</p>
-                        <hr class="section-divider">
-                        <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness nightingale the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
+                    <h5>زي المثال ده:</h5>
+                    <div style="direction: ltr !important; text-align: left !important;">
+                        <pre>
+                            <code class="language-javascript">
+                                let num = 021
+                                console.log(num)
+                                // output: 17 (decimal equivalent)
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="entry-main-content">
+                        <p>
+                            ليه هنا ال <b>output</b> طلع 17 مش 21
+                        </p>
+                        <p>
+السبب هنا إن جافاسكريب بتفسر العدد حسب الصيغة <b>(literal form)</b>
+وبعد كده بتحوله وبيتخزن داخلياً ك
+<b>Double Precision Floating Point.</b>
+</p>
+<p>
+سواء كتبت العدد<br/>
+بال Octal (0o21)<br/>
+أو بال Hexadecimal (0x1A)<br/>
+او بال Binary (0b1010)<br/>
+هيتم تحويل العدد لرقم عشري.
+</p>
+<p>
+وجود الصفر في بداية العدد (021) معناه إن الرقم مش عشري وهيتم تحويله، الإستثناء الوحيد هو لما يكون الرقم صفر (0) لوحده ساعتها هيتم طباعته.
+</p>
+<p>
+وعشان تتجنب المشكلة  ممكن تستخدم الدالة
+<b>toString(base)</b> لتحويل العدد لأي قاعدة عددية.
+</p>
+                    </div>
+					
+                    <div style="direction: ltr !important; text-align: left !important;">
+                        <pre>
+                            <code class="language-javascript">
+								let number = 255;
 
-                        <p>Yet more some certainly yet alas abandonedly whispered intriguingly well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less however hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
+								// 11111111 (ثنائي)
+								console.log(number.toString(2));  
+								// 377 (ثماني)
+								console.log(number.toString(8)); 
+								// ff (ست عشري)
+								console.log(number.toString(16));
+                            </code>
+                        </pre>
                     </div>
+					<div class="entry-main-content">
+					<p>
+بالطريقة دي، تقدر تطبع أي رقم بأي نظام عددي بدون أي مشاكل، وتتفادى استخدام الصيغ القديمة اللي فيها صفر في البداية (021) واللي ممكن تعمل لخبطة أو خطأ في الإصدارات الحديثة من جافاسكريبت.​					
+					</p>
+					</div>
                 </article> <!--entry-content-->
             </div>
         </main>
@@ -191,6 +227,7 @@
     <!--Scripts-->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/prism.js"></script>
     <script src="../assets/js/jquery-scrolltofixed-min.js"></script>
     <script src="../assets/js/theia-sticky-sidebar.js"></script>
     <script src="../assets/js/jquery.lazy.min.js"></script>
