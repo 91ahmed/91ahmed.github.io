@@ -103,6 +103,19 @@
     });
   }
 
+  function bodyMode () 
+  {
+    if ($('body').hasClass('dark-mode')) {
+      if (document.getElementsByClassName('entry-title')[0]) {
+        document.getElementsByClassName('entry-title')[0].setAttribute('style', 'color:#FFF !important')
+      }
+    } else {
+      if (document.getElementsByClassName('entry-title')[0]) {
+         document.getElementsByClassName('entry-title')[0].setAttribute('style', 'color:rgba(0,0,0,.84) !important')
+      }
+    }
+  }
+
   $(window).load(function () {
     backToTop();
     mobileMenu();
@@ -111,18 +124,7 @@
     scrollBar();
     theiaSticky();
     darkLightToggle(); // Initialize dark/light mode toggle
+    bodyMode();
   });
 
 })(jQuery);
-
-
-
-  if (document.body.classList.contains('dark-mode')) {
-    if (document.getElementsByClassName('entry-title')[0]) {
-           document.getElementsByClassName('entry-title')[0].setAttribute('style', 'color:rgba(0,0,0,.84) !important')
-    }
-  } else {
-    if (document.getElementsByClassName('entry-title')[0]) {
-       document.getElementsByClassName('entry-title')[0].setAttribute('style', 'color:#FFF !important')
-    }
-  }
