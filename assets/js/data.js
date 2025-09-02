@@ -25,8 +25,13 @@ let nav_social_icons = `
     <a href="https://linkedin.com/in/91ahmed" target="_blank"><i class="icon-linkedin"></i></a>
 </li>
 `
-document.getElementById('nav_social_icons1').innerHTML = nav_social_icons
-document.getElementById('nav_social_icons2').innerHTML = nav_social_icons
+if (document.getElementById('nav_social_icons1')) {
+    document.getElementById('nav_social_icons1').innerHTML = nav_social_icons
+}
+if (document.getElementById('nav_social_icons2')) {
+    document.getElementById('nav_social_icons2').innerHTML = nav_social_icons
+}
+
 
 /**********************************************/
 /******** Menu Links ********/
@@ -48,8 +53,12 @@ let menu_links2 = `
 </ul>
 <span></span>
 `
-document.getElementById('menu_links1').innerHTML = menu_links1
-document.getElementById('menu_links2').innerHTML = menu_links2
+if (document.getElementById('menu_links1')) {
+    document.getElementById('menu_links1').innerHTML = menu_links1
+}
+if (document.getElementById('menu_links2')) {
+    document.getElementById('menu_links2').innerHTML = menu_links2
+}
 
 /**********************************************/
 /******** Author Photo ********/
@@ -57,6 +66,40 @@ document.getElementById('menu_links2').innerHTML = menu_links2
 let author_photo = `
 <img src="${url}assets/images/ahmed.png" alt="author">
 `
-document.getElementById('author_photo1').innerHTML = author_photo
-document.getElementById('author_photo2').innerHTML = author_photo
-document.getElementById('author_photo3').innerHTML = author_photo
+if (document.getElementById('author_photo1')) {
+    document.getElementById('author_photo1').innerHTML = author_photo  
+}
+if (document.getElementById('author_photo2')) {
+    document.getElementById('author_photo2').innerHTML = author_photo  
+}
+if (document.getElementById('author_photo3')) {
+    document.getElementById('author_photo3').innerHTML = author_photo  
+}
+
+
+/**********************************************/
+/******** Home Posts ********/
+/*********************************************/
+
+// Javascript Section
+for (let data of posts) {
+    if (data.id > 3) { break }
+    if (data.category === 'javascript') {
+        if (document.getElementById('javascript_section_1')) {
+            document.getElementById('javascript_section_1').innerHTML += `
+            <article class="post-has-bg">
+                <div class="mb-3 d-flex row">
+                    <figure class="col-4 col-md-4"><a href="${url+data.path}"><!--<img class="lazy" data-src="assets/images/thumb/thumb-700x512.jpg" src="assets/images/thumb/placeholder.png" alt="post-title">--></a></figure>
+                    <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
+                        <h5 class="entry-title mb-3"><a href="${url+data.path}">${data.title}</a></h5>
+                        <div class="entry-meta align-items-center">
+                            <a href="author.html">${data.category}</a><br>
+                            <span class="d-block mt-2">${data.time}</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            `
+        }
+    }
+}
