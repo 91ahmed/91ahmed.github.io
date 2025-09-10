@@ -7,3 +7,13 @@
 pre {
 	font-size: 14px !important;
 }
+
+.postPhoto {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: #ecedda;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}

@@ -90,8 +90,8 @@ for (let data of posts) {
             <article class="post-has-bg">
                 <div class="mb-3 d-flex row">
                     <figure class="col-4 col-md-4">
-                        <a href="${url+data.path}">
-                            <img class="lazy" data-src="${data.thumb}" src="${data.thumb}" alt="post-title">
+                        <a href="${url+data.path}" class="postPhoto" style="background-image:url(${data.thumb});">
+                            <!--<img class="lazy" data-src="${data.thumb}" src="${data.thumb}" alt="post-title">-->
                         </a>
                     </figure>
                     <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
