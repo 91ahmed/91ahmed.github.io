@@ -89,7 +89,11 @@ for (let data of posts) {
             document.getElementById('javascript_section_1').innerHTML += `
             <article class="post-has-bg">
                 <div class="mb-3 d-flex row">
-                    <figure class="col-4 col-md-4"><a href="${url+data.path}"><!--<img class="lazy" data-src="assets/images/thumb/thumb-700x512.jpg" src="assets/images/thumb/placeholder.png" alt="post-title">--></a></figure>
+                    <figure class="col-4 col-md-4">
+                        <a href="${url+data.path}">
+                            <img class="lazy" data-src="${data.thumb}" src="${data.thumb}" alt="post-title">
+                        </a>
+                    </figure>
                     <div class="entry-content col-8 col-md-8 pl-md-0" style="direction: rtl; text-align: right;">
                         <h5 class="entry-title mb-3"><a href="${url+data.path}">${data.title}</a></h5>
                         <div class="entry-meta align-items-center">
