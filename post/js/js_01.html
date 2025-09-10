@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>التعامل مع الاعداد في لغة الجافاسكريبت (Octal, Hex, Binary)</title>
+    <title></title>
     <meta name="description" content="Ahmed Hassan Software Engineer - official website">
     <meta name="keywords" content="ahmed hassan hassan, software engineer, ahmed hassan php, ahmed hassan python, ahmed hassan engineer, 91ahmed, 91ahmed.github.io, github.com/91ahmed, 91ahmed, 91ahmed">
 
@@ -126,13 +126,11 @@
             <div class="container" style="direction: rtl !important; text-align: right !important;">
                 <div class="entry-header">
                     <div class="mb-5">
-                        <h1 class="entry-title m_b_2rem">
-                            التعامل مع الاعداد في لغة الجافاسكريبت (Octal, Hex, Binary)
-                        </h1>
+                        <h1 class="entry-title m_b_2rem" id="printTitle"><!-- title here --></h1>
                         <div class="entry-meta align-items-center">
                             <a class="author-avatar" href="#" id="author_photo3" style="float: right !important; margin: -3px 0 0 15px !important;"></a>
-                            <a href="author.html">Ahmed Hassan</a> in <a href="archive.html">Javascript</a><br>
-                            <span>Oct 16, 2019</span>
+                            <a href="author.html" id="printAuthor"><!-- author here --></a> in <a href="archive.html" id="printCategory"><!-- category here --></a><br>
+                            <span id="printDate"><!-- date here --></span>
                             <span class="middotDivider"></span>
                         </div>
                     </div>
@@ -144,7 +142,7 @@
                 -->
                 <!--figure-->
                 <article class="entry-wraper mb-5">
-                    <div class="excerpt mb-4">
+                    <div class="entry-main-content"> <!-- class="excerpt mb-4" -->
                         <p>
                             لغة جافاسكريبت من اللغات اللي بتحتوي على تفاصيل دقيقة ممكن تسبب ارتباك للمبتدئين وحتى للمستوى المتوسط. ومن ابرز هذه التفاصيل هي آلية تمثيل وتخزين الأعداد في اللغة. فمثلًا، ممكن تكتب كود لاسترجاع رقم معين او تنفيذ عملية حسابية او حتي جملة شرطية، لكن في النهاية تلاقي أن المخرجات مختلفة عن اللي كنت متوقعه.
                         </p>
@@ -205,9 +203,9 @@
                     <div style="direction: ltr !important; text-align: left !important;">
                         <pre>
                             <code class="language-javascript">
-                                console.log(Number("34") === 34);     // true
+                                console.log(Number("34") === 34);   // true
                                 console.log(Number("2.7") === 2.7); // true
-                                console.log(Number("021") === 21);    // true
+                                console.log(Number("021") === 21);  // true
                             </code>
                         </pre>
                     </div>
