@@ -4,7 +4,7 @@ const posts = [
 		title: ' تمثيل الاعداد في لغة الجافاسكريبت (Octal, Hex, Binary)',
 		category: 'javascript',
 		path: 'post/js/js_01.html',
-		thumb: 'post/js/1.png',
+		thumb: 'post/js/1.jpg',
 		time: 'Oct 16, 2021',
 		created_year: '2021',
 		created_month: 'Oct',
