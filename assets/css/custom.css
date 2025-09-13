@@ -1,6 +1,14 @@
+.box-author {
+	max-width: 900px;
+	margin: auto;
+}
 @media screen and (max-width: 772px) {
 	.entry-main-content, .excerpt {
 		font-size: 18px !important;
+	}
+	#author-container,
+	.box-author {
+		max-width: 100% !important;
 	}
 }
 
