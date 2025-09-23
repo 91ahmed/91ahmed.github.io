@@ -25,3 +25,29 @@ pre {
 	background-repeat: no-repeat;
 	background-position: center top;
 }
+
+#books {
+	text-align: center;
+}
+.book-box {
+	width: 200px;
+	display: inline-block;
+	margin: auto;
+	padding: 15px;
+}
+.book-photo {
+	width: 100%;
+	height: 215px;
+	background-color: #f7f7f7;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+.book-box a {
+    display: block;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    background-color: #f3f0f0;
+    margin-top: 10px;
+    font-size: 15px;
+}
