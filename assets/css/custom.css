@@ -2,15 +2,6 @@
 	max-width: 900px;
 	margin: auto;
 }
-@media screen and (max-width: 772px) {
-	.entry-main-content, .excerpt {
-		font-size: 18px !important;
-	}
-	#author-container,
-	.box-author {
-		max-width: 100% !important;
-	}
-}
 
 pre {
 	font-size: 14px !important;
@@ -50,4 +41,23 @@ pre {
     background-color: #f3f0f0;
     margin-top: 10px;
     font-size: 15px;
+    color: #222 !important;
+}
+
+
+@media screen and (max-width: 772px) {
+	.entry-main-content, .excerpt {
+		font-size: 18px !important;
+	}
+	#author-container,
+	.box-author {
+		max-width: 100% !important;
+	}
+	.book-photo {
+		height: 160px;
+	}
+	.book-box {
+		width: 160px;
+		padding: 10px;
+	}
 }
