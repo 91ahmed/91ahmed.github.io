@@ -60,4 +60,7 @@ pre {
 		width: 160px;
 		padding: 10px;
 	}
+	.book-box a {
+		font-size: 13px;
+	}
 }
