@@ -144,45 +144,50 @@
                 <article class="entry-wraper mb-5">
                     <div class="entry-main-content"> <!-- class="excerpt mb-4" -->
                         <p>
-في البرمجة الكائنية في مفهوم أساسي يسمي Polymorphism يعني بالعربي تعدد الأشكال.<br>
-المفهوم ده معناه إن الكائنات (Objects) ممكن تتصرف بشكل مختلف حسب السياق حتى لو جايه من نفس النوع أو نفس الـ Class الأساسي. ويوجد في البرمجة الكائنية نوعين أساسيين من الـ Polymorphism:
-<br>
-<ol>
-    <li><b>Static Polymorphism</b></li>
-    <li><b>Dynamic Polymorphism</b></li>
-</ol>
-
+                            في البرمجة الكائنية في مفهوم أساسي يسمي Polymorphism يعني بالعربي تعدد الأشكال.<br>
+                            المفهوم ده معناه إن الكائنات (Objects) ممكن تتصرف بشكل مختلف حسب السياق حتى لو جايه من نفس النوع أو نفس الـ Class الأساسي. ويوجد في البرمجة الكائنية نوعين أساسيين من الـ Polymorphism:
+                            <br>
+                            <ol>
+                            <li><b>Static Polymorphism</b></li>
+                            <li><b>Dynamic Polymorphism</b></li>
+                            </ol>
+                        </p>
+                        <p>
+                            النوع الأول Static Polymorphism (التعدد الثابت)
+                            <br/>
+                            النوع ده معناه إن اللغة هتعرف تستخدم أي method وقت كتابة الكود مش وقت تشغيل البرنامج.
+عادة بيظهر لما نحب نعمل method ممكن تاخد معاملات مختلفة.
                         </p>
                     </div>
-                    <h5>زي المثال ده:</h5>
+                    <h5>مثال</h5>
                     <div style="direction: ltr !important; text-align: left !important;">
                         <pre>
-                            <code class="language-javascript">
-                                let num = 021
-                                console.log(num)
-                                // output: 17 (decimal equivalent)
+                            <code class="language-php">
+                                class Calculator { 
+                                    // دالة جمع ممكن تاخد أي عدد من الأرقام 
+                                    public function add(...$numbers) 
+                                    { 
+                                        $sum = 0; 
+                                        foreach($numbers as $num) { 
+                                            $sum += $num; 
+                                        } 
+
+                                        return $sum; 
+                                    } 
+                                } 
+
+                                $calc = new Calculator(); 
+                                echo $calc->add(2, 3); // 5 echo "\n"; 
+                                echo $calc->add(2, 3, 4); // 9 
                             </code>
                         </pre>
                     </div>
                     <div class="entry-main-content">
                         <p>
-                         ليه هنا الـ <b>output</b> طلع 17 مش 21
-                        </p>
-<p>
- السبب هنا إن جافاسكريب بتفسر العدد أولا حسب الصيغة المكتوبة <b>(literal form)</b>
-وبعد كده بتحوله وبيتخزن داخلياً كرقم عشري وده لان لغة جافاسكريبت بتستخدم معيار يعرف بي
-<b>IEEE 754 Double Precision (64-bit floating point)</b>  لتخزين الاعداد
-</p>
-<p>
-يعني سواء كتبت العدد بصغة
-<b>Octal (0o21), Hexadecimal (0x1A), Binary (0b1010)</b>
-هيتم تحويل العدد لرقم عشري وده بسبب ال
+                            إحنا بنعمل <b>add method</b> تقدر تجمع رقمين أو ثلاثة أو أكتر.
 
-<b>Zero Leading</b> وجود الصفر في بداية العدد <b>(021)</b> قد يؤدي إلى سلوك غير متوقع لان اللغة ستتعامل معه علي انه عدد ثماني او ثنائي.
-</p>
-<p>
-وللتغلب على المشكلة، ممكن تستخدم الدالة <b>toString(base)</b> لعرض الأعداد بالصيغة المطلوبة، ويفضل استخدام الدالة <b>Number(1)</b> عند الحاجة إلى مقارنة الأعداد أو إجراء العمليات الحسابية عليها او يمكن الاستعانة بمكتبات خارجية زي <b>decimal.js</b>، لانها توفر دقة أعلى عند إجراء العمليات الحسابية ومعالجة الأعداد.
-</p>
+                            PHP تعرف إيه هي الدالة اللي هتشتغل وقت ما كتبنا الكود.
+                        </p>
                     </div>
 					
                     <h5>مثال علي الدالة toString</h5>
