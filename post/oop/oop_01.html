@@ -153,7 +153,7 @@
                             </ol>
                         </p>
                         <p>
-                            النوع الأول Static Polymorphism (التعدد الثابت)
+                            ←<u> النوع الأول Static Polymorphism (التعدد الثابت): </u>
                             <br/>
                             النوع ده معناه إن اللغة هتعرف تستخدم أي method وقت كتابة الكود مش وقت تشغيل البرنامج.
 عادة بيظهر لما نحب نعمل method ممكن تاخد معاملات مختلفة.
@@ -184,43 +184,68 @@
                     </div>
                     <div class="entry-main-content">
                         <p>
-                            إحنا بنعمل <b>add method</b> تقدر تجمع رقمين أو ثلاثة أو أكتر.
+                            في المثال ده عملنا <b>add method</b> تقدر تجمع رقمين أو ثلاثة أو أكتر.<br/>
 
                             PHP تعرف إيه هي الدالة اللي هتشتغل وقت ما كتبنا الكود.
                         </p>
                     </div>
-					
-                    <h5>مثال علي الدالة toString</h5>
+
+                    <div class="entry-main-content">
+                        <p>
+                            ←<u> النوع التاني Dynamic Polymorphism (التعدد الديناميكي):</u><br/>
+                            والنوع ده معناه إن البرنامج هيختار الدالة المناسبة وقت التشغيل حسب نوع الـ Object اللي احنا شغالين معاه.<br/>
+                        </p>
+                        <p>
+                        يعني لو عندك Class أساسي Creatures و Sub Classes (Shobill , Bear)، كل واحدة منهم هتطلع صوت مختلف حتى لو كلهم عندهم Method باسم واحد.
+                        <p>
+                    </div>
+                    <h5>مثال</h5>
                     <div style="direction: ltr !important; text-align: left !important;">
                         <pre>
-                            <code class="language-javascript">
-								let number = 255;
+                            <code class="language-php">
+                                class Creatures { 
+                                    public function makeSound() { 
+                                        return "Some sound"; 
+                                    } 
+                                } 
 
-								// 11111111 (ثنائي)
-								console.log(number.toString(2));  
-								// 377 (ثماني)
-								console.log(number.toString(8)); 
-								// ff (ست عشري)
-								console.log(number.toString(16));
+                                class Shobill extends Creatures { 
+                                    public function makeSound() { 
+                                        return "Clattering"; 
+                                    } 
+                                } 
+
+                                class Bear extends Creatures { 
+                                    public function makeSound() { 
+                                        return "Growl"; 
+                                    } 
+                                } 
+
+                                $creatures = [new Shobill(), new Bear()]; 
+                                foreach($creatures as $creature) { 
+                                    echo $creature->makeSound() . "<br>"; 
+                                }
                             </code>
                         </pre>
                     </div>
-					<div class="entry-main-content">
-					<p>
-بالطريقة دي، تقدر تطبع أي رقم بأي نظام عددي بدون أي مشاكل، وتتفادى استخدام الصيغ القديمة اللي فيها صفر في البداية (021) واللي ممكن تعمل لخبطة أو خطأ في الإصدارات الحديثة من جافاسكريبت.​					
-					</p>
-					</div>
+                    <div class="entry-main-content">
+                        <p>
+                            كل كائن (Bear أو Shobill) بيستخدم نسخته الخاصة من makeSound(). <br>
 
-                    <h5>مثال علي الدالة Number</h5>
-                    <div style="direction: ltr !important; text-align: left !important;">
-                        <pre>
-                            <code class="language-javascript">
-                                console.log(Number("34") === 34);   // true
-                                console.log(Number("2.7") === 2.7); // true
-                                console.log(Number("021") === 21);  // true
-                            </code>
-                        </pre>
-                    </div>
+                            اللغة هتختار الدالة الصح وقت التشغيل. <br>
+
+                            ده اللي بيخلي الـ Dynamic Polymorphism مرن جدًا. <br>
+                        <p>
+                    </p>                    
+                    <div class="entry-main-content">
+                        <p>
+<b>الخلاصة</b><br>
+
+لو عايز  <b>الMethod</b> تتصرف بشكل مختلف حسب عدد المعاملات أو نوعها → استخدم  <b>Static Polymorphism</b>.<br>
+
+لو عايز ل<b>Method</b> تتصرف بشكل مختلف حسب نوع الكائن اللي انت بتتعامل معاه → استخدم  <b>Dynamic Polymorphism</b>.<br>
+                        <p>
+                    </p>
                 </article> <!--entry-content-->
             </div>
         </main>
