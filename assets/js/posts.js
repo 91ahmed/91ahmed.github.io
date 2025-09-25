@@ -13,14 +13,14 @@ const posts = [
 	},	
 	{
 		id: 2,
-		title: 'php php',
-		category: 'php',
-		path: 'post/php/php_01.html',
-		thumb: 'post/js/1.jpg',
-		time: 'Oct 16, 2021',
+		title: 'الفرق بين Static Polymorphism و Dynamic Polymorphism',
+		category: 'object oriented',
+		path: 'post/oop/oop_01.html',
+		thumb: 'post/oop/1.jpg',
+		time: 'Oct 21, 2021',
 		created_year: '2021',
 		created_month: 'Oct',
-		created_day: '16',
+		created_day: '21',
 		author: 'Ahmed Hassan'
 	}
 ]

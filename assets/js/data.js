@@ -84,7 +84,7 @@ if (document.getElementById('author_photo3')) {
 // Javascript Section
 for (let data of posts) {
     if (data.id > 3) { break }
-    if (data.category === 'javascript') {
+    //if (data.category === 'javascript') {
         if (document.getElementById('javascript_section_1')) {
             document.getElementById('javascript_section_1').innerHTML += `
             <article class="post-has-bg">
@@ -105,5 +105,5 @@ for (let data of posts) {
             </article>
             `
         }
-    }
+    //}
 }
