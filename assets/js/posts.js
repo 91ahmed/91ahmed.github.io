@@ -13,7 +13,7 @@ const posts = [
 	},	
 	{
 		id: 2,
-		title: 'الفرق بين Static Polymorphism و Dynamic Polymorphism',
+		title: 'أنواع الـ Polymorphism',
 		category: 'object oriented',
 		path: 'post/oop/oop_01.html',
 		thumb: 'post/oop/1.jpg',
